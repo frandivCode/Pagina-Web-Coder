@@ -6,9 +6,9 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 
 
 > - ##### Contacto
-- #####Eventos
-- #####Nuestro Trabajo
--  #####Sobre nosotros
+- ##### Eventos
+- ##### Nuestro Trabajo
+-  ##### Sobre nosotros
 
 ------------
 
@@ -19,7 +19,7 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 - Github
 
 
-#### :tw-1f3af:  Se utilizó:
+#### :tw-1f3af: Se utilizó:
 
 - Box modeling
 - Flexbox
