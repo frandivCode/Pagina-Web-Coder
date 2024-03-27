@@ -1,0 +1,3143 @@
+/* Fuente para algunos textos */
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine&family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Fuente general */
+/* Font Cursiva */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/*   font-family: "DM Sans", sans-serif; */
+
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ---- PAGE INDEX ---- */
+
+
+/* Header Nav*/
+.logo img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.header-page-one {
+    width: 100%;
+    background-color: #4f4a45;
+    padding: 10px 40px;
+}
+
+.nav-page-one {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elementos-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 3rem;
+}
+
+.header-page-one .logo {
+    cursor: pointer;
+}
+
+.elementos-nav li {
+    list-style: none;
+}
+
+.elementos-nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #bbb9b9;
+    font-size: 1.15rem;
+    transition: all .5s ease;
+}
+
+.elementos-nav a:hover {
+    color: #F3EEEA;
+}
+
+/* Banner de entrada para   a página */
+.banner-principal {
+    background: url(../assets/img-disegn/luces-ambiente-cafeteria.jpg)fixed center/cover;
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-principal::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 40%;
+}
+
+.content-banner {
+    position: absolute;
+    width: 100%;
+    max-width: 60rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: rgb(240, 248, 255);
+}
+
+.banner-title {
+    font-family: "Tangerine", cursive;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 6.5rem;
+}
+
+.banner-subtitle {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 3;
+}
+
+.banner-parrafo {
+    font-family: "Charm", cursive;
+    line-height: 2;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Main products coffee */
+.main-product {
+    background-color: #e4cda7;
+}
+
+.subtitle-carousel {
+    padding-top: 2.2rem;
+}
+
+.subtitle-carousel h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: "Charm", cursive;
+}
+
+.title-product {
+    color: #3C2A21;
+    font-size: 2.7rem;
+    font-family: "Charm", cursive;
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #3C2A21;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Mas info de la cafeteria */
+
+.container-info {
+    width: 100%;
+    background-color: #E4CDA7;
+    margin: 5rem 0;
+    padding: 100px 150px;
+}
+
+#presentacion {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 2.7rem;
+    font-family: "Elsie Swash Caps", serif;
+    color: #65451F;
+}
+
+.element-info p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #65451F;
+    font-weight: 600;
+}
+
+.card-feature img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.card-feature-info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.card-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    border-radius: .3rem;
+    padding: 1.2rem 3rem;
+    background-color: #3f2305e5;
+    box-shadow: 10px 11px 3px rgba(168, 123, 75, 0.5);
+}
+
+.feature-content span {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Menu del Dia */
+.card-product-coffee {
+    background-color: #E4CDA7;
+    margin-top: 10rem;
+    padding: 40px;
+    border: 15px ridge #D7A86E;
+}
+
+.carta-elements {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.carta-elements p {
+    font-size: 1.5rem;
+}
+
+.carta-elements h2 {
+    font-size: 4rem;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    color: #65451F;
+}
+
+/* Coffee tipos */
+.container-card-product {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    margin: 6rem;
+
+}
+
+.element-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.element-card h4 {
+    font-size: 20px;
+    color: #3C2A21;
+    letter-spacing: 1px;
+    font-family: fantasy;
+}
+
+.element-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    transition: 500ms;
+}
+
+.element-card img:hover {
+    transform: scale(0.9)
+}
+
+.price {
+    text-align: center;
+    font-size: 18px;
+    font-family: fantasy;
+}
+
+/* Separador de menu */
+.linea-separatoria {
+    display: inline-block;
+    border: 2px solid #B0926A;
+    width: 100%;
+}
+
+/* Acompañamiento para el cafe */
+.content-acompañamiento {
+    padding: 20px;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content-acompañamiento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+    grid-gap: 40px;
+}
+
+/* Subtitle */
+.subtitle-contenedor {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle-contenedor h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 400;
+    color: #65451F;
+}
+
+/* Tartas y Masitas */
+.acompañamiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: .5rem;
+}
+
+.elementos-del-acompañamiento h4 {
+    text-align: center;
+    color: #3C2A21;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: fantasy;
+}
+
+.img-order {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    transition: transform 350ms;
+}
+
+.elementos-del-acompañamiento img:hover {
+    transform: scale(0.95);
+}
+
+/* Ultima section info */
+.banner-secundario-coffee {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.banner-secundario-content {
+    text-align: center;
+}
+
+.banner-secundario-content h2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-size: 33px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0px 250px;
+    margin-bottom: 15px;
+}
+
+.p-txt {
+    flex-flow: column wrap;
+    font-size: 21px;
+    color: #414247;
+    padding: 0 150px;
+    margin-bottom: 35px;
+}
+
+.coffee-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 266px;
+    height: 243px;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.modificar-button {
+    font-family: fantasy;
+    padding: .5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #C8C6C6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modificar-button:hover {
+    background-color: #F9E4C8;
+}
+
+/* footer */
+.container-footer {
+    font-family: "Poppins", sans-serif;
+    padding: 5rem;
+}
+
+.footer {
+    background-color: #4F4A45;
+    padding: 20px;
+}
+
+.foot-col {
+    padding: 0 50px;
+}
+
+.foot-col ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-flow: row wrap;
+}
+
+.foot-col ul li a {
+    color: #bbb9b9;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.foot-col ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #c58a24;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: .5s;
+}
+
+.foot-col ul li a:hover::after {
+    width: 100%;
+}
+
+.foot-col ul li a:hover {
+    color: #ebe8e8;
+}
+
+.copyright {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: #4F4A45;
+    margin: 0px 5px;
+}
+
+.copyright p {
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* END PAGE INDEX */
+
+
+/* ---- INICIO PAGE CONTACT ---- */
+
+
+/* Header */
+.container-header-contact {
+    background-color: #31363F;
+    padding: 10px 5px;
+}
+
+.logo-contact {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.logo-contact img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Nav */
+.nav-header-contact {
+    margin: 10px 40px;
+}
+
+.nav-contact-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding-top: 1.2rem;
+    flex-direction: row;
+}
+
+.nav-contact-elements li {
+    list-style: none;
+}
+
+.nav-contact-elements a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #C8C6C6;
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.nav-contact-elements a:hover {
+    color: #76ABAE;
+}
+
+/* Contacto Info */
+.bg-body-contact {
+    background-color: #536162;
+    font-family: "Poppins", sans-serif;
+}
+
+.nuestro-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10px;
+    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 /.4)), url(../assets/img-disegn/echando-leche-al-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.box-info-contact {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.box-info-contact h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data p {
+    color: #76ABAE;
+    font-size: 20px;
+    width: 100%;
+
+}
+
+.data i {
+    margin-right: 10px;
+}
+
+/* Formulario Reserva de mesa (Datos Personales) */
+.container-reserva {
+    padding: 40px 3px;
+}
+
+.elemento-reserva {
+    margin: 30px;
+}
+
+.elemento-reserva h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #ffffff;
+
+}
+
+.formulario-de-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box>input {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(255 255 255 / .2);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .5s;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input-box>input::placeholder {
+    color: #ffffff;
+}
+
+.input-box>input:focus::placeholder {
+    color: transparent;
+}
+
+.input-box>input:focus {
+    border-bottom: 3px solid #D06224;
+}
+
+.input-box>i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgba(255 255 255 / .4);
+    transition: .3s;
+}
+
+.input-box>input:focus~i {
+    color: #D06224;
+}
+
+.formulario-de-reserva>button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #77706c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all .5s ease;
+}
+
+.mover-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-de-reserva>button:hover,
+.links>a:hover {
+    background: #D06224;
+}
+
+/* Footer Contact */
+.footer-contact {
+    width: 100%;
+    min-height: 200px;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2C3639;
+}
+
+.footer-contact .menu-footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.footer-contact li,
+.menu-footer-contact li {
+    list-style: none;
+}
+
+.footer-contact .menu-footer-contact li a {
+    font-size: 1.3em;
+    color: #cacaca;
+    margin: 0 10px;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.footer-contact .menu-footer-contact li a:hover {
+    opacity: 1;
+}
+
+.social-icons-info {
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+}
+
+.social-icons-info span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons-info span i {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+.github-icon {
+    background-color: #121f3b;
+}
+
+.facebook-icon {
+    background-color: #3b5998;
+}
+
+.instagram-icon {
+    background: linear-gradient(#405de6, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #fcaf45);
+}
+
+/* ---- END PAGE CONTACT ---- */
+
+
+
+/* ---- INICIO PAGE TRABAJO ---- */
+
+.bg-color-work {
+    background-color: #ebebeb;
+}
+
+.content-body-work {
+    height: 100vh;
+    background: linear-gradient(rgba(0 0 0 / .50), rgba(0 0 0 /.1)), url(../assets/img-disegn/merienda-cafe-cafeteria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container-work {
+    padding: 20px;
+}
+
+.navbar-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-work img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu-links-work {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.navbar-container li {
+    list-style: none;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.5px;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-container a:hover {
+    color: #C8AE7D;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    padding: 0 20px;
+}
+
+.hero-section .hero-content {
+    color: #ffffff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-break: loose;
+    max-width: 600px;
+}
+
+.hero-content p {
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.btn-hero {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 10px 25px;
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.btn-hero:hover {
+    background-color: #a8a8a7;
+    transition: all .3s ease;
+    color: #ffffff;
+    transform: scale(0.95);
+}
+
+/* Origen */
+.margin-container {
+    margin: 20px 88px;
+    max-width: 100%;
+    padding: 16px 16px 108px 16px;
+}
+
+/* Introducción*/
+.content-introduccion {
+    padding: 0 30px;
+    text-align: left;
+    margin-block-end: 5rem;
+}
+
+.content-introduccion h2 {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #B0926A;
+}
+
+.paragraphs-introduccion {
+    color: #747373;
+    font-weight: 400;
+    line-height: 30.75px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+/* Cultivo */
+.process-elements-cultivo {
+    text-align: left;
+    margin-block-end: 5rem;
+    padding: 0 30px;
+}
+
+.process-elements-cultivo h2 {
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    color: #B0926A;
+}
+
+.paragraphs-cultivo {
+    color: #747373;
+    font-weight: 400;
+    line-height: 30.75px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.5px;
+    margin: 1.5rem 0;
+}
+
+
+/* Recoleccion */
+.process-elements-recoleccion {
+    text-align: left;
+    margin-block-end: 5rem;
+    padding: 0 30px;
+}
+
+.order-elements-dos {
+    margin-block-end: 7rem;
+}
+
+.order-elements-dos h2 {
+    margin-top: 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    color: #B0926A;
+}
+
+.order-elements-dos h3 {
+    margin-block-start: 4.5rem;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.paragraphs-recoleccion {
+    color: #747373;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.5px;
+    margin-top: 1.5rem;
+    line-height: 30.75px;
+    margin-block-end: 4rem;
+}
+
+.paragraphs-recoleccion-uno {
+    color: #747373;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.5px;
+    margin-top: 1.2rem;
+    line-height: 30.75px;
+    margin-block-end: 2.5rem;
+}
+
+/* Cosecha */
+.order-elements-tres {
+    text-align: left;
+    margin-block-end: 8rem;
+    padding: 0 30px;
+}
+
+.order-elements-tres h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #B0926A;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2.1rem
+}
+
+.order-elements-tres p {
+    color: #747373;
+    font-weight: 400;
+    line-height: 29.75px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 15.5px;
+}
+
+.order__recoleccion-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.order-elements-dos img {
+    width: 50%;
+    height: auto;
+}
+
+.order-list-cosecha p {
+    font-size: 17.5px;
+    margin: 2rem 0;
+}
+
+.granos-de-cafe__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.order-elements-tres p span {
+    font-weight: 600;
+}
+
+/* La PostCosecha */
+.process-elements-postcosecha {
+    text-align: left;
+    margin-block-end: 5rem;
+    padding: 0 30px;
+}
+
+.grid-process {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.elements-postcosecha-uno {
+    grid-column: span 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+
+.elements-postcosecha-dos {
+    grid-column: 1 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+    line-break: strict;
+}
+
+.img-process {
+    width: 48rem;
+    height: 31.25rem;
+    border-radius: 10px;
+}
+
+.process-elements-postcosecha h2 {
+    text-align: left;
+    margin-block-start: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.process-elements-postcosecha p {
+    color: #747373;
+    font-weight: 400;
+    line-height: 30.75px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.process-elements-postcosecha p span {
+    font-weight: 600;
+}
+
+/* Torrefaccion */
+.img-ultimo-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-torrefaccion {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.process-elements-torrefaccion {
+    padding: 0 30px;
+}
+
+.process-elements-torrefaccion h2 {
+    margin-block-start: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.5rem
+}
+
+.paragraphs-torrefaccion {
+    color: #747373;
+    font-weight: 500;
+    line-height: 30.75px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.5px;
+    margin-block-end: 3rem;
+}
+
+
+/* ---  BLOGS DE CAFE  --- */
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /* --- font y tipografia --- */
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.35rem;
+    --small-font-size: .813rem;
+}
+
+#blogs {
+    background: linear-gradient(rgba(73, 73, 73, 0.514), rgba(73, 73, 73, 0.514)), url(../assets/img-disegn-work/bg-de-cafe-animado.jpg);
+}
+
+.container-blog {
+    display: grid;
+    place-items: center;
+    padding-block: 8rem;
+    width: 100%;
+    background-color: #E6DDC6;
+}
+
+/* Elements del blog */
+
+.elements-blog {
+    display: flex;
+    color: #ececec;
+    text-align: center;
+    margin-block-end: 3rem;
+    font-family: var(--body-font);
+    flex-direction: column;
+}
+
+.elements-blog h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.color-span {
+    color: #DFD7BF;
+}
+
+.elements-blog p {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.elements-blog .img-coffee-icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+/* Card blog */
+
+.card__container {
+    display: grid;
+    column-gap: 3rem;
+    padding-block: 5rem;
+}
+
+.card__article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 328px;
+    border-radius: 1.5rem;
+}
+
+.card__data {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .200);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .50rem;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .55rem;
+}
+
+.card__button {
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #D36B00;
+}
+
+.card__button:hover {
+    text-decoration: underline;
+}
+
+/* animaciones en hover de la card */
+
+.card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card__article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+}
+
+/* Animacion de la card */
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+
+    50% {
+        overflow: hidden;
+    }
+}
+
+/* Footer Nuestro trabajo*/
+
+.footer-nuestro-trabajo {
+    width: 100%;
+    padding: 70px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(10, 10, 10, 0.514)), url(../assets/img-disegn-work/bg-de-cafe-animado.jpg);
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.social-icon li,
+.list-links-trabajo li {
+    list-style-type: none;
+}
+
+.social-icon a,
+.list-links-trabajo a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.social-icon {
+    gap: 2rem;
+}
+
+.list-links-trabajo li a {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.footer-nuestro-trabajo .list-links-trabajo li a:hover {
+    opacity: 1;
+}
+
+.footer-nuestro-trabajo .social-icon li a {
+    display: inline-flex;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-nuestro-trabajo .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+.list-links-trabajo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-block-start: 3rem;
+    gap: 2rem;
+}
+
+.copy {
+    margin: 40px 15px 0 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ---- END PAGE TRABAJO ---- */
+
+
+
+/* ---- PAGE SOBRE NOSOTROS ---- */
+
+/* Header-Logo */
+.order-elements-nosotros .nav-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: #3A3845;
+}
+
+.logo-cafeteria {
+    width: 80px;
+    height: 80px;
+}
+
+/* Nav */
+.nav-nosotros {
+    display: flex;
+    justify-content: end;
+}
+
+.pages-list {
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.pages-list li {
+    list-style: none;
+}
+
+.pages-list li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    transition: all .5s ease;
+}
+
+.pages-list li a:hover {
+    color: #4f8e92;
+}
+
+/* Informacion de la cafeteria */
+
+.acerca-de-nosotros {
+    width: 100%;
+    height: 950px;
+    background: linear-gradient(rgba(0, 3, 0, 0.966), rgba(151, 99, 15, 0.12)), url(../assets/img-disegn-nosotros/tazas-de-cafe-estaticas.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+
+.presentacion-de-la-cafeteria {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+}
+
+.description-question {
+    font-size: 1.7rem;
+    padding: 0 100px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.modifier-text-p {
+    color: #CC9544;
+}
+
+.p-description-nos {
+    margin-top: 1.7rem;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 0 100px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.faq-nosotros {
+    background-color: #d4d4d4;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.faq-nosotros a {
+    text-decoration: none;
+    color: black;
+}
+
+.faq-nosotros:hover {
+    background-color: #fff;
+    transition: all .3s ease;
+    color: #ffffff;
+    transform: scale(0.95);
+}
+
+.img-abajo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 20vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+/* Un poco mas de info */
+.un-poco-mas {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.un-poco-mas-de-info {
+    text-align: center;
+}
+
+.description-subtitle {
+    font-size: 50px;
+    margin-bottom: 2.2rem;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+.coffee-modifier {
+    color: #603601;
+}
+
+.p-info-nosotros {
+    font-size: 25px;
+    color: #747373;
+    line-height: 30px;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* Galeria */
+.container-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 35px 10px;
+}
+
+.heading-gallery {
+    margin-right: 10px;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.icon-coffeee {
+    font-size: 3rem;
+    display: inline-block;
+    margin-block-end: -10px;
+    color: #603601;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    grid-gap: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.galeria-img-3 {
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+/* Cards */
+
+.info-cafeteria {
+    background-color: #F3EEEA;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.order-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1.8rem;
+    color: #876445;
+}
+
+.container-cards {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container-cards .card-content {
+    background-color: #F0ECE3;
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 10px 9px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-cards .card-content:hover {
+    transform: translateY(-15px);
+    box-shadow: 16px 12px 16px rgba(0, 0, 0, 0.4);
+}
+
+.container-cards .card-content img {
+    width: 150px;
+    height: 120px;
+    margin-top: 40px;
+}
+
+.container-cards .card-content h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-cards .card-content p {
+    padding: .5rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Ultima section, despedida */
+.container-nosotros {
+    width: 100%;
+    height: 49rem;
+    background: linear-gradient(rgba(0, 3, 0, 0.80), rgba(53, 53, 52, 0.25)), url(../assets/img-disegn/echando-leche-al-cafe.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+
+.img-abajo-dos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 350px 20vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #3a3845 transparent;
+}
+
+.content-despedida {
+    width: 100%;
+    min-height: 400px;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content-despedida h2 {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 3.8rem;
+}
+
+.content-despedida p {
+    font-size: 2rem;
+}
+
+.order-paragraph {
+    min-height: 200px;
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    align-items: flex-end;
+    font-size: 1.8rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer-sobre-nosotros {
+    width: 100%;
+    min-height: 100px;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3a3845;
+}
+
+.footer-sobre-nosotros .social_icon,
+.menu-footer-nosotros {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-sobre-nosotros .social_icon li,
+.menu-footer-nosotros li {
+    list-style: none;
+}
+
+.footer-sobre-nosotros .social_icon li a,
+.menu-footer-nosotros a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.footer-sobre-nosotros .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+.footer-sobre-nosotros .menu-footer-nosotros li a {
+    font-size: 1.2em;
+    color: #cacaca;
+    margin: 0 10px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.footer-sobre-nosotros .menu-footer-nosotros li a:hover {
+    opacity: 2;
+}
+
+.footer-sobre-nosotros .copy-nos {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.logo-ig {
+    background: linear-gradient(#405de6, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #fcaf45);
+    border-radius: 30%;
+}
+
+.logo-wpp {
+    background-color: #25D366;
+    border-radius: 40%;
+}
+
+.logo-fb {
+    background-color: #3b5998;
+    border-radius: 100%;
+}
+
+/* ---- END PAGE SOBRE NOSOTROS ---- */
+
+/* ---- PAGE EVENTOS ---- */
+.body-event {
+    background-color: var(--eerie-black-1);
+    color: var(--white);
+    font-family: var(--fontFamily-dm_sans);
+    font-size: 12px;
+    font-weight: var(--weight-regular);
+    line-height: var(--lineHeight-5);
+    height: 300vh;
+}
+
+:root {
+
+    /**
+     * COLORS
+     */
+
+    --gold-crayola: hsl(38, 58%, 62%);
+    --quick-silver: hsla(0, 0%, 65%, 1);
+    --davys-grey: hsla(30, 3%, 34%, 1);
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-2: hsla(30, 8%, 5%, 1);
+    --smoky-black-3: hsla(0, 3%, 7%, 1);
+    --eerie-black-1: hsla(210, 4%, 9%, 1);
+    --eerie-black-2: hsla(210, 4%, 11%, 1);
+    --eerie-black-3: hsla(180, 2%, 8%, 1);
+    --eerie-black-4: hsla(0, 0%, 13%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+    --black: hsla(0, 0%, 0%, 1);
+    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+
+    /**
+     * GRADIENT COLOR
+     */
+
+    --gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
+
+    /**
+     * TYPOGRAPHY
+     */
+
+    /* font-family */
+    --fontFamily-reenie: "Reenie Beanie", cursive;
+    --fontFamily-rem: "REM", sans-serif;
+    --fontFamily-clicker: "Clicker Script", cursive;
+    --fontFamily-forum: 'Forum', cursive;
+    --fontFamily-dm_sans: 'DM Sans', sans-serif;
+
+    /* font-size */
+    --fontSize-title-2: 2.2rem;
+    --fontSize-title-3: 2.1rem;
+    --fontSize-body-1: 2.4rem;
+    --fontSize-body-2: 1.15rem;
+    --fontSize-body-3: 1.8rem;
+    --fontSize-body-4: 1rem;
+    --fontSize-label-1: 2.5rem;
+    --fontSize-label-2: 1.1rem;
+
+    /* font-weight */
+    --weight-regular: 400;
+    --weight-bold: 600;
+
+    /* line-height */
+    --lineHeight-1: 1em;
+    --lineHeight-2: 1.2em;
+    --lineHeight-3: 1.5em;
+    --lineHeight-4: 1.6em;
+    --lineHeight-5: 1.85em;
+    --lineHeight-6: 1.4em;
+
+    /* letter-spacing */
+    --letterSpacing-1: 0.15em;
+    --letterSpacing-2: 0.4em;
+    --letterSpacing-3: 0.2em;
+    --letterSpacing-4: 0.3em;
+    --letterSpacing-5: 1px;
+
+    /**
+     * SPACING
+     */
+
+    --section-space: 70px;
+
+    /**
+     * SHADOW
+     */
+
+    --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+    /**
+     * BORDER RADIUS
+     */
+
+    --radius-24: 24px;
+    --radius-circle: 50%;
+
+    /**
+     * TRANSITION
+     */
+
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+    --transition-3: 1000ms ease;
+
+}
+
+/* Reused styles */
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-subtitle {
+    position: relative;
+    color: var(--gold-crayola);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-2);
+    margin-block-end: 12px;
+}
+
+.section-subtitle::after {
+    content: url('../assets/img-eventos/separator.png');
+    display: block;
+    width: 100px;
+    margin-inline: auto;
+    margin-block-start: 5px;
+}
+
+.has-before,
+.has-after {
+    position: relative;
+    z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+    content: "";
+    position: absolute;
+}
+
+.section {
+    position: relative;
+    padding-block: var(--section-space);
+    z-index: -1;
+
+}
+
+.bg-black-10 {
+    background-color: var(--smoky-black-2);
+}
+
+.grid-list {
+    display: grid;
+    gap: 40px;
+}
+
+.hover\:shine {
+    position: relative;
+}
+
+.hover\:shine::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+    transform: skewX(-0.08turn) translateX(-180%);
+}
+
+.hover\:shine:is(:hover, :focus-within)::after {
+    transform: skewX(-0.08turn) translateX(275%);
+    transition: var(--transition-3);
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+    background-color: var(--eerie-black-4);
+}
+
+
+/* Header */
+.header-event {
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    container-type: inline-size;
+    container-name: header;
+}
+
+/* logo */
+.header__logo {
+    width: 50px;
+    height: auto;
+    margin: 10px 20px;
+
+}
+
+/* checkbox */
+.header__open-nav-button {
+    color: #afafaf;
+    font-size: var(--fontSize-label-1);
+    font-weight: var(--weight-bold);
+    position: absolute;
+    right: 10px;
+}
+
+.input-check {
+    display: none;
+}
+
+.input-check:checked~.header__nav {
+    display: flex;
+}
+
+/* nav */
+.header__nav {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    background-color: var(--smoky-black-3);
+}
+
+/* list-nav */
+.header__nav-list {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+    gap: 1.1rem;
+}
+
+.header__nav-list .navbar-link {
+    font-size: var(--fontSize-body-4);
+    font-family: var(--fontFamily-dm_sans);
+    color: var(--gold-crayola);
+}
+
+/* items y links */
+.header__nav-item a:not(:is(:hover, :active)) {
+    text-decoration: none;
+}
+
+.navbar-link {
+    position: relative;
+    font-size: var(--fontSize-label-2);
+    padding-inline: 15px;
+}
+
+.navbar-link::after {
+    display: none;
+}
+
+.navbar-link .span {
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+    color: var(--gold-crayola);
+    transform: translateX(20px);
+}
+
+/* separador de enlaces */
+.separator {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--gold-crayola);
+    transform: rotate(45deg);
+}
+
+.navbar-link .separator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .separator {
+    opacity: 1;
+}
+
+/* Información adicional de la cafeteria */
+.text-center {
+    text-align: center;
+    margin: 15px 20px;
+    font-family: var(--fontFamily-dm_sans);
+    font-weight: var(--weight-regular);
+    font-size: .9rem;
+}
+
+.text-center-menu {
+    text-align: center;
+    margin: 15px 20px;
+    font-family: var(--fontFamily-dm_sans);
+    font-weight: var(--weight-regular);
+    font-size: .9rem;
+}
+
+.navbar-title {
+    font-size: var(--fontSize-body-3);
+    margin-block-end: 5px;
+}
+
+.navbar-text {
+    margin-block: 10px;
+}
+
+.header__nav .body-4 {
+    color: var(--quick-silver);
+}
+
+.sidebar-link {
+    transition: var(--transition-1);
+}
+
+.sidebar-link:is(:hover, :focus-visible) {
+    color: var(--gold-crayola);
+}
+
+.header__nav .text-center-menu .separator {
+    margin-block: 10px;
+    margin-inline: auto;
+}
+
+/* card event */
+.event .section-title {
+    margin-block-end: 40px;
+    font-size: var(--fontSize-body-2);
+}
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card .card-content {
+    background-image: var(--gradient-1);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event-card .publish-date {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    padding: 5px 10px;
+    color: var(--gold-crayola);
+    background-color: var(--black);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letterSpacing-1);
+    line-height: 14px;
+}
+
+.event-card .card-subtitle {
+    color: var(--gold-crayola);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: var(--letterSpacing-5);
+    margin-block-end: 5px;
+}
+
+.event-card .card-banner .img-cover {
+    transition: var(--transition-2);
+}
+
+.event-card:is(:hover, :focus-within) .img-cover {
+    transform: scale(1.05);
+}
+
+
+/* testimonios */
+.testi {
+    background-image: linear-gradient(rgba(0 0 0 / .200), rgba(0 0 0 /.4)), url('../assets/img-eventos/high-angle-women-coffee-shop.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-block-end: 340px;
+    position: static;
+}
+
+.quote {
+    font-size: 5rem;
+    font-family: var(--fontFamily-dm_sans);
+    line-height: 0.7em;
+}
+
+.testi .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-block: 40px 50px;
+}
+
+.testi .separator {
+    animation: rotate360 15s linear infinite;
+}
+
+.profile .img {
+    border-radius: var(--radius-circle);
+    margin-block-end: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+.testi-text {
+    font-size: 1rem;
+    margin: 0 10px;
+    line-break: loose;
+}
+
+.testi .profile-name {
+    color: var(--gold-crayola);
+    font-weight: var(--weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing-3);
+}
+
+/* footer */
+.footer-event {
+    background: var(--smoky-black-3);
+    padding: 70px 10px;
+}
+
+.footer-top {
+    margin-block-end: 70px;
+}
+
+.footer-brand {
+    position: relative;
+    padding: 50px 40px;
+    background: var(--smoky-black-1) url("../assets/img-eventos/footer-form-bg.png");
+    background-position: center top;
+    background-repeat: repeat;
+
+}
+
+.footer-brand::before,
+.footer-brand::after {
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background-image: url("../assets/img-eventos/footer-form-pattern.png");
+}
+
+.footer-brand::before {
+    left: 0;
+}
+
+.footer-brand::after {
+    right: 0;
+}
+
+.footer-brand .girasol-logo-footer {
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block-end: 40px;
+}
+
+.girasol-logo-footer img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-brand :is(.body-4, .label-1) {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-3);
+}
+
+.footer-brand .contact-link {
+    transition: var(--transition-1);
+}
+
+.footer-brand .contact-link:is(:hover, :focus-visible) {
+    color: var(--gold-crayola);
+}
+
+.footer-brand .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-block: 40px 25px;
+}
+
+.footer-list {
+    display: grid;
+    gap: 20px;
+}
+
+.footer-link {
+    color: var(--quick-silver);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letterSpacing-5);
+    transition: var(--transition-1);
+    font-family: var(--fontFamily-dm_sans);
+}
+
+.footer-link:is(:hover, :focus-visible) {
+    color: var(--gold-crayola);
+}
+
+.copyright-event {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-3);
+    font-family: var(--fontFamily-dm_sans);
+}
+
+.copyright-event .link {
+    font-family: var(--fontFamily-reenie);
+    display: inline;
+    color: var(--gold-crayola);
+    text-decoration: underline;
+}
+/* ---- END PAGE EVENTOS ---- */
+
+/*--------- MediaQueries (Nuestro Trabajo--Contacto--Eventos) -------- */
+@media screen and (max-width: 320px) {
+
+    /* Hero, header, nav */
+    .navbar-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .navbar-container .logo-work {
+        font-size: 1.5rem;
+    }
+
+    .menu-links-work {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar-container a {
+        font-size: .85rem;
+    }
+
+    .hero-section .hero-content {
+        margin: 40px auto;
+    }
+
+    .hero-section {
+        height: 0;
+    }
+
+    .btn-hero {
+        font-size: .8rem;
+        font-weight: 500;
+        margin-top: 40px;
+        padding: 10px 10px;
+    }
+
+    /* end section */
+    .margin-container {
+        margin: 40px 0;
+        padding: 20px;
+    }
+
+    /* Main */
+    .order-elements-dos {
+        margin-block-end: 2rem;
+    }
+
+    .order-list-cosecha li {
+        list-style: none;
+    }
+
+    .process-elements-cultivo {
+        margin-block-end: 7rem;
+    }
+
+    .process-elements-torrefaccion {
+        padding: 0;
+    }
+
+    .elements-blog {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2.5rem;
+    }
+
+    .card__container {
+        padding-block: 1rem;
+        row-gap: 2rem;
+    }
+
+    .card__data {
+        padding: 1.2rem 1.5rem;
+        width: 200px;
+    }
+
+    .container-blog {
+        padding-block: 2rem;
+    }
+
+    /* ---- IMG ---- */
+    .card__img {
+        width: 200px;
+        border-radius: 1.5rem;
+    }
+
+    .img-process {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-torrefaccion {
+        width: 80%;
+        height: 80%;
+    }
+
+    .granos-de-cafe__icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    .elements-blog .img-coffee-icon {
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+    }
+
+    .order-elements-dos img {
+        width: 270px;
+        height: auto;
+    }
+
+    /* ---- TITULOS O SUBTITULOS ---- */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-introduccion h2 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .process-elements-torrefaccion h2 {
+        margin-block-start: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .process-elements-postcosecha h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card__title {
+        font-size: .9rem;
+        font-family: poppins;
+        font-weight: 400;
+    }
+
+    .elements-blog h2 {
+        margin: 0;
+    }
+
+    .elements-blog h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-elements-tres h2 {
+        font-size: 1.2rem;
+    }
+
+    .order-elements-dos h3 {
+        font-size: 1.12rem;
+        text-align: center;
+    }
+
+    .order-elements-dos h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        line-break: strict;
+    }
+
+    .process-elements-cultivo h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* ---- PARRAFOS ---- */
+    .hero-content p {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .paragraphs-introduccion {
+        font-size: 13.2px;
+    }
+
+    .paragraphs-torrefaccion {
+        font-size: 13.2px;
+        font-weight: 400;
+        text-align: center;
+        line-break: strict;
+    }
+
+    .process-elements-postcosecha p {
+        font-size: 13.2px;
+        margin: 0 auto;
+    }
+
+    .card__description {
+        font-size: .9rem;
+    }
+
+    .order-list-cosecha p {
+        font-size: 13.2px;
+        line-height: 30.75px;
+    }
+
+    .order-elements-tres p {
+        font-size: 13.2px;
+        line-break: loose;
+        text-align: center;
+    }
+
+    .paragraphs-recoleccion {
+        font-size: 13.2px;
+        line-break: loose;
+    }
+
+    .paragraphs-recoleccion-uno {
+        font-size: 13.2px;
+        line-break: loose;
+    }
+
+    .paragraphs-cultivo {
+        font-size: 13.2px;
+        line-break: loose;
+    }
+
+    .elements-blog p {
+        font-size: 1rem;
+    }
+
+    /* GRID */
+    .grid-process {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+        padding: 20px 0;
+    }
+
+    .elements-postcosecha-uno {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .elements-postcosecha-dos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  End Main */
+
+    /* ---- Footer ---- */
+
+    .footer-nuestro-trabajo {
+        padding: 30px 20px;
+    }
+
+    .list-links-trabajo {
+        width: 100%;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .social-icon {
+        flex-direction: row;
+    }
+
+    .list-links-trabajo li a {
+        font-size: .80rem;
+    }
+
+    .social-icon a,
+    .list-links-trabajo a {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .copy {
+        margin: 0 20px;
+        font-size: 12px;
+        margin-block-start: 2rem;
+    }
+
+    /* ---- End page NuestroTrabajo ---- */
+
+
+    /* Contact page */
+    .container-element-contact h2 {
+        font-size: 1.1rem;
+        color: #76ABAE;
+    }
+
+    .nav-contact-elements {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem 0;
+    }
+
+    .nav-contact-elements a {
+        font-size: .8rem;
+    }
+
+    .social-icons-info {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .social-icons-info span {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .social-icons-info span i {
+        font-size: 1.1rem;
+    }
+
+    .box-info-contact h1 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+    }
+
+    .data {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .data p {
+        font-size: 13.5px;
+    }
+
+    .data i {
+        margin-right: 5px;
+    }
+
+    .elemento-reserva h2 {
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .formulario-de-reserva {
+        gap: 13px;
+    }
+
+    .input-box>input {
+        height: 32px;
+        font-size: .62rem;
+    }
+
+    .input-box>i {
+        display: none;
+    }
+
+    .formulario-de-reserva>button {
+        font-size: .63rem;
+        padding: 7px;
+    }
+
+    .footer-contact {
+        align-items: start;
+        padding: 40px 20px;
+    }
+
+    .footer-contact .menu-footer-contact {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .footer-contact .menu-footer-contact li {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Nuestro Trabajo */
+    .margin-container {
+        margin: 20px 30px;
+    }
+
+    /* --- Header - Nav - Logo --- */
+    .header-container-work {
+        padding: 10px;
+    }
+
+    .menu-links-work {
+        gap: 2.5rem;
+    }
+
+    .navbar-container a {
+        font-size: 15px;
+    }
+
+    .logo-work img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+        line-break: loose;
+    }
+
+    .btn-hero {
+        font-size: .9rem;
+        font-weight: 500;
+        margin-top: 25px;
+        padding: 7px 15px;
+    }
+
+    /* ---- Procesos del Café ---- */
+
+    /* Introduccion */
+    .content-introduccion h2 {
+        font-size: 1.5rem;
+    }
+
+    .paragraphs-introduccion {
+        font-size: 15px;
+    }
+
+    /* Cultivo */
+    .process-elements-cultivo h2 {
+        font-size: 1.5rem;
+    }
+
+    .paragraphs-cultivo {
+        font-size: 15px;
+    }
+
+    /* Recoleccion */
+    .order-elements-dos h2 {
+        font-size: 1.5rem;
+    }
+
+    .paragraphs-recoleccion {
+        font-size: 15px;
+    }
+
+    /* A mano y Maquina*/
+    .order-elements-dos h3 {
+        font-size: 1.25rem;
+    }
+
+    .paragraphs-recoleccion-uno {
+        font-size: 15px;
+    }
+
+    .order-elements-dos img {
+        width: 70%;
+    }
+
+    /* Cosecha */
+    .order-elements-tres h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-elements-tres p {
+        font-size: 14.5px;
+    }
+
+    /* Postcosecha */
+    .process-elements-postcosecha h2 {
+        font-size: 1.5rem;
+    }
+
+    .process-elements-postcosecha p {
+        font-size: 14px;
+    }
+
+    .img-process {
+        width: 30rem;
+        height: 25.25rem;
+    }
+
+    /* Torrefaccion */
+    .process-elements-torrefaccion h2 {
+        margin-block-start: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .paragraphs-torrefaccion {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .img-torrefaccion {
+        width: 70%;
+    }
+
+    /* Blogs */
+    .elements-blog h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .elements-blog p {
+        font-size: 16px;
+    }
+
+    .elements-blog .img-coffee-icon {
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+    }
+
+    .card__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        padding: 0;
+    }
+
+    .card__img {
+        width: 220px;
+    }
+
+    .card__data {
+        width: 210px;
+        padding: 2rem 1rem;
+    }
+
+    .card__description {
+        display: none;
+    }
+
+    .card__title {
+        font-size: 1.1rem;
+    }
+
+    /* footer */
+    .footer-nuestro-trabajo {
+        margin: 0 auto;
+        padding: 60px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .list-links-trabajo {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40px;
+        margin-block-start: 0;
+    }
+
+    .list-links-trabajo li a {
+        font-size: 1em;
+    }
+
+    .social-icon {
+        gap: 1.3rem;
+        flex-direction: column;
+    }
+
+    .social-icon a,
+    .list-links-trabajo a {
+        font-size: 1.3rem;
+    }
+
+    .copy {
+        margin: auto 50px;
+        font-size: 14px;
+    }
+
+    /* Contacto Page */
+
+    /* logo*/
+    .logo-contact {
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .logo-contact img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* nav - header*/
+    .nav-header-contact {
+        margin: auto 15px;
+    }
+
+    .nav-contact-elements {
+        padding-block: 1.2rem;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .nav-contact-elements a {
+        font-size: .92rem;
+    }
+
+    .social-icons-info span i {
+        font-size: .95rem;
+    }
+
+    .social-icons-info span {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* Main - Form - Title - Subtitle */
+    .box-info-contact h1 {
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .data p {
+        font-size: 16px;
+    }
+
+    .elemento-reserva h2 {
+        font-size: 19px;
+    }
+
+    .input-box>input {
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .input-box>i {
+        font-size: .8rem;
+        top: 40%;
+    }
+
+    .formulario-de-reserva>button {
+        font-size: .9rem;
+        padding: 8px;
+    }
+
+    /* footer */
+    .footer-contact {
+        flex-direction: column;
+        padding: 15px 25px;
+        min-height: 100px;
+    }
+
+    .footer-contact .menu-footer-contact {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .footer-contact .menu-footer-contact li a {
+        font-size: 1rem;
+    }
+
+    /* ---- Events ---- */
+    .text-center {
+        display: block;
+    }
+
+    .text-center-menu {
+        display: none;
+    }
+
+    .section {
+        z-index: 1;
+    }
+
+    .header__nav {
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
+        justify-content: space-between;
+        background-color: #191919;
+    }
+
+    .header__nav-list {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .span {
+        font-size: var(--fontSize-body-2);
+    }
+
+    .header__open-nav-button {
+        display: none;
+    }
+
+    .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :is(.service, .event) .container {
+        max-width: 820px;
+    }
+
+    :is(.service, .event) .grid-list li:last-child {
+        grid-column: 1 / 3;
+        width: 50%;
+        margin-inline: auto;
+    }
+
+    .footer-brand {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 1400px) {
+    .body-event {
+        height: 100vh;
+    }
+
+    .header__logo {
+        width: 70px;
+    }
+
+    .section {
+        z-index: 1;
+    }
+
+    .section-subtitle {
+        padding-block-start: 5rem;
+        font-size: var(--fontSize-body-3);
+        font-weight: var(--weight-bold);
+    }
+
+    .card-subtitle {
+        font-size: var(--fontSize-label-2);
+    }
+
+    .card-title {
+        font-size: var(--fontSize-body-2);
+    }
+
+    .event {
+        margin-bottom: 10rem;
+    }
+
+    .event .section-title {
+        font-size: var(--fontSize-body-3);
+    }
+
+    .grid-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    :is(.service, .event) .container {
+        max-width: 1700px;
+    }
+
+    :is(.service, .event) .grid-list li:last-child {
+        grid-column: 3 / -1;
+        width: 100%;
+    }
+
+    .testi {
+        padding-block-end: 170px;
+    }
+
+    .quote {
+        font-size: 6rem;
+    }
+
+    .testi-text {
+        font-size: 1.3rem;
+        margin: auto 200px;
+        line-height: 1.3;
+    }
+
+    .testi .wrapper {
+        padding-bottom: 20px;
+        gap: 15px;
+    }
+
+    .profile .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--fontSize-body-4);
+        gap: 1.7rem;
+        grid-column: 1 / 4;
+    }
+
+    .footer-brand {
+        grid-column: 1 / 4;
+    }
+
+    .copyright-event {
+        font-size: var(--fontSize-body-2);
+    }
+
+    .copyright-event .link {
+        font-family: var(--fontFamily-dm_sans);
+        text-decoration: none;
+    }
+}
