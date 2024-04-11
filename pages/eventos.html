@@ -21,17 +21,23 @@
 <body class="body-event">
     <!----- Header ----->
     <header class="header-event container">
-        <input type="checkbox" class="input-check">
 
-        <label for="menu-toglee" class="header__open-nav-button" role="button"><ion-icon
-                name="menu-outline"></ion-icon></label>
-        <!----- Logo ----->
-        <div class="header__logo-container">
-            <img class="header__logo" src="../assets/img-eventos/logo-girasol.png" alt="girasol logo de la pagina">
-        </div>
 
         <!----- Navegación ----->
+
         <nav class="header__nav">
+            <label for="menu-hamburguesa" class="header__open-nav-button" role="button"><ion-icon
+                    name="menu-outline"></ion-icon></label>
+
+            <!-- hamburguer menu -->
+            <input class="header__open-nav-checkbox" type="checkbox" id="menu-hamburguesa">
+
+            <!----- Logo ----->
+            <div class="header__logo-container">
+                <img class="header__logo" src="../assets/img-eventos/logo-girasol.png" alt="girasol logo de la pagina">
+            </div>
+
+
             <ul class="header__nav-list">
                 <li class="header__nav-item">
                     <a href="../index.html" class="navbar-link hover-underline active" id="home">
@@ -42,7 +48,7 @@
                 </li>
 
                 <li class="header__nav-item">
-                    <a href="./contacto.html" class="navbar-link hover-underline">
+                    <a href="../pages/contacto.html" class="navbar-link hover-underline">
 
                         <div class="separator"></div>
                         <span class="span">Contacto</span>
@@ -50,7 +56,7 @@
                 </li>
 
                 <li class="header__nav-item">
-                    <a href="./nosotros.html" class="navbar-link hover-underline">
+                    <a href="../pages/nosotros.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
 
                         <span class="span">Nosotros</span>
@@ -58,7 +64,7 @@
                 </li>
 
                 <li class="header__nav-item">
-                    <a href="./nuestro-trabajo.html" class="navbar-link hover-underline">
+                    <a href="../pages/nuestro-trabajo.html" class="navbar-link hover-underline">
                         <div class="separator"></div>
 
                         <span class="span">Nuestro trabajo</span>
@@ -75,7 +81,9 @@
                         Güemes 772, Córdoba
                     </address>
 
-                    <p class="body-4 navbar-text">Abierto: 08:00am a 10:00pm</p>
+                    <p class="body-4 navbar-text">Abierto: Lunes - Viernes | 09:00 a 23:00hs </p>
+                    <p class="body-4 navbar-text">Abierto: Sábados | 10:00 a 15:00hs</p>
+                    <p class="body-4 navbar-text">Cerrado: Domingos</p>
 
                     <a href="ej:mailbooking@gmail.com" class="body-4 sidebar-link">elgirasolcafeteria@gmail.com</a>
                 </div>
@@ -94,14 +102,14 @@
 
                 <h2 class="section-title headline-1 text-center">Próximos eventos...</h2>
 
-                <ul class="grid-list">
+                <ul>
 
                     <li>
                         <div class="event-card has-before hover:shine">
 
                             <div class="card-banner img-holder">
-                                <img src="../assets/img-eventos/cata-de-cafe-event.jpg" loading="lazy" alt="evento de catar cafes"
-                                    class="img-cover">
+                                <img src="../assets/img-eventos/cata-de-cafe-event.jpg" loading="lazy"
+                                    alt="evento de catar cafes" class="img-cover">
 
                                 <time class="publish-date label-2" datetime="2024-04-18">22/04/2024</time>
                             </div>
@@ -121,8 +129,8 @@
                         <div class="event-card has-before hover:shine">
 
                             <div class="card-banner img-holder">
-                                <img src="../assets/img-eventos/comedy-event.jpg" loading="lazy" alt="evento de show de comedia"
-                                    class="img-cover">
+                                <img src="../assets/img-eventos/event-comedy.jpg" loading="lazy"
+                                    alt="evento de show de comedia" class="img-cover">
 
                                 <time class="publish-date label-2" datetime="2022-09-08">17/05/2024</time>
                             </div>
@@ -131,7 +139,7 @@
                                 <p class="card-subtitle label-2 text-center">Risa con aroma a café</p>
 
                                 <h3 class="card-title title-2 text-center">
-                                    ¡El café y la risa se mezclan en nuestra taza! Disfruta de cada sorbo con una dosis
+                                    ¡Disfruta de cada sorbo con una dosis
                                     de humor!
                                 </h3>
                             </div>
@@ -143,8 +151,8 @@
                         <div class="event-card has-before hover:shine">
 
                             <div class="card-banner img-holder">
-                                <img src="../assets/img-eventos/music-event.jpg" loading="lazy" alt="evento de musica en vivo"
-                                    class="img-cover">
+                                <img src="../assets/img-eventos/music-event.jpg" loading="lazy"
+                                    alt="evento de musica en vivo" class="img-cover">
 
                                 <time class="publish-date label-2" datetime="2022-09-03">28/06/2024</time>
                             </div>
@@ -171,8 +179,8 @@
                 <div class="quote">”</div>
 
                 <p class="headline-2 testi-text">
-                    Desde que descubrí esta cafetería, mi mañana nunca ha sido la misma. Cada sorbo de su exquisito
-                    café es un viaje sensorial.
+                    Desde que descubrí esta cafetería, mi mañana nunca ha sido la misma. Recomiendo este lugar a cualquiera que busque una excelente taza de café y un ambiente acogedor. ¡Gracias por una
+                    atención increíble!
                 </p>
 
                 <div class="wrapper">
@@ -194,12 +202,13 @@
     <footer class="footer-event section has-bg-image text-center">
         <div class="container">
 
-            <div class="footer-top grid-list">
+            <div class="footer-top">
 
                 <div class="footer-brand has-before has-after">
 
-                    <a href="#" class="girasol-logo-footer">
-                        <img src="../assets/img-eventos/logo-girasol.png" loading="lazy" alt="girasol logo de la pagina">
+                    <a href="#home" class="girasol-logo-footer">
+                        <img src="../assets/img-eventos/logo-girasol.png" loading="lazy"
+                            alt="girasol logo de la pagina">
                     </a>
 
                     <address class="body-4">
@@ -207,7 +216,13 @@
                     </address>
 
                     <p class="body-4">
-                        Abierto: 08:00am a 10:00pm
+                        Lunes - Viernes | 09:00 a 23:00
+                    </p>
+                    <p class="body-4">
+                        Sábado | 10:00 a 15:00
+                    </p>
+                    <p class="body-4">
+                        Domingo | CERRADO
                     </p>
 
                     <div class="wrapper">
@@ -216,51 +231,58 @@
                         <div class="separator"></div>
                     </div>
                 </div>
+                <div class="order-list-footer">
+                    <ul class="footer-list">
 
-                <ul class="footer-list">
+                        <li>
+                            <a href="#home" class="label-2 footer-link hover-underline">Inicio</a>
+                        </li>
 
-                    <li>
-                        <a href="#home" class="label-2 footer-link hover-underline">Inicio</a>
-                    </li>
+                        <li>
+                            <a href="./contacto.html" class="label-2 footer-link hover-underline">Contacto</a>
+                        </li>
 
-                    <li>
-                        <a href="./contacto.html" class="label-2 footer-link hover-underline">Contacto</a>
-                    </li>
+                        <li>
+                            <a href="./nosotros.html" class="label-2 footer-link hover-underline">Nosotros</a>
+                        </li>
 
-                    <li>
-                        <a href="./nuestro-trabajo.html" class="label-2 footer-link hover-underline">Nuestro trabajo</a>
-                    </li>
+                        <li>
+                            <a href="./nuestro-trabajo.html" class="label-2 footer-link hover-underline">Nuestro
+                                trabajo</a>
+                        </li>
 
-                    <li>
-                        <a href="./nosotros.html" class="label-2 footer-link hover-underline">Acerca de Nosotros</a>
-                    </li>
+                    </ul>
 
-                </ul>
+                    <ul class="footer-list">
 
-                <ul class="footer-list">
+                        <li>
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"
+                                class="label-2 footer-link hover-underline">Gmail</a>
+                        </li>
 
-                    <li>
-                        <a href="https://www.facebook.com/francisco.zapata.39750121?locale=es_LA" target="_blank" class="label-2 footer-link hover-underline">Facebook</a>
-                    </li>
+                        <li>
+                            <a href="https://github.com/frandivCode" target="_blank"
+                                class="label-2 footer-link hover-underline">Github</a>
+                        </li>
 
-                    <li>
-                        <a href="https://www.instagram.com/frannzapata__/" target="_blank" class="label-2 footer-link hover-underline">Instagram</a>
-                    </li>
+                        <li>
+                            <a href="https://www.facebook.com/francisco.zapata.39750121?locale=es_LA" target="_blank"
+                                class="label-2 footer-link hover-underline">Facebook</a>
+                        </li>
 
-                    <li>
-                        <a href="https://github.com/frandivCode" target="_blank" class="label-2 footer-link hover-underline">Github</a>
-                    </li>
+                        <li>
+                            <a href="https://www.instagram.com/frannzapata__/" target="_blank"
+                                class="label-2 footer-link hover-underline">Instagram</a>
+                        </li>
 
-                </ul>
-
+                    </ul>
+                </div>
             </div>
 
             <div class="footer-bottom">
 
-                <p class="copyright-event">
-                    &copy; 2024 El Girasol. Todos los derechos reservados | Creado por <a
-                        href="https://github.com/frandivCode" target="_blank" class="link">frandivCode</a>
-                </p>
+                <p class="typing">Creado por <a class="typing-link"
+                        href="https://github.com/frandivCode" target="_blank">frandivCode</a></p>
 
             </div>
 
