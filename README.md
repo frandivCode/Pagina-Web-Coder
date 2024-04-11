@@ -5,21 +5,22 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 **El Girasol** es una cafeteria que dispone de cuatro secciones arraigadas a la principal:
 
 
-> - #####Contacto
-- #####Eventos
-- #####Nuestro Trabajo
--  #####Sobre nosotros
+> 
+-  ##### Contacto
+- ##### Eventos
+- ##### Nuestro Trabajo
+-  ##### Sobre nosotros
 
 ------------
 
-#### :tw-1f3af: Se trabajo con 
+#### Se trabajo con 
 - HTML5
 - CSS3
 - Git
 - Github
 
 
-#### :tw-1f3af:  Se utilizó:
+#### Se utilizó:
 
 - Box modeling
 - Flexbox
@@ -45,4 +46,5 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 #### Explicacion código responsive
 - La página eventos tiene el responsive fallido.
 
- >Esa página la trabajé desde otra carpeta, utilice el método **Mobile First**. Todo iba bien, pero a la hora de pasar toda la estructura a la carpeta principal se me rompió el código. :tw-1f625:
+ >Esa página la trabajé desde otra carpeta, utilice el método **Mobile First**. Todo iba bien, pero a la hora de pasar toda la estructura a la carpeta principal se me rompió el código.
+
