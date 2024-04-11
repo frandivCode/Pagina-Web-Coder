@@ -1,9 +1,8 @@
 #  Proyecto El Girasol 
 
 ###  ¿De que trata?
-Especialmente dedicado hacia el café, los procesos que conllevan conseguir café, el trabajo y la pasión por esta bebida. :tw-2615:
+Especialmente dedicado hacia el café, los procesos que conllevan conseguir café, el trabajo y la pasión por esta bebida.
 **El Girasol** es una cafeteria que dispone de cuatro secciones arraigadas a la principal:
-
 
 > 
 -  ##### Contacto
@@ -27,13 +26,14 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 - Grids
 - Bootstrap
 - Pseudoclases y Pseudoelementos
+- Animaciones
 
 ------------
 
 ### Aclaraciones
 > Se utilizó root para mayor practicidad a la hora de codear.
 
->Las páginas responsive son la de (Contacto y Nuestro Trabajo).
+>Las páginas responsive son (Contacto, Nuestro trabajo y Eventos).
 
 >Estructura avanzada y mejorada de CSS.
 
@@ -41,10 +41,3 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 
 
 ------------
-
-
-#### Explicacion código responsive
-- La página eventos tiene el responsive fallido.
-
- >Esa página la trabajé desde otra carpeta, utilice el método **Mobile First**. Todo iba bien, pero a la hora de pasar toda la estructura a la carpeta principal se me rompió el código.
-
