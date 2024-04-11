@@ -41,10 +41,3 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 
 
 ------------
-
-
-#### Explicacion código responsive
-- La página eventos tiene el responsive fallido.
-
- >Esa página la trabajé desde otra carpeta, utilice el método **Mobile First**. Todo iba bien, pero a la hora de pasar toda la estructura a la carpeta principal se me rompió el código.
-
