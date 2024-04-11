@@ -2449,7 +2449,7 @@ li {
 
 
 /*--------- MediaQueries (Nuestro Trabajo--Contacto--Eventos) -------- */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
     /* Nuestro Trabajo */
     .margin-container {
@@ -2915,7 +2915,7 @@ li {
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
 
     /* Hero, header, nav */
     .navbar-container {
