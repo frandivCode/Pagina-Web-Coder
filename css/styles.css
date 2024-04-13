@@ -1,16 +1,17 @@
-/* Fuente para algunos textos */
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Tangerine&family=Trocchi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* ---- font general ----*/
+
+/*   font-family: "Poppins", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* Fuente general */
-/* Font Cursiva */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 /*   font-family: "DM Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/*   font-family: "Playfair Display", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* esta en una section de una pagina */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/*   font-family: "Dancing Script", cursive; */
 
-/* Reset */
+/* Reset CSS */
 *,
 *::before,
 *::after {
@@ -28,382 +29,496 @@ li {
     list-style: none;
 }
 
+p {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
 
 /* ---- PAGE INDEX ---- */
+:root {
+    /* Colores index */
+    --colorMain: #3C2A21;
+    --colorEnlace: #BCA37F;
+    --colorText: #776B5D;
+    --colorHover: #DFD7BF;
+}
 
+.body-index {
+    background-color: #EAD8C0;
+}
 
-/* Header Nav*/
+.section-principal {
+    padding: 3rem 0 2rem;
+}
+
+.contenedor-principal {
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Nav - Header */
+.header-principal {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    z-index: 100;
+}
+
 .logo img {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-}
-
-.header-page-one {
-    width: 100%;
-    background-color: #222831;
-    padding: 10px 40px;
-}
-
-.nav-page-one {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-page-one ul {
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.elementos-nav {
-    display: flex;
-    align-items: center;
-    gap: 3.5rem;
-}
-
-.header-page-one .logo {
-    cursor: pointer;
-}
-
-.elementos-nav li {
-    list-style: none;
-}
-
-.elementos-nav a {
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: #C8B6A6;
-    font-size: 17px;
-    transition: all .5s ease;
-}
-
-.elementos-nav a:hover {
-    color: #A27B5C;
-}
-
-/* Banner */
-.banner-principal {
-    background: url(../assets/img-disegn/luces-ambiente-cafeteria.jpg)fixed center/cover;
-    height: 100vh;
-    display: flex;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner-principal::before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: #000000;
-    opacity: 55%;
-}
-
-.content-banner {
-    position: absolute;
-    width: 100%;
-    max-width: 50rem;
-    text-align: center;
-    color: rgb(240, 248, 255);
-}
-
-.banner-title {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    text-align: center;
-    font-size: 7rem;
-}
-
-.banner-subtitle {
-    font-family: "Charm", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5rem;
-    line-height: 3;
-}
-
-.banner-parrafo {
-    font-family: "Charm", cursive;
-    line-height: 2;
-    font-size: 1.7rem;
-    font-weight: 700;
-}
-
-/* Main products coffee */
-.main-product {
-    background-color: #b0a695;
-}
-
-.subtitle-carousel {
-    padding-top: 2.2rem;
-}
-
-.subtitle-carousel h2 {
-    text-align: center;
-    font-size: 2.7rem;
-    font-family: "Charm", cursive;
-}
-
-.title-product {
-    color: #3C2A21;
-    font-size: 2.7rem;
-    font-family: "Charm", cursive;
-}
-
-.description {
-    font-size: 1.3rem;
-    color: #3C2A21;
-    font-family: "Poppins", sans-serif;
-}
-
-
-/* Mas info de la cafeteria */
-
-.container-info {
-    background: url('../assets/img-disegn/fondo-de-madera.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 120vh;
-    width: 100%;
-    padding: 50px;
-    font-family: "Poppins", sans-serif;
-    color: #ffffff;
-}
-
-#presentacion {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: end;
-    align-items: center;
-    font-size: 2.7rem;
-    margin-block-end: 5rem;
-}
-
-.element-info p {
-    display: flex;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 20px;
-    line-height: 1.9;
-}
-
-.card-feature-info {
-    display: flex;
-    height: 70%;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    text-align: center;
-}
-
-.card-feature {
-    background: url('../assets/img-disegn/cartel-de-madera.png');
-    filter: drop-shadow(0 -2mm 6mm rgb(167, 146, 119));
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    width: 410px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-top: 8rem;
-    gap: 1.5rem;
-
-}
-
-.card-feature img {
-    object-fit: cover;
     width: 60px;
     height: 60px;
 }
 
-.feature-content span {
-    color: #603601;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-/* Menu del Dia */
-.card-product-coffee {
-    background-color: #596E79;
-    margin-top: 10rem;
-    padding: 40px;
-    border: 15px ridge #41444B;
-}
-
-.carta-elements {
+.nav-principal {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #493024;
+    padding: 14px 20px;
+    border-radius: 2rem;
+}
+
+.navbar-principal {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
-    text-align: center;
+    flex-direction: row;
+    gap: 2rem;
 }
 
-.carta-elements h2 {
-    font-size: 4rem;
-    font-family: "Elsie Swash Caps", serif;
-    font-weight: 400;
-    color: #DFD8C8;
-    margin-bottom: 2rem;
-}
-
-.carta-elements p {
-    font-size: 1.25rem;
+.navbar-enlace {
+    font-size: 1.03rem;
+    text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #DFD8C8;
+    color: #dcd7c9;
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* Coffee tipos */
-.container-card-product {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    margin: 6rem 2.5rem;
+.navbar-enlace:hover {
+    color: #c8ae7d;
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.element-card {
-    color: #DFD8C8;
-    font-family: "Poppins", sans-serif;
+.nav-icons {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-.element-card h4 {
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 400;
+.nav-icons .bx {
+    font-size: 22px;
+    color: #c8ae7d;
 }
 
-.element-card img {
-    width: 200px;
-    height: 220px;
+/* Menu hamburguesa */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transform: 0.3s;
+    margin-right: 10px;
 }
 
-.price {
-    text-align: center;
-    font-size: 18px;
+.menu-icon div {
+    display: block;
+    background-color: #E8D8C4;
+    height: 2px;
+    width: 23px;
 }
 
-/* Separador de menu */
-.linea-separatoria {
-    display: inline-block;
-    border: 2px solid #DFD8C8;
+/* Despliegue */
+.move .line-one {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line-two {
+    opacity: 0;
+}
+
+.move .line-three {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Banner */
+.banner-principal {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.content-banner h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    color: #54372a;
+}
+
+.content-banner p {
+    max-width: 300px;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 0 1.5rem;
+    color: #54372a;
+}
+
+.boton-ir {
+    max-width: 140px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    border-radius: 2rem;
+    background-color: #54372a;
+}
+
+.boton-ir span {
+    font-family: "Poppins", sans-serif;
+    color: #E8D8C4;
+}
+
+.boton-ir .bx {
+    font-size: 20px;
+    background-color: #E8D8C4;
+    color: #54372a;
+    border-radius: 50%;
+    padding: 3px;
+    transition: all .3s;
+    transform: rotate(0deg);
+}
+
+.boton-ir .bx:hover {
+    transform: rotate(180deg);
+    background-color: #54372a;
+    color: #e8d8c4;
+}
+
+.banner-img {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    max-width: 500px;
     width: 100%;
 }
 
-/* Acompañamiento para el cafe */
-.content-acompañamiento {
+/* Services */
+.servicios {
+    margin: 5rem auto;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-block: 2.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.heading h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #54372a;
+}
+
+.service-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 5rem 2rem;
-    grid-gap: 40px;
-}
-
-/* Subtitle */
-.subtitle-contenedor {
-    margin: 3.2rem 0;
-    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 160px));
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 1rem;
 }
 
-.subtitle-contenedor h2 {
+.ser-box {
+    background-color: #54372a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 35px 20px;
+    border-radius: 2rem;
     text-align: center;
-    font-size: 2.2rem;
-    font-family: "Elsie Swash Caps", serif;
+}
+
+.ser-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.ser-box p {
+    font-family: "Playfair Display", serif;
+    color: #f8e4be;
+    font-weight: 600;
+}
+
+/* Products */
+.products {
+    height: auto;
+    margin-block: 5rem;
+    position: relative;
+}
+
+.taza-de-cafe-tres {
+    position: absolute;
+    bottom: -180px;
+    left: -200px;
+    max-width: 270px;
+    width: 100%;
+}
+
+.heading p {
+    max-width: 550px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1rem;
+}
+
+/* Content product */
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 4.5rem;
+    background-color: #DED0B6;
+    padding: 40px 60px;
+}
+
+.product-card {
+    background-color: #fff8f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.product-card img {
+    margin: 1.5rem 0;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.product-card h2 {
+    font-size: 1rem;
+    color: #54372a;
     font-weight: 400;
-    color: #DFD8C8;
-}
-
-/* Tartas y Masitas */
-.acompañamiento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    gap: .5rem;
-}
-
-.elementos-del-acompañamiento h4 {
-    text-align: center;
-    color: #DFD8C8;
-    font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     font-family: "Poppins", sans-serif;
 }
 
-.img-order {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
-    transition: transform 350ms;
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: absolute;
+    top: 10px;
+    right: -2.5rem;
+    z-index: -4;
+    transition: all 0.4s ease;
 }
 
-.elementos-del-acompañamiento img:hover {
-    transform: scale(0.95);
+.button-group .bx {
+    font-size: 1.2rem;
+    color: #54372a;
+}
+
+.button-group span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7a6448;
+    background-color: #c7b299;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Transicion */
+.product-card:hover {
+    box-shadow: 0 10px 10px #C8AE7D;
+    background-color: #A79277;
+    transition: all 0.5s ease;
+}
+
+.product-card:hover h2 {
+    color: #f8e4be;
+}
+
+.button-group .bx:hover {
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}
+
+.product-card:hover .button-group {
+    z-index: 0;
+    right: .5rem;
+}
+
+/* Nuestro Equipo */
+.team {
+    margin-block: 7rem;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2rem;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+.team-box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.team-box h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #54372a;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.team-box span {
+    font-size: .98rem;
+    font-weight: 600;
+    color: #f8e4be;
+    border-radius: 5px;
+    background-color: #54372a;
+    padding: 0 5px;
+}
+
+/* Testimonios Slide */
+.review {
+    max-width: 650px;
+    margin: auto;
+    width: 100%;
+    padding-block: 2rem;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.5rem !important;
+}
+
+/* Content testimonio */
+.review-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid #fff8f7;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 16px hsla(0, 0%, 1%, 0.2);
+}
+
+.review-box h2 {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #54372a;
+    margin: 1rem 0;
+}
+
+.review-box p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 0.2rem !important;
+    background-color: #54372a !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem !important;
+    background: #D06224 !important;
 }
 
 /* Ultima section info */
 .banner-secundario-coffee {
-    font-family: "Poppins", sans-serif;
-    padding: 100px 0;
-    background-color: #B0A695;
-    position: relative;
+    background: linear-gradient(rgba(0 0 0 / .6), rgba(0 0 0 /.4)), url('../assets/services/book.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-block: 1.5rem;
+    color: #fff8f7;
+    border-radius: 1rem;
 }
 
+/* Contenido */
 .banner-secundario-content {
-    text-align: center;
+    margin: 2rem;
 }
 
 .banner-secundario-content h2 {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    font-size: 2.063rem;
-    line-height: 4.375rem;
-    color: #F3F4ED;
-    padding: 0px 250px;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.banner-secundario-content p {
+    font-size: .95rem;
     font-weight: 500;
-}
-
-.p-txt {
-    flex-flow: column wrap;
-    font-size: 19px;
-    color: #F3F4ED;
-    padding: 0 150px;
-    margin-bottom: 35px;
-}
-
-.coffee-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 253px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    margin-block: 2rem;
 }
 
 .btn-1 {
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
-.modificar-button {
-    color: #776B5D;
-    padding: 0.7em 1.7em;
-    font-size: 14px;
+.btn {
+    color: #000000;
+    padding: 0.5em 1em;
+    font-size: 15px;
     font-weight: 600;
     border-radius: 0.5em;
     background: #e8e8e8;
@@ -411,92 +526,110 @@ li {
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
     box-shadow: 3px 2px 17px #c5c5c5, -3px -2px 16px #ffffff;
+    font-family: "Poppins", sans-serif;
 }
 
-.modificar-button:active {
+.btn:hover {
+    background: #e8e8e8;
+    color: #000000;
+    border: 1px solid #e8e8e8;
+}
+
+.btn:active {
     color: #666;
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-/* footer */
-.container-footer {
-    font-family: "Poppins", sans-serif;
-    padding: 2rem 2rem 0 2rem;
+/* Info de la Cafeteria */
+.info-adicional {
+    background-color: #493024;
+    width: 100%;
+    margin-block: 3rem;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.img-coffee {
+    position: absolute;
+    max-width: 300px;
+    top: 170px;
+    right: -70px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 40px 20px;
+    margin-block: 3rem;
+}
+
+.box-container .info-ad {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "DM Sans", sans-serif;
+}
+
+.box-container .info-ad ion-icon {
+    font-size: 2rem;
+    color: #C8AE7D;
+    padding-bottom: 0.5rem;
+}
+
+.box-container .info-ad h3 {
+    color: #f8e4be;
+    font-size: 1rem;
+}
+
+.box-container .info-ad p {
+    font-size: 0.9rem;
+    color: #C8AE7D;
+    line-height: 2;
+}
+
+/* Footer */
+.footer-bg {
+    background-color: #493024;
     width: 100%;
 }
 
 .footer {
-    width: 100%;
-    height: auto;
-    background-color: #222831;
-    padding: 20px 20px 0 20px;
-}
-
-.foot-col ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    flex-flow: row wrap;
-    padding-left: 0;
-    margin: 0;
-}
-
-.foot-col ul li a {
-    color: #C8B6A6;
-    font-weight: 500;
-    font-size: 17px;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.foot-col ul li a::after {
-    content: "";
-    position: absolute;
-    background-color: #A27B5C;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -4px;
-    transition: .5s;
-}
-
-.foot-col ul li a:hover::after {
-    width: 100%;
-}
-
-.foot-col ul li a:hover {
-    color: #A27B5C;
-}
-
-.foot-col-dos {
-    height: 100px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
-.foot-list-dos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
     gap: 1rem;
-    padding-left: 0;
-    margin: 0;
+    margin-top: 3rem !important;
+    padding-top: 1rem;
 }
 
+/* Parte Social */
+.footer .footer-col .logo {
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
+.foot-social {
+    display: flex;
+    align-items: center;
+    transition: all .5s ease;
+    gap: .3rem;
+}
 
-/* animacion iconos */
+.foot-social .icono {
+    font-size: 1.5rem;
+}
+
+.foot-social .icono:hover {
+    color: #c8ae7d;
+    transition: all .5s ease;
+}
+
 .icono {
-    display: inline-block;
     animation: float 5s ease-in-out infinite;
-    color: #EEEEEE;
-}
-
-.foot-col-dos ion-icon {
-    width: 27px;
-    height: 27px;
-    transition: all .5s ease-out;
 }
 
 .icon-float-one {
@@ -511,15 +644,14 @@ li {
     animation-delay: 3s;
 }
 
-/* keyframe icono */
 @keyframes float {
     0% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-10px);
-        color: #76ABAE;
+        transform: translateY(-15px);
+        color: #FEFAF6;
     }
 
     100% {
@@ -527,34 +659,52 @@ li {
     }
 }
 
-.foot-col-dos ion-icon:hover {
-    color: #378CE7;
+/* Content navegacion */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
 }
 
+.footer-col h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #EAD8C0;
+}
 
+.footer-col a {
+    font-size: .92rem;
+    margin-bottom: 10px;
+    color: #c8ae7d;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.5s ease;
+}
 
+.footer-col a:hover {
+    color: #A27B5C;
+}
 
+.footer-col p {
+    font-size: .92rem;
+    color: #c8ae7d;
+    margin-bottom: 10px;
+    font-family: "DM Sans", sans-serif;
+}
 
 .copyright {
-    display: flex;
-    justify-content: center;
-}
-
-.copyright p {
-    letter-spacing: 1px;
-    color: #EEEEEE;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 0;
+    padding: 30px;
+    color: #c8ae7d;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
 }
 
 /* END PAGE INDEX */
 
 
+
 /* ---- INICIO PAGE CONTACT ---- */
-
-
 /* Header */
 .container-header-contact {
     background-color: #31363F;
@@ -614,8 +764,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 10px;
-    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 /.4)), url(../assets/img-disegn/echando-leche-al-cafe.jpg);
+    padding: 30px 10px;
+    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 /.4)), url(../assets/img-disegn/aesthetic-coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -831,7 +981,7 @@ li {
 
 .content-body-work {
     height: 100vh;
-    background: linear-gradient(rgba(0 0 0 / .50), rgba(0 0 0 /.1)), url(../assets/img-disegn/merienda-cafe-cafeteria.jpg);
+    background: linear-gradient(rgba(0 0 0 / .50), rgba(0 0 0 /.1)), url(../assets/img-disegn-work/merienda-cafe-cafeteria.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1493,7 +1643,7 @@ li {
 .acerca-de-nosotros {
     width: 100%;
     height: 950px;
-    background: linear-gradient(to top right, rgba(0, 3, 0, 0.966), rgba(151, 99, 15, 0.12)), url(../assets/img-disegn-nosotros/tazas-de-cafe-estaticas.jpg);
+    background: linear-gradient(to top right, rgba(0, 3, 0, 0.556), rgb(0, 3, 0, 0.556)), url(../assets/img-disegn-nosotros/luces-ambiente-cafeteria.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1541,11 +1691,6 @@ li {
 }
 
 /* animaciones */
-.p-description-nos {
-    animation-duration: 2s;
-    animation-name: de-un-lado;
-}
-
 .bounce-in-top {
     animation: bounce-in-top 1.2s both;
 }
@@ -1591,18 +1736,6 @@ li {
     100% {
         transform: translateY(0);
         animation-timing-function: ease-out;
-    }
-}
-
-@keyframes de-un-lado {
-    from {
-        margin-left: 50%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
     }
 }
 
@@ -1798,7 +1931,7 @@ li {
     align-items: center;
     flex-flow: column wrap;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .content-despedida h2 {
@@ -2447,9 +2580,146 @@ li {
 /* ---- END PAGE EVENTOS ---- */
 
 
+/* MediaQueries */
+@media (max-width: 1080px) {
+    .contenedor-principal {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-/*--------- MediaQueries (Nuestro Trabajo--Contacto--Eventos) -------- */
-@media (min-width: 768px) {
+    .box-container {
+        margin-block: 3rem;
+    }
+
+    .content-banner h1 {
+        font-size: 3rem;
+    }
+
+    .taza-de-cafe-tres {
+        left: -40px;
+        top: -40px;
+        max-width: 200px;
+    }
+
+    .products-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 40px;
+    }
+
+    .img-coffee {
+        max-width: 280px;
+        right: -50px;
+    }
+}
+
+@media (max-width:875px) {
+    .content-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-img {
+        right: 0;
+        max-width: 400px;
+    }
+
+    .boton-ir span {
+        font-size: 15px;
+    }
+
+    .boton-ir .bx {
+        font-size: 17px;
+    }
+
+    .taza-de-cafe-tres {
+        display: none;
+    }
+
+    .img-coffee {
+        display: none;
+    }
+}
+
+@media (max-width:770px) {
+    .banner-principal {
+        min-height: 500px;
+        height: 600px;
+        grid-template-columns: 1fr;
+        margin-top: 4.5rem !important;
+    }
+
+    .content-banner h1 {
+        order: 1;
+    }
+
+    .banner-img {
+        position: relative;
+    }
+
+    .team-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 1rem;
+    }
+
+    .team-box {
+        align-items: left;
+    }
+
+    .team-box h2 {
+        font-size: 1rem;
+    }
+
+    .team-box span {
+        font-size: .88rem;
+    }
+
+    .btn {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .heading h2,
+    .banner-secundario-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .banner-secundario-content {
+        margin: 1rem;
+    }
+
+    .banner-secundario-coffee {
+        padding: 10px;
+    }
+
+    .banner-secundario-content p {
+        line-height: 1.7;
+        font-size: .9rem;
+        margin: 1.5rem;
+    }
+
+    .foot-social {
+        gap: .5rem;
+    }
+
+    .foot-social .icono {
+        animation: none;
+    }
+
+    .box-container .info-ad p {
+        font-size: 0.8rem;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 30px 0 10px 0;
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (max-width: 768px) {
 
     /* Nuestro Trabajo */
     .margin-container {
@@ -2915,7 +3185,449 @@ li {
     }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 700px) {
+    .header-principal {
+        top: 15px;
+    }
+
+    .nav-principal {
+        padding: 12px 15px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-icons .bx {
+        display: none;
+    }
+
+    .navbar-enlace {
+        font-size: 0.95rem;
+    }
+
+    .content-banner {
+        margin-top: 2rem;
+    }
+
+    .ser-box {
+        padding: 20px 10px;
+    }
+
+    .ser-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ser-box p {
+        font-size: 1rem;
+    }
+
+    .footer-col a {
+        margin-bottom: 7px;
+    }
+
+    /* menu */
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar-principal {
+        position: absolute;
+        top: 300%;
+        transform: translate(-50%);
+        left: 50%;
+        width: 90vw;
+        background-color: #493024;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 1rem;
+        gap: 1rem;
+        clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .open-menu {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .navbar-enlace {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .boton-ir .bx {
+        transform: rotate(180deg);
+    }
+
+    .nav-principal {
+        padding: 5px 10px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content-banner h1 {
+        font-size: 2rem;
+    }
+
+    .content-banner p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .boton-ir span {
+        font-size: 15px;
+    }
+
+    .boton-ir .bx {
+        font-size: 15px;
+    }
+
+    .boton-ir {
+        padding: 5px;
+    }
+
+    .banner-img {
+        left: 100px;
+        top: -80px;
+        max-width: 350px;
+    }
+
+    .heading h2,
+    br {
+        display: contents;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .service-content {
+        justify-content: center;
+    }
+
+    .heading p {
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+
+    .products {
+        max-width: 350px;
+    }
+
+    .products-content {
+        place-items: center;
+        margin: auto 0;
+        grid-template-columns: 250px;
+    }
+
+    .team-content {
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+
+    .review-box p {
+        font-size: 0.9rem;
+    }
+
+    .info-adicional {
+        max-width: 350px;
+    }
+
+    .box-container {
+        grid-template-columns: 150px;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 2rem;
+    }
+
+    .banner-secundario-coffee {
+        max-width: 350px;
+    }
+
+    .banner-secundario-coffee h2 {
+        font-size: 1.2rem;
+    }
+
+    .banner-secundario-content {
+        margin: 2rem;
+    }
+
+    .banner-secundario-content p {
+        line-height: 2;
+        font-size: 0.9rem;
+        margin: 1.5rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .footer-col {
+        padding: 0;
+    }
+
+    .footer-col h3 {
+        font-size: 1rem;
+    }
+
+    .footer-col a {
+        font-size: .8rem;
+    }
+
+    .footer-col p {
+        font-size: .8rem;
+    }
+
+    .copyright {
+        margin: auto 50px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:420px) {
+    .contenedor-principal {
+        max-width: 80%;
+    }
+
+    .banner-principal {
+        min-height: 250px;
+        height: 400px;
+    }
+
+    .banner-img {
+        position: relative;
+        top: -40px;
+        right: 0;
+        max-width: 230px;
+    }
+
+    .content-banner h1 {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    .nav-principal {
+        padding: 3px 5px;
+    }
+
+    .menu-icon div {
+        height: 2px;
+        width: 18px;
+    }
+
+    .content-banner p {
+        font-size: 0.75rem;
+    }
+
+    .boton-ir {
+        max-width: 110px;
+    }
+
+    .boton-ir span {
+        font-size: 0.75rem;
+    }
+
+    .boton-ir .bx {
+        font-size: 12px;
+    }
+
+    .heading {
+        margin-block: 1rem;
+    }
+
+    .heading h2 {
+        font-size: .9rem;
+    }
+
+    .ser-box {
+        padding: 10px 5px;
+    }
+
+    .ser-box img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ser-box p {
+        font-size: 0.6rem;
+    }
+
+    .servicios {
+        margin-block: 3rem;
+    }
+
+    .service-content {
+        grid-template-columns: 120px 120px;
+    }
+
+    .heading p {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    .products {
+        max-width: 300px;
+    }
+
+    .products-content {
+        grid-template-columns: 120px 120px;
+        padding: 10px 0;
+    }
+
+    .product-card {
+        padding: 10px 0;
+    }
+
+    .button-group {
+        display: none;
+    }
+
+    .product-card img {
+        margin: 1rem 0;
+        width: 70px;
+        height: 70px;
+    }
+
+    .product-card h2 {
+        font-size: .7rem;
+    }
+
+    .team-box img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .team-box {
+        align-items: center;
+    }
+
+    .team-box h2 {
+        font-size: 0.9rem;
+    }
+
+    .team-box span {
+        font-size: 0.7rem;
+    }
+
+    .review-box img {
+        width: 60px;
+        height: 60px;
+        border: none;
+    }
+
+    .review {
+        max-width: 300px;
+    }
+
+    .review-box h2 {
+        font-size: .9rem;
+    }
+
+    .review-box p {
+        font-size: 0.8rem;
+    }
+
+    .info-adicional {
+        max-width: 250px;
+    }
+
+    .box-container .info-ad ion-icon {
+        font-size: .9rem;
+    }
+
+    .box-container .info-ad h3 {
+        font-size: .8rem;
+    }
+
+    .box-container .info-ad p {
+        font-size: .7rem;
+    }
+
+    .banner-secundario-coffee h2 {
+        font-size: .9rem;
+    }
+
+    .banner-secundario-content p {
+        font-size: .7rem;
+        padding: 5px;
+        margin: 10px 20px;
+    }
+
+    .banner-secundario-coffee {
+        max-width: 250px;
+    }
+
+    .banner-secundario-content {
+        margin: 0;
+    }
+
+    .btn {
+        padding: 2px;
+        font-size: .7rem;
+    }
+
+    .foot-social .icono {
+        font-size: 1rem;
+    }
+
+    .footer-col h3 {
+        font-size: .8rem;
+    }
+
+    .footer-col a {
+        font-size: .7rem;
+    }
+
+    .footer-col p {
+        font-size: .7rem;
+    }
+
+    .copyright {
+        padding: 20px 5px;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* Index */
+    .banner-img {
+        left: 0;
+        top: 0;
+    }
+
+    .products-content {
+        grid-template-columns: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* Hero, header, nav */
     .navbar-container {
@@ -3431,7 +4143,11 @@ li {
     }
 
     .footer-link {
-        font-size: .85rem;
+        font-size: .8rem;
+    }
+
+    .footer-list li {
+        text-align: left;
     }
 
     .footer-brand :is(.body-4, .label-1) {
@@ -3439,7 +4155,8 @@ li {
     }
 
     .order-list-footer {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        place-items: start;
     }
 
     .order-list-footer .footer-list {
