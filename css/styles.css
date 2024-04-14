@@ -1777,6 +1777,7 @@ h2 {
     line-height: 35px;
     margin-bottom: 2.3rem;
     text-align: left;
+    font-weight: 500;
 }
 
 /* Galeria */
@@ -1785,7 +1786,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    padding: 35px 10px;
+    padding: 35px 0;
 }
 
 .heading-gallery {
@@ -1840,13 +1841,14 @@ h2 {
     align-items: center;
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
-    margin-bottom: 1.8rem;
+    margin-block: 2rem;
     color: #F0ECE3;
 }
 
 .container-cards {
     text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     align-items: center;
@@ -1861,7 +1863,6 @@ h2 {
     box-shadow: 5px 7px 0 rgba(0, 0, 0, 0.8);
     overflow: hidden;
     margin: 20px;
-    text-align: center;
     transition: 500ms;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
@@ -1894,7 +1895,7 @@ h2 {
 
 .container-cards .card-content p {
     padding: .5rem 2rem;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -2582,6 +2583,75 @@ h2 {
 
 /* MediaQueries */
 @media (max-width: 1080px) {
+
+    /* Nosotros */
+    .pages-list li a {
+        font-size: 16px;
+    }
+
+    .presentacion-de-la-cafeteria {
+        margin: 2rem 0 0 0;
+        padding: 0 100px;
+    }
+
+    .question {
+        font-size: 2.5rem;
+    }
+
+    .acerca-de-nosotros {
+        height: 700px;
+    }
+
+    .order-paragraph-presentacion {
+        justify-content: center;
+    }
+
+    .img-abajo {
+        border-width: 0 0 10vh 100vw;
+    }
+
+    .p-description-nos {
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+
+    .description-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .p-info-nosotros {
+        margin-bottom: 2rem;
+        font-size: 19.2px;
+    }
+
+    .container-gallery {
+        margin-bottom: 0;
+    }
+
+    .heading-gallery {
+        font-size: 2.5rem;
+    }
+
+    .content-despedida h2 {
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    .content-despedida p {
+        font-size: 1.5rem;
+    }
+
+    .content-despedida {
+        justify-content: end;
+    }
+
+    .footer-sobre-nosotros {
+        padding: 20px 25px;
+    }
+
+    /* End nosotros */
+
+    /* Index */
     .contenedor-principal {
         width: 90%;
         margin: 0 auto;
@@ -2614,6 +2684,83 @@ h2 {
 }
 
 @media (max-width:875px) {
+
+    /* Nosotros */
+    .acerca-de-nosotros {
+        height: 630px;
+    }
+
+    .question {
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
+
+    .p-description-nos {
+        font-size: 1rem;
+    }
+
+    .un-poco-mas {
+        padding: 25px 100px;
+    }
+
+    .description-subtitle {
+        font-size: 2rem;
+    }
+
+    .p-info-nosotros {
+        margin-bottom: 1.5rem;
+        font-size: 18px;
+    }
+
+    .heading-gallery {
+        font-size: 2rem;
+    }
+
+    .order-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .container-cards .card-content img {
+        margin-top: 20px;
+    }
+
+    .container-cards .card-content {
+        margin: 15px;
+        height: 350px;
+    }
+
+    .content-despedida h2 {
+        font-size: 2.5rem;
+    }
+
+    .content-despedida p {
+        font-size: 1.2rem;
+    }
+
+    .content-despedida {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .img-abajo-dos {
+        border-width: 15vh 100vw;
+    }
+
+    .footer-sobre-nosotros .social_icon li a,
+    .menu-footer-nosotros a {
+        font-size: 1.5rem;
+    }
+
+    .footer-sobre-nosotros .menu-footer-nosotros li a {
+        font-size: 1em;
+    }
+
+    .footer-sobre-nosotros .copy-nos {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    /* End Nosotros */
     .content-banner h1 {
         font-size: 2.5rem;
     }
@@ -2720,6 +2867,158 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
+    /* Nosotros */
+    .pages-list li a {
+        font-size: 14px;
+    }
+
+    .acerca-de-nosotros {
+        height: 500px;
+    }
+
+    .logo-cafeteria {
+        width: 40px;
+        height: 40px;
+    }
+
+    .question {
+        font-size: 1.3rem;
+    }
+
+    .p-description-nos {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .presentacion-de-la-cafeteria {
+        padding: 0 50px;
+        margin: 1.5rem 0;
+    }
+
+    .order-paragraph-presentacion {
+        justify-content: center;
+        height: 250px;
+    }
+
+    .description-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .img-abajo {
+        border-width: 0 0 5vh 100vw;
+    }
+
+    .un-poco-mas {
+        padding: 15px 50px;
+        margin: 0;
+    }
+
+    .p-info-nosotros {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+
+    .heading-gallery {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .container-gallery {
+        padding: 15px 0;
+    }
+
+    .icon-coffeee {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(2, 10rem);
+        grid-gap: 0rem;
+        column-gap: .5rem;
+    }
+
+    .galeria-img-3 {
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+
+    .order-subtitle {
+        font-size: 1rem;
+    }
+
+    .container-cards {
+        gap: 1rem;
+    }
+
+    .container-cards .card-content {
+        height: 250px;
+        width: 200px;
+        margin: 10px;
+    }
+
+    .container-cards .card-content img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container-cards .card-content h4 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .container-cards .card-content p {
+        font-size: .75rem;
+        padding: .2rem 0;
+    }
+
+    .container-nosotros {
+        height: 400px;
+    }
+
+    .order-paragraph {
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    .content-despedida {
+        min-height: 200px;
+        justify-content: end;
+    }
+
+    .content-despedida h2 {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+
+    .content-despedida p {
+        font-size: 1rem;
+    }
+
+    .img-abajo-dos {
+        border-width: 5vh 100vw;
+    }
+
+    .footer-sobre-nosotros .social_icon li a,
+    .menu-footer-nosotros a {
+        font-size: 1.2rem;
+    }
+
+    .menu-footer-nosotros {
+        gap: 1rem;
+    }
+
+    .footer-sobre-nosotros .menu-footer-nosotros li a {
+        font-size: .9rem;
+    }
+
+    .footer-sobre-nosotros .copy-nos {
+        font-size: .8rem;
+    }
+
+    /* End Nosotros */
 
     /* Nuestro Trabajo */
     .margin-container {
@@ -3262,6 +3561,140 @@ h2 {
 }
 
 @media (max-width: 500px) {
+
+    /* Nosotros */
+    .nav-nosotros {
+        flex-direction: column;
+    }
+
+    .logo-cafeteria {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pages-list li a {
+        font-size: 11px;
+    }
+
+    .pages-list {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .acerca-de-nosotros {
+        height: 380px;
+    }
+
+    .question {
+        font-size: 1rem;
+    }
+
+    .order-paragraph-presentacion {
+        justify-content: end;
+    }
+
+    .p-description-nos {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+
+    .description-subtitle {
+        font-size: 1rem;
+    }
+
+    .p-info-nosotros {
+        font-size: 0.75rem;
+    }
+
+    .heading-gallery {
+        font-size: 1rem;
+    }
+
+    .order-subtitle {
+        font-size: .7rem;
+    }
+
+    .info-cafeteria {
+        min-height: 50vh;
+    }
+
+    .galeria-img-3 {
+        grid-column: span 4;
+        grid-row: 1/1;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(2, 5rem);
+        column-gap: 0;
+    }
+
+    .container-cards .card-content {
+        height: 160px;
+        width: 160px;
+    }
+
+    .container-cards .card-content img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .container-cards .card-content h4 {
+        font-size: .7rem;
+        padding: 5px;
+    }
+
+    .container-cards .card-content p {
+        font-size: .6rem;
+    }
+
+    .container-nosotros {
+        height: 300px;
+    }
+
+    .content-despedida {
+        min-height: 150px;
+        justify-content: end;
+    }
+
+    .content-despedida h2 {
+        font-size: 1rem;
+    }
+
+    .order-paragraph {
+        min-height: 100px;
+        align-items: end;
+        font-size: .9rem;
+    }
+
+    .content-despedida p {
+        font-size: .7rem;
+    }
+
+    .footer-sobre-nosotros {
+        padding: 10px;
+    }
+
+    .footer-sobre-nosotros .social_icon li a,
+    .menu-footer-nosotros a {
+        font-size: 1rem;
+    }
+
+    .footer-sobre-nosotros .social_icon {
+        gap: .5rem;
+    }
+
+    .footer-sobre-nosotros .menu-footer-nosotros li a {
+        font-size: .7rem;
+        margin: 0;
+    }
+
+    .footer-sobre-nosotros .copy-nos {
+        font-size: .6rem;
+    }
+
+    /* End Nosotros */
     .boton-ir .bx {
         transform: rotate(180deg);
     }
@@ -3396,6 +3829,111 @@ h2 {
 }
 
 @media (max-width:420px) {
+
+    /* Nosotros */
+    .pages-list {
+        margin-top: 1rem;
+        gap: .5rem;
+    }
+
+    .pages-list li a {
+        font-size: 8px;
+    }
+
+    .presentacion-de-la-cafeteria {
+        padding: 0 30px;
+        margin: 1rem 0;
+    }
+
+    .question {
+        font-size: .8rem;
+        animation: none;
+    }
+
+    .p-description-nos {
+        font-size: 0.6rem;
+    }
+
+    .order-paragraph-presentacion {
+        justify-content: center;
+    }
+
+    .description-subtitle {
+        font-size: .8rem;
+    }
+
+    .acerca-de-nosotros {
+        height: 350px;
+    }
+
+    .p-info-nosotros {
+        font-size: .6rem;
+        line-height: 17px;
+    }
+
+    .heading-gallery {
+        font-size: .8rem;
+    }
+
+    .order-subtitle {
+        font-size: .6rem;
+    }
+
+    .container-cards .card-content {
+        width: 140px;
+        height: 140px;
+    }
+
+    .container-cards .card-content img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+    }
+
+    .container-cards .card-content h4 {
+        font-size: .6rem;
+        padding: 3px;
+    }
+
+    .container-cards .card-content p {
+        font-size: 0.5rem;
+    }
+
+    .content-despedida {
+        min-height: 100px;
+    }
+
+    .order-paragraph {
+        min-height: 60px;
+        font-size: .7rem;
+        margin-right: 15px;
+    }
+
+    .container-nosotros {
+        height: 215px;
+    }
+
+    .footer-sobre-nosotros .copy-nos {
+        margin-top: 5px;
+    }
+
+    .footer-sobre-nosotros .social_icon li a,
+    .menu-footer-nosotros a {
+        font-size: .9rem;
+        margin: 0 3px;
+    }
+
+    .footer-sobre-nosotros .social_icon {
+        gap: .5rem;
+    }
+
+    .footer-sobre-nosotros .menu-footer-nosotros li a {
+        font-size: .6rem;
+        margin: 0;
+    }
+
+    /* End Nosotros */
+
     .contenedor-principal {
         max-width: 80%;
     }
@@ -3602,6 +4140,95 @@ h2 {
 
 @media (max-width: 320px) {
 
+    /* Nosotros */
+    .question {
+        font-size: .6rem;
+    }
+
+    .order-paragraph-presentacion {
+        justify-content: start;
+    }
+
+    .p-description-nos {
+        font-size: 0.46rem;
+    }
+
+    .acerca-de-nosotros {
+        height: 280px;
+    }
+
+    .description-subtitle {
+        font-size: .6rem;
+    }
+
+    .p-info-nosotros {
+        font-size: .5rem;
+        line-height: 12px;
+    }
+
+    .heading-gallery {
+        font-size: .6rem;
+    }
+
+    .galeria-img-3 {
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+
+    .order-subtitle {
+        font-size: .4rem;
+    }
+
+    .container-cards .card-content h4 {
+        font-size: 0.5rem;
+    }
+
+    .container-cards .card-content p {
+        font-size: .45rem;
+    }
+
+
+    .container-nosotros {
+        height: 180px;
+    }
+
+    .content-despedida h2 {
+        font-size: .55rem;
+    }
+
+    .content-despedida p {
+        font-size: .5rem;
+        margin: 0 4rem;
+    }
+
+    .order-paragraph {
+        font-size: .5rem;
+        align-items: center;
+    }
+
+    .footer-sobre-nosotros .copy-nos {
+        margin-top: 5px;
+        font-size: .45rem;
+    }
+
+    .footer-sobre-nosotros .social_icon li a,
+    .menu-footer-nosotros a {
+        font-size: .7rem;
+        margin: 0 3px;
+    }
+
+    .footer-sobre-nosotros .social_icon {
+        gap: .3rem;
+    }
+
+    .footer-sobre-nosotros .menu-footer-nosotros li a {
+        font-size: .5rem;
+        margin: 0;
+    }
+
+    /* End Nosotros */
+
+
     /* Index */
     .banner-img {
         left: 0;
@@ -3611,23 +4238,6 @@ h2 {
     .products-content {
         grid-template-columns: 150px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /* Hero, header, nav */
     .navbar-container {
