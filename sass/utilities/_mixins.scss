@@ -1,0 +1,57 @@
+@mixin flexible1 ($dis, $direction, $just, $align, $corte) {
+    display: $dis;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: $corte;
+}
+
+@mixin flexible ($dis, $just, $align) {
+    display: $dis;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin grid ($columnas, $sizeColumnas, $espacio1, $espacio2, $espacio3) {
+    display: grid;
+    grid-template-columns: repeat($columnas, $sizeColumnas);
+    gap: $espacio1;
+    column-gap: $espacio2;
+    row-gap: $espacio3;
+}
+
+@mixin BasicGrid ($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns);
+}
+
+@mixin heading ($dis, $direction1, $alinear, $justi, $mblock, $aligntxt) {
+    display: $dis;
+    flex-direction: $direction1;
+    align-items: $alinear;
+    justify-content: $justi;
+    margin-block: $mblock;
+    text-align: $aligntxt;
+}
+
+@mixin bgenCss ($bgp, $bgr, $bgs) {
+    background-position: $bgp;
+    background-repeat: $bgr;
+    background-size: $bgs;
+}
+
+@mixin heading2 ($fs, $fw, $mg, $color, $text) {
+    font-size: $fs;
+    font-weight: $fw;
+    margin: $mg;
+    color: $color;
+    text-align: $text;
+}
+
+@mixin parrafos ($colorP, $fwP, $lineH,$fsP) {
+    color: $colorP;
+    font-weight: $fwP;
+    line-height: $lineH;
+    font-size: $fsP;
+}
+

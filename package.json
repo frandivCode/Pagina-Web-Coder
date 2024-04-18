@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "Especialmente dedicado hacia el café, los procesos que conllevan conseguir café, el trabajo y la pasión por esta bebida.\r **El Girasol** es una cafeteria que dispone de cuatro secciones arraigadas a la principal:",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./sass/styles.scss ./css/styles.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
