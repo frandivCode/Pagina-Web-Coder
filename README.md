@@ -17,6 +17,7 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 - CSS3
 - Git
 - Github
+- SASS
 
 
 #### Se utilizó:
@@ -31,11 +32,8 @@ Especialmente dedicado hacia el café, los procesos que conllevan conseguir caf�
 ------------
 
 ### Aclaraciones
-> Se utilizó root para mayor practicidad a la hora de codear.
 
->Las páginas responsive son (Contacto, Nuestro trabajo y Eventos).
-
->Estructura avanzada y mejorada de CSS.
+>Sitio Web Full Responsive.
 
 >Cada carpeta tiene imagenes que corresponden a una determinada página.
 
