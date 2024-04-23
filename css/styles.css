@@ -286,9 +286,10 @@ h2 {
     height: 800px;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    position: relative; }
     .main-index .article-index .banner-principal .content-banner h1 {
-      font-size: 3.5rem;
+      font-size: 3.6rem;
       line-height: 1.5;
       color: #54372a;
       font-weight: 800;
@@ -325,9 +326,9 @@ h2 {
           color: #E8D8C4; }
     .main-index .article-index .banner-principal .banner-img {
       position: absolute;
-      right: 40px;
-      bottom: 0;
-      max-width: 450px;
+      right: 0;
+      bottom: 20px;
+      max-width: 500px;
       width: 100%; }
   .main-index .article-index .servicios .service-content {
     margin: 5rem auto;
@@ -362,8 +363,7 @@ h2 {
       max-width: 550px;
       width: 100%;
       font-size: 1.1rem;
-      font-family: "Poppins", sans-serif;
-      margin-top: 1rem; }
+      font-family: "Poppins", sans-serif; }
     .main-index .article-index .products .products-content {
       display: grid;
       grid-template-columns: repeat(3, 260px);
@@ -530,7 +530,7 @@ h2 {
   background-color: #493024;
   width: 100%; }
   .footer-bg .copyright {
-    font-size: 14px;
+    font-size: 13px;
     padding: 30px 15px 5px 15px;
     color: #f8e4be;
     text-align: center;
@@ -1661,9 +1661,7 @@ h2 {
     min-height: 400px;
     margin-top: 0 !important; }
     .main-index .article-index .banner-principal .banner-img {
-      max-width: 270px;
-      right: 0;
-      top: 0; }
+      max-width: 270px; }
     .main-index .article-index .banner-principal .content-banner h1 {
       font-size: 2rem; }
     .main-index .article-index .banner-principal .content-banner p {
@@ -1690,6 +1688,9 @@ h2 {
         height: 45px; }
       .main-index .article-index .servicios .service-content .ser-box p {
         font-size: 12px; }
+  .main-index .article-index .products p {
+    font-size: .88rem;
+    margin-block: 1rem; }
   .main-index .article-index .products .products-content {
     grid-template-columns: repeat(2, 160px);
     row-gap: 1.5rem;
@@ -1702,9 +1703,6 @@ h2 {
         height: 75px; }
       .main-index .article-index .products .products-content .product-card h2 {
         font-size: .88rem; }
-  .main-index .article-index .products p {
-    font-size: .88rem;
-    margin-block: 1rem; }
   .main-index .article-index .team .team-content {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     gap: .5rem; }
@@ -1729,8 +1727,8 @@ h2 {
     .main-index .article-index .info-adicional .box-container .info-ad ion-icon {
       font-size: 1.6rem; }
   .main-index .article-index .info-adicional .img-coffee {
-    top: -90px;
-    max-width: 260px; }
+    top: -80px;
+    max-width: 230px; }
   .main-index .article-index .banner-secundario-coffee .banner-secundario-content {
     margin: 1.5rem; }
     .main-index .article-index .banner-secundario-coffee .banner-secundario-content h2 {
@@ -1744,6 +1742,12 @@ h2 {
     padding: 0.4em 0.8em; }
   .footer-bg .footer {
     grid-template-columns: repeat(1, auto); }
+    .footer-bg .footer .footer-col h3 {
+      font-size: .92rem; }
+    .footer-bg .footer .footer-col a {
+      font-size: .78rem; }
+    .footer-bg .footer .footer-col p {
+      font-size: .78rem; }
     .footer-bg .footer .footer-col .foot-social {
       display: block; }
       .footer-bg .footer .footer-col .foot-social a {
@@ -1760,14 +1764,14 @@ h2 {
       .header-principal .nav-principal .navbar-principal .navbar-enlace {
         font-size: .8rem;
         margin: .7rem 0; }
-  .main-index .article-index .heading h2, .main-index .article-index .products h2 {
-    font-size: 1rem; }
+  .main-index .article-index .heading, .main-index .article-index .products, .main-index .article-index .products p {
+    margin-block: 1.5rem; }
+    .main-index .article-index .heading h2, .main-index .article-index .products h2 {
+      font-size: 1rem; }
   .main-index .article-index .banner-principal {
     height: 260px; }
     .main-index .article-index .banner-principal .banner-img {
-      max-width: 170px;
-      right: 0;
-      top: 250px; }
+      max-width: 230px; }
     .main-index .article-index .banner-principal .content-banner h1 {
       font-size: 1.8rem; }
     .main-index .article-index .banner-principal .content-banner p {
@@ -1782,37 +1786,78 @@ h2 {
         font-size: 13px;
         padding: 2px; }
   .main-index .article-index .servicios .service-content {
-    grid-template-columns: 140px; }
+    grid-template-columns: 130px 130px;
+    margin: 2rem;
+    column-gap: 1rem; }
     .main-index .article-index .servicios .service-content .ser-box {
-      border-radius: 1rem;
+      border-radius: .5rem;
       padding: 10px; }
       .main-index .article-index .servicios .service-content .ser-box img {
         width: 40px;
         height: 40px; }
       .main-index .article-index .servicios .service-content .ser-box p {
-        font-size: 12px; }
+        font-size: .65rem; }
   .main-index .article-index .products p {
     font-size: .75rem;
-    max-width: 190px; }
+    max-width: 240px;
+    margin: 1rem 0; }
   .main-index .article-index .products .products-content {
-    grid-template-columns: 1fr;
-    padding: 20px; }
-    .main-index .article-index .products .products-content .product-card img {
-      width: 55px;
-      height: 55px;
-      margin: 1rem 0; }
-    .main-index .article-index .products .products-content .product-card h2 {
-      font-size: .75rem; }
-    .main-index .article-index .products .products-content .product-card .button-group span {
-      padding: .2rem; }
-      .main-index .article-index .products .products-content .product-card .button-group span i {
-        font-size: .8rem; }
+    grid-template-columns: repeat(2, 130px);
+    padding: 20px;
+    column-gap: 1rem;
+    row-gap: 1rem; }
+    .main-index .article-index .products .products-content .product-card {
+      border-radius: 1rem; }
+      .main-index .article-index .products .products-content .product-card img {
+        width: 55px;
+        height: 55px;
+        margin: .5rem 0; }
+      .main-index .article-index .products .products-content .product-card h2 {
+        font-size: .7rem; }
+      .main-index .article-index .products .products-content .product-card .button-group span {
+        padding: .2rem; }
+        .main-index .article-index .products .products-content .product-card .button-group span i {
+          font-size: .8rem; }
   .main-index .article-index .team .team-content {
-    grid-template-columns: 180px;
+    grid-template-columns: 160px;
     justify-content: center; }
     .main-index .article-index .team .team-content .team-box h2 {
       font-size: .85rem; }
     .main-index .article-index .team .team-content .team-box span {
-      font-size: .7rem; }
+      font-size: .65rem; }
     .main-index .article-index .team .team-content .team-box img {
-      height: 180px; } }
+      height: 200px; }
+  .main-index .article-index .review .review-box p {
+    max-width: 270px; } }
+
+@media (max-width: 320px) and (max-width: 320px) {
+  .main-index .article-index .heading, .main-index .article-index .products, .main-index .article-index .products p {
+    margin-block: 1.2rem; }
+  .main-index .article-index .banner-principal .content-banner h1 {
+    font-size: 1.5rem; }
+  .main-index .article-index .banner-principal .banner-img {
+    right: -20px;
+    max-width: 200px; }
+  .main-index .article-index .servicios .service-content {
+    grid-template-columns: 130px; }
+  .main-index .article-index .products .products-content {
+    grid-template-columns: repeat(2, 110px); }
+    .main-index .article-index .products .products-content .product-card img {
+      width: 50px;
+      height: 50px; }
+  .main-index .article-index .info-adicional .box-container .info-ad h3 {
+    font-size: .9rem; }
+  .main-index .article-index .info-adicional .box-container .info-ad p {
+    font-size: 0.75rem;
+    line-height: 1.6; }
+  .main-index .article-index .info-adicional .box-container .info-ad ion-icon {
+    font-size: 1.4rem; }
+  .main-index .article-index .banner-secundario-coffee .banner-secundario-content {
+    margin: 1.2rem; }
+    .main-index .article-index .banner-secundario-coffee .banner-secundario-content h2 {
+      font-size: 1.1rem; }
+    .main-index .article-index .banner-secundario-coffee .banner-secundario-content p {
+      font-size: .78rem;
+      margin-block: 1.3rem; }
+  .main-index .article-index .footer .footer-bg .copyright {
+    font-size: 12px; } }

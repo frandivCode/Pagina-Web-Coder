@@ -1,0 +1,76 @@
+@media (max-width:320px) {
+    .main-index .article-index {
+
+        .heading {
+            margin-block: 1.2rem;
+        }
+
+        .banner-principal {
+
+            .content-banner {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .banner-img {
+                right: -20px;
+                max-width: 200px;
+            }
+        }
+
+        .servicios .service-content {
+            grid-template-columns: 130px;
+        }
+
+        .products {
+            .products-content {
+                grid-template-columns: repeat(2, 110px);
+
+                .product-card {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+        .info-adicional .box-container {
+            .info-ad {
+
+                h3 {
+                    font-size: .9rem;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                    line-height: 1.6;
+                }
+
+                ion-icon {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .banner-secundario-coffee .banner-secundario-content {
+            margin: 1.2rem;
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: .78rem;
+                margin-block: 1.3rem;
+            }
+        }
+
+        .footer .footer-bg {
+            .copyright {
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -21,6 +21,8 @@
 
     .main-index .article-index {
         .heading {
+            margin-block: 1.5rem;
+
             h2 {
                 font-size: 1rem;
             }
@@ -30,9 +32,7 @@
             height: 260px;
 
             .banner-img {
-                max-width: 170px;
-                right: 0;
-                top: 250px;
+                max-width: 230px;
             }
 
             .content-banner {
@@ -62,10 +62,12 @@
         }
 
         .servicios .service-content {
-            grid-template-columns: 140px;
+            grid-template-columns: 130px 130px;
+            margin: 2rem;
+            column-gap: 1rem;
 
             .ser-box {
-                border-radius: 1rem;
+                border-radius: .5rem;
                 padding: 10px;
 
                 img {
@@ -74,37 +76,44 @@
                 }
 
                 p {
-                    font-size: 12px;
+                    font-size: .65rem;
                 }
             }
         }
 
-        .products p {
-            font-size: .75rem;
-            max-width: 190px;
-        }
+        .products {
+            p {
+                font-size: .75rem;
+                max-width: 240px;
+                margin: 1rem 0;
+            }
 
-        .products .products-content {
-            grid-template-columns: 1fr;
-            padding: 20px;
+            .products-content {
+                grid-template-columns: repeat(2, 130px);
+                padding: 20px;
+                column-gap: 1rem;
+                row-gap: 1rem;
 
-            .product-card {
-                img {
-                    width: 55px;
-                    height: 55px;
-                    margin: 1rem 0;
-                }
+                .product-card {
+                    border-radius: 1rem;
 
-                h2 {
-                    font-size: .75rem;
-                }
+                    img {
+                        width: 55px;
+                        height: 55px;
+                        margin: .5rem 0;
+                    }
 
-                .button-group {
-                    span {
-                        padding: .2rem;
+                    h2 {
+                        font-size: .7rem;
+                    }
 
-                        i {
-                            font-size: .8rem;
+                    .button-group {
+                        span {
+                            padding: .2rem;
+
+                            i {
+                                font-size: .8rem;
+                            }
                         }
                     }
                 }
@@ -112,19 +121,27 @@
         }
 
         .team .team-content {
-            grid-template-columns: 180px;
+            grid-template-columns: 160px;
             justify-content: center;
 
             .team-box {
                 h2 {
                     font-size: .85rem;
                 }
-                span{
-                    font-size: .7rem;
+
+                span {
+                    font-size: .65rem;
                 }
+
                 img {
-                    height: 180px;
+                    height: 200px;
                 }
+            }
+        }
+
+        .review .review-box {
+            p {
+                max-width: 270px;
             }
         }
     }

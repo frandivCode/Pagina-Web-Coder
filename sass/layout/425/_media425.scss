@@ -25,10 +25,9 @@
         .banner-principal {
             min-height: 400px;
             margin-top: 0 !important;
+
             .banner-img {
                 max-width: 270px;
-                right: 0;
-                top: 0;
             }
 
             .content-banner {
@@ -78,36 +77,40 @@
             }
         }
 
-        .products .products-content {
-            grid-template-columns: repeat(2, 160px);
-            row-gap: 1.5rem;
-            column-gap: 2rem;
-            padding: 35px;
+        .products {
 
-            .product-card {
-                padding: 5px;
+            p {
+                font-size: .88rem;
+                margin-block: 1rem;
+            }
 
-                img {
-                    width: 75px;
-                    height: 75px;
-                }
+            .products-content {
+                grid-template-columns: repeat(2, 160px);
+                row-gap: 1.5rem;
+                column-gap: 2rem;
+                padding: 35px;
 
-                h2 {
-                    font-size: .88rem;
+                .product-card {
+                    padding: 5px;
+
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+
+                    h2 {
+                        font-size: .88rem;
+                    }
                 }
             }
-        }
-
-        .products p {
-            font-size: .88rem;
-            margin-block: 1rem;
         }
 
         .team .team-content {
             grid-template-columns: repeat(auto-fit, minmax(100px, auto));
             gap: .5rem;
-            .team-box{
-                img{
+
+            .team-box {
+                img {
                     border-radius: 10px;
                 }
             }
@@ -151,8 +154,8 @@
         }
 
         .info-adicional .img-coffee {
-            top: -90px;
-            max-width: 260px;
+            top: -80px;
+            max-width: 230px;
         }
 
         .banner-secundario-coffee .banner-secundario-content {
@@ -177,6 +180,20 @@
 
     .footer-bg .footer {
         grid-template-columns: repeat(1, auto);
+
+        .footer-col {
+            h3 {
+                font-size: .92rem;
+            }
+
+            a {
+                font-size: .78rem;
+            }
+
+            p {
+                font-size: .78rem;
+            }
+        }
 
         .footer-col .foot-social {
             display: block;

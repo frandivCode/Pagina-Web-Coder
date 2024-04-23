@@ -118,10 +118,11 @@
             align-items: center;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            position: relative;
 
             .content-banner {
                 h1 {
-                    font-size: 3.5rem;
+                    font-size: 3.6rem;
                     line-height: 1.5;
                     color: map-get($coloresIndex , titulosSubtitulos);
                     font-weight: map-get($grosorfont , 800);
@@ -173,9 +174,9 @@
 
             .banner-img {
                 position: absolute;
-                right: 40px;
-                bottom: 0;
-                max-width: 450px;
+                right: 0;
+                bottom: 20px;
+                max-width: 500px;
                 width: 100%;
             }
         }
@@ -228,7 +229,6 @@
                 width: 100%;
                 font-size: 1.1rem;
                 font-family: "Poppins", sans-serif;
-                margin-top: 1rem;
             }
 
             .products-content {
@@ -448,7 +448,7 @@
     width: 100%;
 
     .copyright {
-        font-size: 14px;
+        font-size: 13px;
         padding: 30px 15px 5px 15px;
         color: #f8e4be;
         text-align: center;
