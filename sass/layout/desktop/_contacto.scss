@@ -11,7 +11,7 @@
             margin: 10px 40px;
 
             .logo-contact {
-                @include flexible (flex, center, end);
+                @include flexible (flex, center, center);
 
                 img {
                     width: 80px;

@@ -1,16 +1,3 @@
-/* Despliegue */
-.move .line-one {
-    transform: rotate(-45deg) translate(-5px, 5px);
-}
-
-.move .line-two {
-    opacity: 0;
-}
-
-.move .line-three {
-    transform: rotate(45deg) translate(-5px, -5px);
-}
-
 .icono {
     animation: float 5s ease-in-out infinite;
 }

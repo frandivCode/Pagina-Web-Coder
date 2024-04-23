@@ -38,10 +38,12 @@
         border-radius: 2rem;
         background-color: map-get($coloresIndex , fondoNavFoot);
 
-        .logo img {
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
+        .logo {
+            img {
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+            }
         }
 
         .navbar-principal {
@@ -74,26 +76,39 @@
         }
 
         .menu-icon {
-            @include flexible1 (none, column, center, center, nowrap);
+            @include flexible1 (none, column, center, center, wrap);
             row-gap: 5px;
             cursor: pointer;
             z-index: 200;
-            transform: 0.3s;
+            transition: .3s all ease-in-out;
             margin-right: 10px;
 
             div {
+                @extend .menu-icon;
                 display: block;
                 background-color: map-get($coloresIndex , colorcito);
                 height: 2px;
                 width: 23px;
             }
+
+        }
+
+        .move .line-one {
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .move .line-two {
+            opacity: 0;
+        }
+
+        .move .line-three {
+            transform: rotate(45deg) translate(-5px, -5px);
         }
     }
 
 }
 
 /* End Header Nav */
-
 /* Primer section */
 .main-index {
     .article-index {
@@ -101,7 +116,8 @@
             @extend .contenedor-principal;
             height: 800px;
             align-items: center;
-            @include BasicGrid (2);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
             .content-banner {
                 h1 {
@@ -132,7 +148,7 @@
 
                     span {
                         font-family: "Poppins", sans-serif;
-                        color: map-get($coloresIndex, colorcito)
+                        color: map-get($coloresIndex, colorcito);
                     }
 
                     i {
@@ -154,288 +170,286 @@
                     }
                 }
             }
-        }
 
-        .banner-img {
-            position: absolute;
-            right: 40px;
-            bottom: 0;
-            max-width: 500px;
-            width: 100%;
-        }
-
-    }
-}
-
-/* End primer section */
-
-/* Servicios */
-
-.servicios {
-    @extend .contenedor-principal;
-    margin: 5rem auto;
-
-    .service-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(auto, 160px));
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 1rem;
-
-        .ser-box {
-            background-color: map-get($coloresIndex, titulosSubtitulos);
-            @include flexible1 (flex, column, center, center, nowrap);
-            text-align: center;
-            row-gap: 1rem;
-            padding: 35px 20px;
-            border-radius: 2rem;
-
-            p {
-                font-family: "Playfair Display", serif;
-                color: #f8e4be;
-                font-weight: 600;
-            }
-
-            img {
-                width: 100px;
-                height: 100px;
-                object-fit: contain;
+            .banner-img {
+                position: absolute;
+                right: 40px;
+                bottom: 0;
+                max-width: 450px;
+                width: 100%;
             }
         }
-    }
-}
 
-.products {
-    @extend .heading;
-    @extend .contenedor-principal;
-    height: auto;
-    margin-block: 5rem;
-    position: relative;
+        /* Servicios */
 
-    p {
-        @extend .heading;
-        max-width: 550px;
-        width: 100%;
-        font-size: 1.1rem;
-        font-family: "Poppins", sans-serif;
-        margin-top: 1rem;
-    }
+        .servicios {
+            @extend .contenedor-principal;
 
-    .products-content {
-        display: grid;
-        grid-template-columns: repeat(3, 260px);
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-content: center;
-        column-gap: 3rem;
-        row-gap: 4.5rem;
-        background-color: #DED0B6;
-        padding: 40px 60px;
+            .service-content {
+                margin: 5rem auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(auto, 160px));
+                justify-content: space-evenly;
+                align-items: center;
 
-        .product-card {
-            background-color: #fff8f7;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 15px;
-            border-radius: 1.5rem;
-            width: 100%;
-            cursor: pointer;
+                .ser-box {
+                    background-color: map-get($coloresIndex, titulosSubtitulos);
+                    @include flexible1 (flex, column, center, center, nowrap);
+                    text-align: center;
+                    row-gap: 1rem;
+                    padding: 35px 20px;
+                    border-radius: 2rem;
+
+                    p {
+                        font-family: "Playfair Display", serif;
+                        color: #f8e4be;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        .products {
+            @extend .heading;
+            @extend .contenedor-principal;
+            height: auto;
+            margin-block: 5rem;
             position: relative;
 
-            &:hover h2 {
-                color: #f8e4be;
-            }
-
-            &:hover {
-                box-shadow: 0 10px 10px #C8AE7D;
-                background-color: #A79277;
-                transition: all 0.5s ease;
-            }
-
-            &:hover .button-group {
-                z-index: 0;
-                right: .5rem;
-            }
-
-            h2 {
-                font-size: 1rem;
-                color: map-get($coloresIndex , titulosSubtitulos);
-                font-weight: 400;
-                letter-spacing: .5px;
+            p {
+                @extend .heading;
+                max-width: 550px;
+                width: 100%;
+                font-size: 1.1rem;
                 font-family: "Poppins", sans-serif;
+                margin-top: 1rem;
             }
 
-            img {
-                margin: 1.5rem 0;
-                width: 130px;
-                height: 130px;
-                object-fit: cover;
-            }
+            .products-content {
+                display: grid;
+                grid-template-columns: repeat(3, 260px);
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                column-gap: 3rem;
+                row-gap: 4.5rem;
+                background-color: #DED0B6;
+                padding: 40px 60px;
 
-            .button-group {
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
-                position: absolute;
-                top: 10px;
-                right: -2.7rem;
-                z-index: -4;
-                transition: all 0.4s ease;
-
-                span {
+                .product-card {
+                    background-color: #fff8f7;
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    justify-content: center;
-                    border: 1px solid #7a6448;
-                    background-color: #c7b299;
-                    padding: 0.5rem;
-                    border-radius: 50%;
-                    z-index: 0;
-                    right: .5rem;
+                    padding: 15px;
+                    border-radius: 1.5rem;
+                    width: 100%;
                     cursor: pointer;
+                    position: relative;
 
-                    i {
-                        font-size: 1.2rem;
-                        color: #54372a;
+                    &:hover h2 {
+                        color: #f8e4be;
+                    }
 
-                        &:hover {
-                            color: rgb(255, 255, 255);
-                            transition: all 0.4s ease;
+                    &:hover {
+                        box-shadow: 0 10px 10px #C8AE7D;
+                        background-color: #A79277;
+                        transition: all 0.5s ease;
+                    }
+
+                    &:hover .button-group {
+                        z-index: 0;
+                        right: .5rem;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                        color: map-get($coloresIndex , titulosSubtitulos);
+                        font-weight: 400;
+                        letter-spacing: .5px;
+                        font-family: "Poppins", sans-serif;
+                    }
+
+                    img {
+                        margin: 1.5rem 0;
+                        width: 130px;
+                        height: 130px;
+                        object-fit: cover;
+                    }
+
+                    .button-group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                        position: absolute;
+                        top: 10px;
+                        right: 0;
+                        z-index: -4;
+                        transition: all 0.4s ease;
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #7a6448;
+                            background-color: #c7b299;
+                            padding: 0.5rem;
+                            border-radius: 50%;
+                            z-index: 0;
+                            right: .5rem;
+                            cursor: pointer;
+
+                            i {
+                                font-size: 1.2rem;
+                                color: #54372a;
+
+                                &:hover {
+                                    color: rgb(255, 255, 255);
+                                    transition: all 0.4s ease;
+                                }
+                            }
                         }
                     }
+                }
+            }
+        }
+
+        /* Team */
+        .team {
+            @extend .contenedor-principal;
+            margin-block: 7rem;
+
+            .team-content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+                gap: 2rem;
+
+                .team-box {
+                    @include flexible1 (flex, column, center, start, nowrap);
+                    text-align: center;
+
+                    img {
+                        width: 100%;
+                        height: 400px;
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+
+                    h2 {
+                        font-size: 1.1rem;
+                        font-weight: map-get($grosorfont, 500);
+                        color: map-get($coloresIndex, titulosSubtitulos);
+                        font-family: "Poppins", sans-serif;
+                        margin: 1rem 0 0.5rem 0;
+                    }
+
+                    span {
+                        font-size: .98rem;
+                        font-weight: map-get($grosorfont, 600);
+                        color: #f8e4be;
+                        border-radius: 5px;
+                        background-color: map-get($coloresIndex, titulosSubtitulos);
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+
+        /* Info de la Cafeteria */
+        .info-adicional {
+            @extend .contenedor-principal;
+            background-color: map-get($coloresIndex, titulosSubtitulos);
+            width: 100%;
+            margin-block: 3rem;
+            border-radius: 1.5rem;
+            position: relative;
+
+            .img-coffee {
+                position: absolute;
+                max-width: 300px;
+                top: 170px;
+                right: -70px;
+            }
+
+            .box-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+                align-items: flex-start;
+                padding: 40px 20px;
+                margin-block: 3rem;
+
+                .info-ad {
+                    @include heading (flex, column, center, center, 0, center);
+                    font-family: "DM Sans", sans-serif;
+
+                    ion-icon {
+                        font-size: 2rem;
+                        color: map-get($coloresIndex , colorPredominante);
+                        padding-bottom: 0.5rem;
+                    }
+
+                    h3 {
+                        color: #f8e4be;
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        color: map-get($coloresIndex , colorPredominante);
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+
+        .banner-secundario-coffee {
+            @extend .contenedor-principal;
+            @include flexible1 (flex, column, normal, center, nowrap);
+            background-color: map-get($coloresIndex, titulosSubtitulos);
+            padding: 20px;
+            margin-block: 1.5rem;
+            color: map-get($coloresIndex , colorPredominante);
+            border-radius: 1rem;
+
+            .banner-secundario-content {
+                margin: 2rem;
+
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-align: center;
+                    font-family: "Playfair Display", serif;
+                    color: #f8e4be;
+                }
+
+                p {
+                    font-size: .95rem;
+                    font-weight: 500;
+                    line-height: 1.7;
+                    text-align: left;
+                    font-family: "Poppins", sans-serif;
+                    margin-block: 2rem;
                 }
             }
         }
     }
 }
 
-/* Team */
-.team {
-    @extend .contenedor-principal;
-    margin-block: 7rem;
-
-    .team-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-        gap: 2rem;
-
-        .team-box {
-            @include flexible1 (flex, column, center, start, nowrap);
-            text-align: center;
-
-            img {
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-
-            h2 {
-                font-size: 1.1rem;
-                font-weight: map-get($grosorfont, 500);
-                color: map-get($coloresIndex, titulosSubtitulos);
-                font-family: "Poppins", sans-serif;
-                margin: 1rem 0 0.5rem 0;
-            }
-
-            span {
-                font-size: .98rem;
-                font-weight: map-get($grosorfont, 600);
-                color: #f8e4be;
-                border-radius: 5px;
-                background-color: map-get($coloresIndex, titulosSubtitulos);
-                padding: 0 5px;
-            }
-        }
-    }
-}
-
-/* Info de la Cafeteria */
-.info-adicional {
-    @extend .contenedor-principal;
-    background-color: map-get($coloresIndex, titulosSubtitulos);
-    width: 100%;
-    margin-block: 3rem;
-    border-radius: 1.5rem;
-    position: relative;
-
-    .img-coffee {
-        position: absolute;
-        max-width: 300px;
-        top: 170px;
-        right: -70px;
-    }
-
-    .box-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-        align-items: flex-start;
-        padding: 40px 20px;
-        margin-block: 3rem;
-
-        .info-ad {
-            @include heading (flex, column, center, center, 0, center);
-            font-family: "DM Sans", sans-serif;
-
-            ion-icon {
-                font-size: 2rem;
-                color: map-get($coloresIndex , colorPredominante);
-                padding-bottom: 0.5rem;
-            }
-
-            h3 {
-                color: #f8e4be;
-                font-size: 1rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-                color: map-get($coloresIndex , colorPredominante);
-                line-height: 2;
-            }
-        }
-    }
-}
-
-.banner-secundario-coffee {
-    @extend .contenedor-principal;
-    @include flexible1 (flex, column, normal, center, nowrap);
-    background-color: map-get($coloresIndex, titulosSubtitulos);
-    padding: 20px;
-    margin-block: 1.5rem;
-    color: map-get($coloresIndex , colorPredominante);
-    border-radius: 1rem;
-
-    .banner-secundario-content {
-        margin: 2rem;
-
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            text-align: center;
-            font-family: "Playfair Display", serif;
-            color: #f8e4be;
-        }
-
-        p {
-            font-size: .95rem;
-            font-weight: 500;
-            line-height: 1.7;
-            text-align: left;
-            font-family: "Poppins", sans-serif;
-            margin-block: 2rem;
-        }
-    }
-}
-
+/* End primer section */
 /* Footer */
 .footer-bg {
     background-color: map-get($coloresIndex , fondoNavFoot);
     width: 100%;
 
     .copyright {
-        padding: 30px;
+        font-size: 14px;
+        padding: 30px 15px 5px 15px;
         color: #f8e4be;
         text-align: center;
         font-family: "DM Sans", sans-serif;
@@ -450,18 +464,19 @@
         margin-top: 3rem !important;
         padding-top: 1rem;
 
-        .logo img {
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            margin-bottom: 1rem;
-            text-align: center;
+        .logo {
+            img {
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                margin-bottom: 1rem;
+            }
         }
 
         .footer-col {
             display: flex;
             flex-direction: column;
-            padding: 5px 10px;
+            padding: 5px 15px;
 
             h3 {
                 font-family: "Playfair Display", serif;

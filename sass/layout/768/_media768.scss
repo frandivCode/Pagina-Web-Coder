@@ -1,0 +1,145 @@
+@media (max-width:768px) {
+    .header-principal {
+        top: 15px;
+
+        .nav-principal {
+            padding: 12px 15px;
+
+            .logo {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .navbar-principal {
+                position: absolute;
+                top: 390%;
+                transform: translate(-50%);
+                left: 50%;
+                width: 70vw;
+                background-color: map-get($coloresIndex, fondoNavFoot);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                border-radius: 1rem;
+                gap: .5rem;
+                clip-path: polygon(1% 100%, 100% 100%, 100% 100%, 0% 100%);
+                transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                .navbar-enlace {
+                    display: block;
+                    margin: 1rem 0;
+                }
+            }
+
+            .open-menu {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+
+            .nav-icons {
+                .bx {
+                    display: none;
+                }
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+        }
+    }
+
+    .main-index .article-index {
+        .servicios .service-content .ser-box {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .banner-principal {
+            grid-template-columns: 1fr;
+            height: 600px;
+            margin-top: 4.5rem !important;
+
+            .banner-img {
+                max-width: 400px;
+                right: 0;
+            }
+
+            .content-banner {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .products .products-content {
+            row-gap: 3.5rem;
+            column-gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 40px;
+
+            .product-card img {
+                width: 110px;
+                height: 110px;
+            }
+        }
+
+        .review .review-box {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+
+        .heading h2 {
+            font-size: 1.6rem;
+        }
+
+        .team .team-content {
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            gap: 1rem;
+
+            .team-box {
+                h2 {
+                    font-size: 1rem;
+                }
+
+                span {
+                    font-size: .88rem;
+                }
+            }
+        }
+
+        .info-adicional .img-coffee {
+            top: 330px;
+        }
+
+        .info-adicional .box-container {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 2rem;
+            column-gap: 1.5rem;
+        }
+
+        .banner-secundario-coffee .banner-secundario-content {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: .88rem;
+            }
+        }
+    }
+
+    .footer-bg .footer {
+        grid-template-columns: repeat(3, auto);
+    }
+}

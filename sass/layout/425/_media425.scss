@@ -1,0 +1,182 @@
+@media (max-width:425px) {
+    .header-principal .nav-principal {
+        padding: 5px 10px;
+
+        .logo {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        .navbar-principal {
+            top: 270%;
+            width: 60vw;
+        }
+    }
+
+    .main-index .article-index {
+        .heading {
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .banner-principal {
+            height: 400px;
+
+            .banner-img {
+                max-width: 270px;
+                right: 0;
+                bottom: 200px;
+            }
+
+            .content-banner {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    max-width: 238px;
+                    font-size: .9rem;
+                }
+
+                .boton-ir {
+                    padding: 3px;
+                    max-width: 120px;
+
+                    span {
+                        font-size: 12px;
+                    }
+
+                    i {
+                        font-size: 15px;
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+
+        .servicios .service-content {
+            margin-block: 3rem 0;
+            grid-template-columns: repeat(2, 160px);
+            row-gap: 1.5rem;
+
+            .ser-box {
+                padding: 15px;
+                row-gap: .5rem;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .products .products-content {
+            grid-template-columns: repeat(2, 160px);
+            row-gap: 1.5rem;
+            column-gap: 2rem;
+            padding: 35px;
+
+            .product-card {
+                padding: 5px;
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
+
+                h2 {
+                    font-size: .88rem;
+                }
+            }
+        }
+
+        .products p {
+            font-size: .88rem;
+            margin-block: 1rem;
+        }
+
+        .team .team-content {
+            grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+        }
+
+        .review .review-box {
+            h2 {
+                font-size: .88rem;
+            }
+
+            img {
+                width: 65px;
+                height: 65px;
+                border: 3px solid #fff8f7;
+            }
+
+            p {
+                font-size: .85rem;
+            }
+        }
+
+        .info-adicional .box-container {
+            grid-template-columns: 200px;
+            justify-content: center;
+
+            .info-ad {
+
+                h3 {
+                    font-size: .95rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1.7;
+                }
+
+                ion-icon {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .info-adicional .img-coffee {
+            top: -90px;
+            max-width: 260px;
+        }
+
+        .banner-secundario-coffee .banner-secundario-content {
+            margin: 1.5rem;
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: .82rem;
+                margin-block: 1.5rem;
+            }
+        }
+
+        .btn-1 .btn {
+            font-size: 11.5px;
+            font-weight: 400;
+            padding: 0.4em 0.8em;
+        }
+    }
+
+    .footer-bg .footer {
+        grid-template-columns: repeat(1, auto);
+
+        .footer-col .foot-social {
+            display: block;
+
+            a {
+                margin: 0 .3rem;
+            }
+        }
+    }
+}

@@ -1,51 +1,33 @@
-/** Utilities **/
 @import "./utilities/variables";
 @import "./utilities/maps";
 @import "./utilities/mixins";
 
-/** Base **/
 @import "./base/reset";
 @import "./base/tipografias";
 
-/** Components **/
 @import "./components/bootstrap";
 @import "./components/animaciones";
 
-
-/** Desktop **/
 @import "./layout/desktop/index";
 @import "./layout/desktop/contacto";
 @import "./layout/desktop/eventos";
 @import "./layout/desktop/trabajo";
 @import "./layout/desktop/nosotros";
 
-/* Falta Mediaqueries, las voy a añadir para la devolución :( */
-@media (max-width:1080px) {
-    @import "./layout/1080/media1080";
-}
-
-@media (max-width:875px) {
-    @import "./layout/875/media875";
-}
-
-@media (max-width:770px) {
-    @import "./layout/770/media770";
+@media (max-width:1024px) {
+    @import "./layout/1024/media1024";
 }
 
 @media (max-width:768px) {
     @import "./layout/768/media768";
 }
 
-@media (max-width:700px) {
-    @import "./layout/700/media700";
+@media (max-width:425px) {
+    @import "./layout/425/media425";
 }
 
-@media (max-width:500px) {
-    @import "./layout/500/media500";
-}
-
-@media (max-width:420px) {
-    @import "./layout/420/media420";
+@media (max-width:375px) {
+    @import "./layout/375/media375";
 }
 
 @media (max-width:320px) {

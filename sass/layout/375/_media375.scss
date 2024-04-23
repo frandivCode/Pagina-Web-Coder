@@ -1,0 +1,131 @@
+@media (max-width:375px) {
+    .header-principal .nav-principal {
+        padding: 0 7px;
+
+        .logo {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .navbar-principal {
+            top: 220%;
+
+            .navbar-enlace {
+                font-size: .8rem;
+                margin: .7rem 0;
+            }
+        }
+    }
+
+    .main-index .article-index {
+        .heading {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+
+        .banner-principal {
+            height: 260px;
+
+            .banner-img {
+                max-width: 170px;
+                right: 0;
+                top: 250px;
+            }
+
+            .content-banner {
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    max-width: 200px;
+                    font-size: .75rem;
+                }
+
+                .boton-ir {
+                    padding: 3px;
+                    max-width: 110px;
+
+                    span {
+                        font-size: 11px;
+                    }
+
+                    i {
+                        font-size: 13px;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+
+        .servicios .service-content {
+            grid-template-columns: 140px;
+
+            .ser-box {
+                border-radius: 1rem;
+                padding: 10px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .products p {
+            font-size: .75rem;
+            max-width: 190px;
+        }
+
+        .products .products-content {
+            grid-template-columns: 1fr;
+            padding: 20px;
+
+            .product-card {
+                img {
+                    width: 55px;
+                    height: 55px;
+                    margin: 1rem 0;
+                }
+
+                h2 {
+                    font-size: .75rem;
+                }
+
+                .button-group {
+                    span {
+                        padding: .2rem;
+
+                        i {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .team .team-content {
+            grid-template-columns: 180px;
+            justify-content: center;
+
+            .team-box {
+                h2 {
+                    font-size: .85rem;
+                }
+                span{
+                    font-size: .7rem;
+                }
+                img {
+                    height: 180px;
+                }
+            }
+        }
+    }
+}

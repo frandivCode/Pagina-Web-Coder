@@ -12,15 +12,15 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //Menu
-let menu = document.querySelector('.menu-icon');
-let navbar = document.querySelector('.navbar-principal');
+let menu = document.querySelector(".menu-icon");
+let navbar = document.querySelector(".navbar-principal");
 
 menu.onclick = () => {
-    menu.classList.toggle('move')
-    navbar.classList.toggle('open-menu')
+    menu.classList.toggle("move")
+    navbar.classList.toggle("open-menu")
 }
 /* Menu se cierra y scrollea al enlace */
 window.onscroll = () => {
-    menu.classList.remove('move')
-    navbar.classList.remove('open-menu')
+    menu.classList.remove("move");
+    navbar.classList.remove("open-menu");
 }

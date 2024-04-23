@@ -20,11 +20,6 @@
     row-gap: $espacio3;
 }
 
-@mixin BasicGrid ($columns) {
-    display: grid;
-    grid-template-columns: repeat($columns);
-}
-
 @mixin heading ($dis, $direction1, $alinear, $justi, $mblock, $aligntxt) {
     display: $dis;
     flex-direction: $direction1;
@@ -48,7 +43,7 @@
     text-align: $text;
 }
 
-@mixin parrafos ($colorP, $fwP, $lineH,$fsP) {
+@mixin parrafos ($colorP, $fwP, $lineH, $fsP) {
     color: $colorP;
     font-weight: $fwP;
     line-height: $lineH;
