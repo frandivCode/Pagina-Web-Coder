@@ -1663,7 +1663,7 @@ h2 {
     .main-index .article-index .banner-principal .banner-img {
       max-width: 270px;
       right: 0;
-      bottom: 180px; }
+      top: 0; }
     .main-index .article-index .banner-principal .content-banner h1 {
       font-size: 2rem; }
     .main-index .article-index .banner-principal .content-banner p {
