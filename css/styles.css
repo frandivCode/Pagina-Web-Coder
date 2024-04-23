@@ -1658,11 +1658,11 @@ h2 {
   .main-index .article-index .heading h2, .main-index .article-index .products h2 {
     font-size: 1.3rem; }
   .main-index .article-index .banner-principal {
-    height: 400px; }
+    min-height: 400px; }
     .main-index .article-index .banner-principal .banner-img {
       max-width: 270px;
       right: 0;
-      bottom: 200px; }
+      bottom: 50px; }
     .main-index .article-index .banner-principal .content-banner h1 {
       font-size: 2rem; }
     .main-index .article-index .banner-principal .content-banner p {
@@ -1679,15 +1679,16 @@ h2 {
   .main-index .article-index .servicios .service-content {
     margin-block: 3rem 0;
     grid-template-columns: repeat(2, 160px);
-    row-gap: 1.5rem; }
+    row-gap: 1rem; }
     .main-index .article-index .servicios .service-content .ser-box {
-      padding: 15px;
-      row-gap: .5rem; }
+      padding: 10px;
+      row-gap: .5rem;
+      border-radius: 1rem; }
       .main-index .article-index .servicios .service-content .ser-box img {
-        width: 60px;
-        height: 60px; }
+        width: 45px;
+        height: 45px; }
       .main-index .article-index .servicios .service-content .ser-box p {
-        font-size: 14px; }
+        font-size: 12px; }
   .main-index .article-index .products .products-content {
     grid-template-columns: repeat(2, 160px);
     row-gap: 1.5rem;
@@ -1704,7 +1705,10 @@ h2 {
     font-size: .88rem;
     margin-block: 1rem; }
   .main-index .article-index .team .team-content {
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto)); }
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: .5rem; }
+    .main-index .article-index .team .team-content .team-box img {
+      border-radius: 10px; }
   .main-index .article-index .review .review-box h2 {
     font-size: .88rem; }
   .main-index .article-index .review .review-box img {
