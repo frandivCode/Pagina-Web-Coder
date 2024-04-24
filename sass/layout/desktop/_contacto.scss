@@ -2,36 +2,73 @@
 .bg-body-contact {
     background-color: #322C2B;
     font-family: "Poppins", sans-serif;
+    height: 100vh;
 
     .container-header-contact {
-        background-color: map-get($coloresContact, background );
-        padding: 10px 5px;
+        background-color: map-get($coloresContact, background);
 
-        .nav-header-contact {
-            margin: 10px 40px;
+        .nav-contact {
 
-            .logo-contact {
-                @include flexible (flex, center, center);
+            .sidebar {
+                @include flexible1(none, column, flex-start, flex-start, nowrap);
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 250px;
+                z-index: 999;
+                background-color: rgba(255, 255, 255, 0.2);
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.425);
+                backdrop-filter: blur(10px);
 
-                img {
-                    width: 80px;
-                    height: 80px;
+                li {
+                    width: 100%;
+                    height: 50px;
+                }
+
+                a {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0 30px;
+                    font-size: 1.05rem;
+                    color: map-get($coloresIndex, colorcito);
+                    transition: all .5s ease;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: map-get($coloresContact, colorText);
+                    }
                 }
             }
 
             .nav-contact-elements {
-                @include flexible1 (flex, row, center, center, wrap);
-                gap: 5rem;
-                padding-top: 1.2rem;
+                width: 100%;
+                @include flexible(flex, flex-end, center);
+
+                li {
+                    height: 50px;
+                }
+
+                li:first-child {
+                    margin-right: auto;
+                }
 
                 a {
-                    font-size: 1.1rem;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0 30px;
+                    font-size: 1.05rem;
                     color: map-get($coloresIndex, colorcito);
-                    transition: all .3s ease;
+                    transition: all .5s ease;
                     font-weight: 500;
 
                     &:hover {
-                        color: map-get($coloresContact, colorText);
+                        color: #fff;
+                        background-color: map-get($coloresContact, colorText);
                     }
                 }
             }
@@ -148,7 +185,7 @@
 
                 button {
                     &:hover {
-                        background-color: map-get($coloresContact, background );
+                        background-color: map-get($coloresContact, background);
                     }
                 }
             }
@@ -160,7 +197,7 @@
     @include flexible1(flex, column, center, center, nowrap);
     width: 100%;
     padding: 40px 20px 5px 20px;
-    background-color: map-get($coloresContact, background );
+    background-color: map-get($coloresContact, background);
 
     .menu-footer-contact {
         @include flexible1(flex, row, center, center, wrap);

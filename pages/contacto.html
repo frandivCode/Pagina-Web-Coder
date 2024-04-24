@@ -21,30 +21,37 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contacto | Reserva</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="bg-body-contact">
     <header class="container-header-contact">
-        <div class="nav-header-contact">
-            <div class="logo-contact">
-                <img src="../assets/logo-de-la-page/logo-girasol.png" alt="logo de la pagina">
-            </div>
-            <nav>
-                <ul class="nav-contact-elements">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nuestro-trabajo.html">Nuestro trabajo</a></li>
-                    <li><a href="./eventos.html">Eventos</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
+        <nav class="nav-contact">
+            <ul class="sidebar">
+                <li onclick=esconderSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./nuestro-trabajo.html">Nuestro trabajo</a></li>
+            </ul>
+            <ul class="nav-contact-elements">
+                <li><a href="#">El Girasol</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./nuestro-trabajo.html">Nuestro trabajo</a></li>
+                <li onclick=mostrarSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
 
-                </ul>
-            </nav>
-            <div class="menu-icon">
-                <div class="line-one"></div>
-                <div class="line-two"></div>
-                <div class="line-three"></div>
-            </div>
-        </div>
     </header>
     <!-- Nuestro contacto -->
     <main class="nuestro-contact">
@@ -100,6 +107,17 @@
         </ul>
         <p class="copy">Desarrollado por Francisco Zapata &copy; El Girasol 2024. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function mostrarSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function esconderSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
