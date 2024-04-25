@@ -2,7 +2,6 @@
 .bg-body-contact {
     background-color: #322C2B;
     font-family: "Poppins", sans-serif;
-    height: 100vh;
 
     .container-header-contact {
         background-color: map-get($coloresContact, background);
@@ -87,8 +86,10 @@
     }
 
     .nuestro-contact {
+        height: 100vh;
         @include flexible1 (flex, column, center, center, wrap);
-        padding: 30px 10px;
+        margin: 50px 10px;
+        padding: 0 15px;
 
         .box-info-contact {
 

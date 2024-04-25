@@ -584,8 +584,7 @@ h2 {
 /* ---- INICIO PAGE CONTACT ---- */
 .bg-body-contact {
   background-color: #322C2B;
-  font-family: "Poppins", sans-serif;
-  height: 100vh; }
+  font-family: "Poppins", sans-serif; }
   .bg-body-contact .container-header-contact {
     background-color: #786556; }
     .bg-body-contact .container-header-contact .nav-contact .sidebar {
@@ -647,12 +646,14 @@ h2 {
       .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements .menu-boton {
         display: none; }
   .bg-body-contact .nuestro-contact {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px 10px; }
+    margin: 50px 10px;
+    padding: 0 15px; }
     .bg-body-contact .nuestro-contact .box-info-contact h1 {
       color: #B19470;
       text-align: center;
@@ -1688,14 +1689,14 @@ h2 {
   .bg-body-contact .nuestro-contact .box-info-contact h1 {
     font-size: 1.6rem; }
   .bg-body-contact .nuestro-contact .box-info-contact .data p {
-    font-size: .9rem; }
+    font-size: .95rem; }
   .bg-body-contact .nuestro-contact .box-info-contact .data i {
     margin-right: 7px;
     font-size: 13px; }
   .bg-body-contact .nuestro-contact .container-reserva {
     padding: 20px 0; }
     .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
-      font-size: 1.2rem; }
+      font-size: 1.3rem; }
     .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
       height: 40px; }
       .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
@@ -1822,8 +1823,7 @@ h2 {
     .bg-body-contact .container-header-contact .nav-contact .sidebar a {
       font-size: .9rem; }
   .bg-body-contact .nuestro-contact {
-    height: 100vh;
-    padding: 50px 0; }
+    margin: 20px auto; }
     .bg-body-contact .nuestro-contact .box-info-contact h1 {
       font-size: 1.4rem;
       padding-block: 20px; }
@@ -1832,7 +1832,7 @@ h2 {
       .bg-body-contact .nuestro-contact .box-info-contact .data p {
         font-size: .85rem; }
     .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
-      font-size: 1.2rem; }
+      font-size: 1.1rem; }
   .bg-body-contact .footer-contact {
     padding: 15px; }
     .bg-body-contact .footer-contact .copy {
@@ -1946,63 +1946,30 @@ h2 {
       margin-block: 1.3rem; }
   .main-index .article-index .footer .footer-bg .copyright {
     font-size: 12px; }
-  /*  //Contacto
-    .bg-body-contact {
-        .nuestro-contact {
-            .box-info-contact {
-                h1 {
-                    font-size: 1rem;
-                }
-
-                .data {
-                    gap: 10px;
-
-                    p {
-                        font-size: .7rem;
-                    }
-
-                    i {
-                        font-size: 10px;
-                    }
-                }
-            }
-
-            .container-reserva {
-                .elemento-reserva {
-                    h2 {
-                        font-size: .75rem;
-                    }
-                }
-
-                .formulario-de-reserva {
-                    gap: 7px;
-
-                    .input-box>input {
-                        height: 30px;
-
-                        &::placeholder {
-                            font-size: 9px;
-                            letter-spacing: 0.2px;
-                        }
-                    }
-
-                    i {
-                        font-size: 9px;
-                        top: 45%;
-                    }
-
-                    button {
-                        padding: 4px;
-                        font-size: .6rem;
-                    }
-                }
-            }
-        }
-
-        .footer-contact {
-
-            .copy {
-                font-size: .6rem;
-            }
-        }
-    } */ }
+  .bg-body-contact .nuestro-contact {
+    height: 80vh; }
+    .bg-body-contact .nuestro-contact .box-info-contact h1 {
+      font-size: 1.2rem; }
+    .bg-body-contact .nuestro-contact .box-info-contact .data {
+      gap: 13px; }
+      .bg-body-contact .nuestro-contact .box-info-contact .data p {
+        font-size: .78rem; }
+      .bg-body-contact .nuestro-contact .box-info-contact .data i {
+        font-size: 12px; }
+    .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
+      font-size: 1rem; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva {
+      gap: 7px; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
+        height: 30px; }
+        .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
+          font-size: 9.5px;
+          letter-spacing: 0.2px; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i {
+        font-size: 9px;
+        top: 45%; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button {
+        padding: 4px;
+        font-size: .7rem; }
+  .bg-body-contact .footer-contact .copy {
+    font-size: .6rem; } }
