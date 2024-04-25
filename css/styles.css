@@ -1818,25 +1818,55 @@ h2 {
       display: block; }
       .footer-bg .footer .footer-col .foot-social a {
         margin: 0 .3rem; }
-  .bg-body-contact .container-header-contact .nav-contact .sidebar {
-    width: 50%; }
-    .bg-body-contact .container-header-contact .nav-contact .sidebar a {
-      font-size: .9rem; }
-  .bg-body-contact .nuestro-contact {
-    margin: 20px auto; }
-    .bg-body-contact .nuestro-contact .box-info-contact h1 {
-      font-size: 1.4rem;
-      padding-block: 20px; }
-    .bg-body-contact .nuestro-contact .box-info-contact .data {
-      gap: 10px; }
-      .bg-body-contact .nuestro-contact .box-info-contact .data p {
-        font-size: .85rem; }
-    .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
-      font-size: 1.1rem; }
-  .bg-body-contact .footer-contact {
-    padding: 15px; }
-    .bg-body-contact .footer-contact .copy {
-      font-size: .7rem; } }
+  /*  .bg-body-contact {
+        .container-header-contact {
+            .nav-contact {
+                .sidebar {
+                    width: 50%;
+
+                    a {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+        .nuestro-contact {
+            margin: 20px auto;
+            .box-info-contact {
+                h1 {
+                    font-size: 1.4rem;
+                    padding-block: 20px;
+                }
+
+                .data {
+                    gap: 10px;
+
+                    p {
+                        font-size: .85rem;
+                    }
+                }
+            }
+
+            .container-reserva {
+
+                .elemento-reserva {
+
+                    h2 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        .footer-contact {
+            padding: 15px;
+
+            .copy {
+                font-size: .7rem;
+            }
+        }
+    } */ }
 
 @media (max-width: 375px) and (max-width: 375px) {
   .header-principal .nav-principal {
