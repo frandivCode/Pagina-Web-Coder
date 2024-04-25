@@ -9,7 +9,7 @@
 
         .nav-contact {
             .sidebar {
-                @include flexible1(flex, column, flex-start, flex-start, nowrap);
+                @include flexible1(none, column, flex-start, flex-start, nowrap);
                 position: fixed;
                 top: 0;
                 right: 0;

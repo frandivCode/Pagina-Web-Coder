@@ -220,10 +220,11 @@
         }
 
         .nuestro-contact {
-            padding: 50px 10px;
+            height: 100vh;
+            padding: 50px 0;
             .box-info-contact {
                 h1 {
-                    font-size: 1.3rem;
+                    font-size: 1.4rem;
                     padding-block: 20px;
                 }
 
@@ -231,7 +232,7 @@
                     gap: 10px;
 
                     p {
-                        font-size: .75rem;
+                        font-size: .85rem;
                     }
                 }
             }
@@ -241,30 +242,7 @@
                 .elemento-reserva {
 
                     h2 {
-                        font-size: 1.1rem;
-                    }
-                }
-
-                .formulario-de-reserva {
-                    gap: 10px;
-
-                    .input-box>input {
-                        height: 30px;
-
-                        &::placeholder {
-                            font-size: 9.5px;
-                            letter-spacing: 0.5px;
-                        }
-                    }
-
-                    i {
-                        font-size: 10px;
-                        top: 45%;
-                    }
-
-                    button {
-                        padding: 4px;
-                        font-size: .7rem;
+                        font-size: 1.2rem;
                     }
                 }
             }

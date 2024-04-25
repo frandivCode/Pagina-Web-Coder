@@ -589,7 +589,7 @@ h2 {
   .bg-body-contact .container-header-contact {
     background-color: #786556; }
     .bg-body-contact .container-header-contact .nav-contact .sidebar {
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -1822,29 +1822,17 @@ h2 {
     .bg-body-contact .container-header-contact .nav-contact .sidebar a {
       font-size: .9rem; }
   .bg-body-contact .nuestro-contact {
-    padding: 50px 10px; }
+    height: 100vh;
+    padding: 50px 0; }
     .bg-body-contact .nuestro-contact .box-info-contact h1 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       padding-block: 20px; }
     .bg-body-contact .nuestro-contact .box-info-contact .data {
       gap: 10px; }
       .bg-body-contact .nuestro-contact .box-info-contact .data p {
-        font-size: .75rem; }
+        font-size: .85rem; }
     .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
-      font-size: 1.1rem; }
-    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva {
-      gap: 10px; }
-      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
-        height: 30px; }
-        .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
-          font-size: 9.5px;
-          letter-spacing: 0.5px; }
-      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i {
-        font-size: 10px;
-        top: 45%; }
-      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button {
-        padding: 4px;
-        font-size: .7rem; }
+      font-size: 1.2rem; }
   .bg-body-contact .footer-contact {
     padding: 15px; }
     .bg-body-contact .footer-contact .copy {
