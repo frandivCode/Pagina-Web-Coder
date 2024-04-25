@@ -589,7 +589,7 @@ h2 {
   .bg-body-contact .container-header-contact {
     background-color: #786556; }
     .bg-body-contact .container-header-contact .nav-contact .sidebar {
-      display: none;
+      display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -598,11 +598,11 @@ h2 {
       top: 0;
       right: 0;
       height: 100vh;
-      width: 250px;
+      width: 300px;
       z-index: 999;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.322);
       box-shadow: -10px 0 10px rgba(0, 0, 0, 0.425);
-      backdrop-filter: blur(10px); }
+      backdrop-filter: blur(15px); }
       .bg-body-contact .container-header-contact .nav-contact .sidebar li {
         width: 100%;
         height: 50px; }
@@ -611,14 +611,16 @@ h2 {
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 0 30px;
-        font-size: 1.05rem;
+        padding: 0 25px;
+        font-size: 1rem;
         color: #E8D8C4;
         transition: all .5s ease;
         font-weight: 500; }
         .bg-body-contact .container-header-contact .nav-contact .sidebar a:hover {
           color: #fff;
           background-color: #B19470; }
+        .bg-body-contact .container-header-contact .nav-contact .sidebar a i {
+          font-size: 20px; }
     .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements {
       width: 100%;
       display: flex;
@@ -632,14 +634,18 @@ h2 {
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 0 30px;
-        font-size: 1.05rem;
+        padding: 0 25px;
+        font-size: 1rem;
         color: #E8D8C4;
         transition: all .5s ease;
         font-weight: 500; }
         .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements a:hover {
           color: #fff;
           background-color: #B19470; }
+        .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements a i {
+          font-size: 25px; }
+      .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements .menu-boton {
+        display: none; }
   .bg-body-contact .nuestro-contact {
     display: flex;
     flex-direction: column;
@@ -647,23 +653,21 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     padding: 30px 10px; }
-    .bg-body-contact .nuestro-contact .box-info-contact {
-      gap: 40px; }
-      .bg-body-contact .nuestro-contact .box-info-contact h1 {
-        color: #B19470;
-        text-align: center;
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        padding-block: 20px; }
-      .bg-body-contact .nuestro-contact .box-info-contact .data {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; }
-        .bg-body-contact .nuestro-contact .box-info-contact .data p {
-          color: #AF8260;
-          font-size: 18px; }
-        .bg-body-contact .nuestro-contact .box-info-contact .data i {
-          margin-right: 10px; }
+    .bg-body-contact .nuestro-contact .box-info-contact h1 {
+      color: #B19470;
+      text-align: center;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      padding-block: 40px; }
+    .bg-body-contact .nuestro-contact .box-info-contact .data {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; }
+      .bg-body-contact .nuestro-contact .box-info-contact .data p {
+        color: #AF8260;
+        font-size: 18px; }
+      .bg-body-contact .nuestro-contact .box-info-contact .data i {
+        margin-right: 10px; }
     .bg-body-contact .nuestro-contact .container-reserva {
       padding: 40px 0; }
       .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva {
@@ -715,37 +719,38 @@ h2 {
           border: none;
           cursor: pointer;
           font-size: 1rem;
+          font-weight: 600;
           transition: all .5s ease; }
         .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button:hover {
           background-color: #786556; }
 
 .footer-contact {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-direction: column;
   width: 100%;
-  padding: 40px 20px 5px 20px;
+  padding: 20px;
   background-color: #786556; }
-  .footer-contact .menu-footer-contact {
+  .footer-contact .menu-footer-uno {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px 0;
-    gap: 5rem; }
-    .footer-contact .menu-footer-contact a {
-      font-size: 1.1rem;
+    gap: 2rem; }
+    .footer-contact .menu-footer-uno a {
+      font-size: 1.05rem;
       color: #E8D8C4;
       transition: all .3s ease;
       font-weight: 500; }
-      .footer-contact .menu-footer-contact a:hover {
+      .footer-contact .menu-footer-uno a:hover {
         color: #B19470; }
   .footer-contact .copy {
-    margin-top: 20px;
-    color: #E8D8C4; }
+    color: #E8D8C4;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 30px; }
 
 .body-event {
   background-color: #161718;
@@ -1675,7 +1680,36 @@ h2 {
   .footer-bg .footer {
     grid-template-columns: repeat(3, auto); }
   /* End Index */
-  /* Contacto */ }
+  /* Contacto */
+  .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements .hideOnMobile {
+    display: none; }
+  .bg-body-contact .container-header-contact .nav-contact .nav-contact-elements .menu-boton {
+    display: block; }
+  .bg-body-contact .nuestro-contact .box-info-contact h1 {
+    font-size: 1.6rem; }
+  .bg-body-contact .nuestro-contact .box-info-contact .data p {
+    font-size: .9rem; }
+  .bg-body-contact .nuestro-contact .box-info-contact .data i {
+    margin-right: 7px;
+    font-size: 13px; }
+  .bg-body-contact .nuestro-contact .container-reserva {
+    padding: 20px 0; }
+    .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
+      font-size: 1.2rem; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
+      height: 40px; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
+        font-size: 11px; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i {
+      font-size: 13px;
+      top: 45%; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button {
+      padding: 7px;
+      font-size: .85rem; }
+  .bg-body-contact .footer-contact .menu-footer-uno {
+    display: none; }
+  .bg-body-contact .footer-contact .copy {
+    margin: 0; } }
 
 @media (max-width: 425px) and (max-width: 425px) {
   .header-principal .nav-principal {
@@ -1782,7 +1816,39 @@ h2 {
     .footer-bg .footer .footer-col .foot-social {
       display: block; }
       .footer-bg .footer .footer-col .foot-social a {
-        margin: 0 .3rem; } }
+        margin: 0 .3rem; }
+  .bg-body-contact .container-header-contact .nav-contact .sidebar {
+    width: 100%; }
+    .bg-body-contact .container-header-contact .nav-contact .sidebar a {
+      font-size: .9rem; }
+  .bg-body-contact .nuestro-contact {
+    padding: 50px 10px; }
+    .bg-body-contact .nuestro-contact .box-info-contact h1 {
+      font-size: 1.3rem;
+      padding-block: 20px; }
+    .bg-body-contact .nuestro-contact .box-info-contact .data {
+      gap: 10px; }
+      .bg-body-contact .nuestro-contact .box-info-contact .data p {
+        font-size: .75rem; }
+    .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
+      font-size: 1.1rem; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva {
+      gap: 10px; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
+        height: 30px; }
+        .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
+          font-size: 9.5px;
+          letter-spacing: 0.5px; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i {
+        font-size: 10px;
+        top: 45%; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button {
+        padding: 4px;
+        font-size: .7rem; }
+  .bg-body-contact .footer-contact {
+    padding: 15px; }
+    .bg-body-contact .footer-contact .copy {
+      font-size: .7rem; } }
 
 @media (max-width: 375px) and (max-width: 375px) {
   .header-principal .nav-principal {
@@ -1891,4 +1957,29 @@ h2 {
       font-size: .78rem;
       margin-block: 1.3rem; }
   .main-index .article-index .footer .footer-bg .copyright {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .bg-body-contact .nuestro-contact .box-info-contact h1 {
+    font-size: 1rem; }
+  .bg-body-contact .nuestro-contact .box-info-contact .data {
+    gap: 10px; }
+    .bg-body-contact .nuestro-contact .box-info-contact .data p {
+      font-size: .7rem; }
+    .bg-body-contact .nuestro-contact .box-info-contact .data i {
+      font-size: 10px; }
+  .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
+    font-size: .75rem; }
+  .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva {
+    gap: 7px; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
+      height: 30px; }
+      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
+        font-size: 9px;
+        letter-spacing: 0.2px; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i {
+      font-size: 9px;
+      top: 45%; }
+    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button {
+      padding: 4px;
+      font-size: .6rem; }
+  .bg-body-contact .footer-contact .copy {
+    font-size: .6rem; } }

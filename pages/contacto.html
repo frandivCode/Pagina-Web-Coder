@@ -29,11 +29,7 @@
     <header class="container-header-contact">
         <nav class="nav-contact">
             <ul class="sidebar">
-                <li onclick=esconderSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
-                            viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg></a></li>
+                <li onclick=esconderSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./eventos.html">Eventos</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
@@ -41,14 +37,11 @@
             </ul>
             <ul class="nav-contact-elements">
                 <li><a href="#">El Girasol</a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./eventos.html">Eventos</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./nuestro-trabajo.html">Nuestro trabajo</a></li>
-                <li onclick=mostrarSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
-                            viewBox="0 -960 960 960" width="24">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg></a></li>
+                <li class="hideOnMobile"><a href="../index.html">Inicio</a></li>
+                <li class="hideOnMobile"><a href="./eventos.html">Eventos</a></li>
+                <li class="hideOnMobile"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="hideOnMobile"><a href="./nuestro-trabajo.html">Nuestro trabajo</a></li>
+                <li class="menu-boton" onclick=mostrarSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
             </ul>
         </nav>
 
@@ -83,11 +76,9 @@
                             <input type="email" name="email" placeholder="Introduce tu correo electrónico" required>
                             <i class="fa-solid fa-envelope"></i>
                         </div>
-                        <div class="datos-de-reserva content-reserva">
-                            <div class="input-box">
-                                <input type="text" name="personas" max="6" min="3" placeholder="Cantidad de personas"
-                                    required>
-                            </div>
+                        <div class="input-box">
+                            <input type="text" name="personas" max="6" min="3" placeholder="Cantidad de personas"
+                                required>
                         </div>
                         <div class="input-box">
                             <input type="date" required>
@@ -99,7 +90,7 @@
     </main>
     <!-- Footer Contact -->
     <footer class="footer-contact">
-        <ul class="menu-footer-contact">
+        <ul class="menu-footer-uno">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./eventos.html">Eventos</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>

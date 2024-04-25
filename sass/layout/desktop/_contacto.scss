@@ -8,18 +8,17 @@
         background-color: map-get($coloresContact, background);
 
         .nav-contact {
-
             .sidebar {
-                @include flexible1(none, column, flex-start, flex-start, nowrap);
+                @include flexible1(flex, column, flex-start, flex-start, nowrap);
                 position: fixed;
                 top: 0;
                 right: 0;
                 height: 100vh;
-                width: 250px;
+                width: 300px;
                 z-index: 999;
-                background-color: rgba(255, 255, 255, 0.2);
+                background-color: rgba(255, 255, 255, 0.322);
                 box-shadow: -10px 0 10px rgba(0, 0, 0, 0.425);
-                backdrop-filter: blur(10px);
+                backdrop-filter: blur(15px);
 
                 li {
                     width: 100%;
@@ -31,8 +30,8 @@
                     display: flex;
                     align-items: center;
                     height: 100%;
-                    padding: 0 30px;
-                    font-size: 1.05rem;
+                    padding: 0 25px;
+                    font-size: 1rem;
                     color: map-get($coloresIndex, colorcito);
                     transition: all .5s ease;
                     font-weight: 500;
@@ -40,6 +39,10 @@
                     &:hover {
                         color: #fff;
                         background-color: map-get($coloresContact, colorText);
+                    }
+
+                    i {
+                        font-size: 20px;
                     }
                 }
             }
@@ -60,8 +63,8 @@
                     display: flex;
                     align-items: center;
                     height: 100%;
-                    padding: 0 30px;
-                    font-size: 1.05rem;
+                    padding: 0 25px;
+                    font-size: 1rem;
                     color: map-get($coloresIndex, colorcito);
                     transition: all .5s ease;
                     font-weight: 500;
@@ -70,6 +73,14 @@
                         color: #fff;
                         background-color: map-get($coloresContact, colorText);
                     }
+
+                    i {
+                        font-size: 25px;
+                    }
+                }
+
+                .menu-boton {
+                    display: none;
                 }
             }
         }
@@ -80,14 +91,13 @@
         padding: 30px 10px;
 
         .box-info-contact {
-            gap: 40px;
 
             h1 {
                 color: map-get($coloresContact, colorText);
                 text-align: center;
                 font-size: 2.2rem;
                 text-transform: uppercase;
-                padding-block: 20px;
+                padding-block: 40px;
             }
 
             .data {
@@ -180,6 +190,7 @@
                     border: none;
                     cursor: pointer;
                     font-size: 1rem;
+                    font-weight: 600;
                     transition: all .5s ease;
                 }
 
@@ -194,18 +205,20 @@
 }
 
 .footer-contact {
-    @include flexible1(flex, column, center, center, nowrap);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    padding: 40px 20px 5px 20px;
+    padding: 20px;
     background-color: map-get($coloresContact, background);
 
-    .menu-footer-contact {
-        @include flexible1(flex, row, center, center, wrap);
-        margin: 10px 0;
-        gap: 5rem;
+    .menu-footer-uno {
+        @include flexible1(flex, row, start, center, wrap);
+        gap: 2rem;
 
         a {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: map-get($coloresIndex, 'colorcito');
             transition: all .3s ease;
             font-weight: 500;
@@ -217,7 +230,9 @@
     }
 
     .copy {
-        margin-top: 20px;
         color: map-get($coloresIndex, 'colorcito');
+        text-align: center;
+        font-size: .9rem;
+        margin-top: 30px;
     }
 }

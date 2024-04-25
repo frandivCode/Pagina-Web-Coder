@@ -73,4 +73,65 @@
             }
         }
     }
+
+    //Contacto
+    .bg-body-contact {
+        .nuestro-contact {
+            .box-info-contact {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                .data {
+                    gap: 10px;
+
+                    p {
+                        font-size: .7rem;
+                    }
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .container-reserva {
+                .elemento-reserva {
+                    h2 {
+                        font-size: .75rem;
+                    }
+                }
+
+                .formulario-de-reserva {
+                    gap: 7px;
+
+                    .input-box>input {
+                        height: 30px;
+
+                        &::placeholder {
+                            font-size: 9px;
+                            letter-spacing: 0.2px;
+                        }
+                    }
+
+                    i {
+                        font-size: 9px;
+                        top: 45%;
+                    }
+
+                    button {
+                        padding: 4px;
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+
+        .footer-contact {
+
+            .copy {
+                font-size: .6rem;
+            }
+        }
+    }
 }
