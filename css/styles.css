@@ -1818,7 +1818,7 @@ h2 {
       .footer-bg .footer .footer-col .foot-social a {
         margin: 0 .3rem; }
   .bg-body-contact .container-header-contact .nav-contact .sidebar {
-    width: 100%; }
+    width: 50%; }
     .bg-body-contact .container-header-contact .nav-contact .sidebar a {
       font-size: .9rem; }
   .bg-body-contact .nuestro-contact {
@@ -1958,28 +1958,63 @@ h2 {
       margin-block: 1.3rem; }
   .main-index .article-index .footer .footer-bg .copyright {
     font-size: 12px; }
-  .bg-body-contact .nuestro-contact .box-info-contact h1 {
-    font-size: 1rem; }
-  .bg-body-contact .nuestro-contact .box-info-contact .data {
-    gap: 10px; }
-    .bg-body-contact .nuestro-contact .box-info-contact .data p {
-      font-size: .7rem; }
-    .bg-body-contact .nuestro-contact .box-info-contact .data i {
-      font-size: 10px; }
-  .bg-body-contact .nuestro-contact .container-reserva .elemento-reserva h2 {
-    font-size: .75rem; }
-  .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva {
-    gap: 7px; }
-    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input {
-      height: 30px; }
-      .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva .input-box > input::placeholder, .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i > input::placeholder {
-        font-size: 9px;
-        letter-spacing: 0.2px; }
-    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva i {
-      font-size: 9px;
-      top: 45%; }
-    .bg-body-contact .nuestro-contact .container-reserva .formulario-de-reserva button {
-      padding: 4px;
-      font-size: .6rem; }
-  .bg-body-contact .footer-contact .copy {
-    font-size: .6rem; } }
+  /*  //Contacto
+    .bg-body-contact {
+        .nuestro-contact {
+            .box-info-contact {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                .data {
+                    gap: 10px;
+
+                    p {
+                        font-size: .7rem;
+                    }
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .container-reserva {
+                .elemento-reserva {
+                    h2 {
+                        font-size: .75rem;
+                    }
+                }
+
+                .formulario-de-reserva {
+                    gap: 7px;
+
+                    .input-box>input {
+                        height: 30px;
+
+                        &::placeholder {
+                            font-size: 9px;
+                            letter-spacing: 0.2px;
+                        }
+                    }
+
+                    i {
+                        font-size: 9px;
+                        top: 45%;
+                    }
+
+                    button {
+                        padding: 4px;
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+
+        .footer-contact {
+
+            .copy {
+                font-size: .6rem;
+            }
+        }
+    } */ }
