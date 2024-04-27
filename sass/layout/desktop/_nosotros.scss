@@ -1,7 +1,7 @@
 .order-elements-nosotros {
     width: 100%;
     padding: 15px;
-    background-color: #3A3845;
+    background-color: #3D3B40;
 
     .nav-nosotros {
         @include flexible (flex, space-between, center);
@@ -19,14 +19,14 @@
             li {
                 a {
                     text-decoration: none;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-family: "Poppins", sans-serif;
                     color: #fff;
                     font-size: 18px;
                     transition: all .5s ease;
 
                     &:hover {
-                        color: #4f8e92;
+                        color: #B4D4FF;
                     }
                 }
             }
@@ -34,86 +34,126 @@
     }
 }
 
+.color-bg-nosotros {
+    background-color: #607274;
+    height: 100vh;
+}
+
 .acerca-de-nosotros {
     width: 100%;
-    height: 950px;
-    background: linear-gradient(to top right, rgba(0, 3, 0, 0.556), rgba(0, 3, 0, 0.556)), url(../../../assets/img-disegn-nosotros/luces-ambiente-cafeteria.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    color: #ffffff;
     text-align: center;
 
     .presentacion-de-la-cafeteria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 5rem 0;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
         padding: 0 120px;
+        position: relative;
+
+        .cafe-dos {
+            position: absolute;
+            max-width: 250px;
+            bottom: 300px;
+            right: 220px;
+        }
+
+        .granos-de-cafe-dispersos {
+            position: absolute;
+            max-width: 300px;
+            bottom: -150px;
+            right: 200px;
+            z-index: -1;
+        }
 
         h1 {
-            font-size: 3.5rem;
+            grid-column: span 4;
+            font-size: 4rem;
             font-weight: 600;
-            text-align: center;
+            letter-spacing: 10px;
+            color: #FAEED1;
+            font-family: "Poppins", sans-serif;
+            @include flexible (flex, center, center);
         }
 
-        .order-paragraph-presentacion {
-            height: 400px;
-            @include flexible1(flex, column, center, center, nowrap);
-
-            p {
-                margin: 1rem 0;
-                font-size: 1.3rem;
-                font-family: "Poppins", sans-serif;
-                font-weight: 400;
-                line-height: 1.4;
-                text-align: left;
-
-                span {
-                    color: #CC9544;
-                }
-            }
+        .grid-p {
+            grid-column: 1 / 3;
+            @include flexible (flex, center, start);
         }
-    }
 
-    .img-abajo {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-width: 0 0 20vh 100vw;
-        border-style: solid;
-        border-color: transparent transparent #fff transparent;
+        .grid-p-dos {
+            grid-column: 2 / 4;
+            @include flexible (flex, center, start);
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            text-align: left;
+            color: #FAEED1;
+        }
     }
 }
 
 /* Nuestro amor hacia el café */
 .un-poco-mas {
     width: 100%;
-    margin: 40px auto;
-    overflow: hidden;
-    padding: 50px 120px;
     text-align: center;
 
-    h2 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        line-height: 1.8;
-        font-family: "Poppins", sans-serif;
+    .un-poco-mas-de-info {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 0 120px;
+        position: relative;
+        grid-gap: 2rem;
 
-        span {
-            color: #603601;
+        .corazon {
+            position: absolute;
+            max-width: 250px;
+            left: 120px;
+            top: 150px;
         }
-    }
 
-    p {
-        font-size: 20px;
-        color: #747373;
-        line-height: 35px;
-        margin-bottom: 1.5rem;
-        text-align: left;
-        font-weight: 500;
+        .p-info-uno {
+            grid-column: 2 / 5;
+        }
+
+        .p-info-dos {
+            display: flex;
+            align-items: center;
+            grid-row: 3 / 5;
+            grid-column: 3 / 5;
+        }
+
+        .p-info-tres {
+            display: flex;
+            align-items: start;
+            grid-row: 3 / 5;
+            grid-column: 1 / 3;
+        }
+
+        h2 {
+            letter-spacing: 2px;
+            color: #FAEED1;
+            grid-column: span 5;
+            font-size: 2.5rem;
+            @include flexible(flex, start, center);
+            font-family: "Poppins", sans-serif;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #FAEED1;
+            line-height: 1.8;
+            font-family: "Poppins", sans-serif;
+            text-align: left;
+            font-weight: 400;
+        }
     }
 }
 
@@ -123,13 +163,9 @@
     padding: 35px 0;
 
     h2 {
-        margin-right: 10px;
         font-size: 2.5rem;
+        color: #FAEED1;
         font-family: "Poppins", sans-serif;
-
-        span {
-            color: #603601;
-        }
     }
 }
 
@@ -138,7 +174,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 30rem);
     grid-gap: 1.1rem;
-    margin-bottom: 3rem;
 
     img {
         width: 100%;
@@ -154,7 +189,7 @@
 
 .info-cafeteria {
     @include flexible (flex, center, center);
-    background-color: #3a3845;
+    background-color: #3D3B40;
     width: 100%;
     min-height: 100vh;
     text-align: center;
@@ -223,20 +258,17 @@
 }
 
 .container-nosotros {
+    display: flex;
     width: 100%;
-    height: 40rem;
+    height: 100vh;
     background: linear-gradient(rgba(0, 3, 0, 0.80), rgba(53, 53, 52, 0.25)), url(../assets/img-disegn/echando-leche-al-cafe.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    @include bgenCss (center, no-repeat, cover);
     color: #ffffff;
     text-align: center;
 
     .content-despedida {
+        @include flexible (flex, center, center);
         width: 100%;
-        min-height: 400px;
-        padding: 25px 10px;
-        @include flexible (flex, end, center);
         flex-flow: column wrap;
         text-align: center;
         gap: 2.5rem;
@@ -254,42 +286,32 @@
 
 .footer-sobre-nosotros {
     width: 100%;
-    min-height: 100px;
+    min-height: 150px;
     padding: 20px 50px 10px;
-    @include flexible1(flex, column, center, center, nowrap);
-    background-color: #3a3845;
+    @include flexible1(flex, column, end, center, nowrap);
+    background-color: #3D3B40;
+    font-family: "DM Sans", sans-serif;
 
-    .social_icon {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    .menu-footer-nosotros {
+        @include flexible1 (flex, row, center, center, wrap);
         gap: 1.5rem;
 
         a {
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 18px;
+            transition: all .5s ease;
+
+            &:hover {
+                color: #B4D4FF;
+            }
         }
     }
 
-    .menu-footer-nosotros {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5rem;
-        gap: 1.5rem;
-
-        a{
-            color: #fff;
-            font-size: 1.2rem;
-            font-family: "DM Sans", sans-serif;
-        }
-    }
-    .copy-nos{
+    .copy-nos {
         margin-top: 1.5rem;
         color: #fff;
-        font-family: "DM Sans", sans-serif;
         font-size: 1rem;
     }
 }
