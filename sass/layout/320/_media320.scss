@@ -78,6 +78,7 @@
     .bg-body-contact {
         .nuestro-contact {
             height: 80vh;
+
             .box-info-contact {
                 h1 {
                     font-size: 1.2rem;
@@ -133,6 +134,108 @@
             .copy {
                 font-size: .6rem;
             }
+        }
+    }
+
+    //Nosotros
+    .acerca-de-nosotros {
+        .presentacion-de-la-cafeteria {
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: .77rem;
+            }
+
+            .granos-de-cafe-dispersos {
+                bottom: -40px;
+                max-width: 200px;
+            }
+        }
+    }
+
+    .un-poco-mas {
+        .un-poco-mas-de-info {
+
+            h2 {
+                font-size: 1.02rem;
+            }
+
+            p {
+                font-size: .77rem;
+            }
+        }
+    }
+
+    .container-gallery {
+        margin-block-start: 1.5rem;
+        padding: 10px 0;
+
+        h2 {
+            font-size: 1.02rem;
+        }
+    }
+
+    /*     .gallery {
+        grid-template-rows: repeat(1, 5rem);
+
+        .galeria-img-3 {
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+    } */
+    .info-cafeteria {
+        h2 {
+            font-size: 1.02rem;
+            margin-block: 1rem;
+        }
+
+        .container-cards {
+            .card-content {
+                height: 170px;
+                width: 200px;
+                margin: 10px;
+
+                h4 {
+                    font-size: .75rem;
+                    padding: 5px;
+                }
+
+                p {
+                    font-size: 0.65rem;
+                }
+            }
+        }
+    }
+
+    .container-nosotros {
+        .content-despedida {
+            justify-content: center;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .footer-sobre-nosotros {
+        padding: 10px;
+
+        .menu-footer-nosotros {
+            a {
+                font-size: .8rem;
+            }
+        }
+
+        .copy-nos {
+            font-size: .75rem;
+            text-align: center;
         }
     }
 }

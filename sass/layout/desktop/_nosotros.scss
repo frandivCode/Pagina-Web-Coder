@@ -1,32 +1,61 @@
 .order-elements-nosotros {
-    width: 100%;
-    padding: 15px;
     background-color: #3D3B40;
 
     .nav-nosotros {
-        @include flexible (flex, space-between, center);
+        height: 80px;
+        width: 100%;
 
         .logo-cafeteria {
             width: 60px;
             height: 60px;
         }
 
-        .pages-list {
-            @extend .nav-nosotros;
-            @include flexible (flex, center, center);
-            gap: 3rem;
+        .nav__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
 
-            li {
+            .nav__label,
+            .nav__input {
+                display: none;
+                font-size: 1.7rem;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .nav__menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2.5rem;
+
                 a {
                     text-decoration: none;
-                    font-weight: 500;
+                    color: #ffffff;
+                    font-size: 17px;
+                    position: relative;
                     font-family: "Poppins", sans-serif;
-                    color: #fff;
-                    font-size: 18px;
-                    transition: all .5s ease;
 
-                    &:hover {
-                        color: #B4D4FF;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 100%;
+                        background: #B4D4FF;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover:after {
+                        transform-origin: left;
+                        transform: scaleX(1);
                     }
                 }
             }
@@ -48,14 +77,13 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 2rem;
         padding: 0 120px;
         position: relative;
 
         .cafe-dos {
             position: absolute;
             max-width: 250px;
-            bottom: 300px;
+            bottom: 270px;
             right: 220px;
         }
 
@@ -110,7 +138,6 @@
         grid-template-rows: repeat(4, 1fr);
         padding: 0 120px;
         position: relative;
-        grid-gap: 2rem;
 
         .corazon {
             position: absolute;
@@ -159,8 +186,8 @@
 
 .container-gallery {
     @include flexible(flex, center, center);
-    margin-bottom: 1rem;
     padding: 35px 0;
+    margin-block-start: 5rem;
 
     h2 {
         font-size: 2.5rem;
@@ -189,23 +216,21 @@
 
 .info-cafeteria {
     @include flexible (flex, center, center);
-    background-color: #3D3B40;
     width: 100%;
     min-height: 100vh;
     text-align: center;
-    flex-flow: column wrap;
+    flex-direction: column;
     font-family: "Poppins",
         sans-serif;
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-block: 2rem;
-        color: #F0ECE3;
+        color: #FAEED1;
     }
 
     .container-cards {
-        @include flexible (flex, center, center);
-        flex-flow: row wrap;
+        @include flexible1 (flex, row, center, center, wrap);
         text-align: center;
         gap: 2rem;
 
@@ -272,6 +297,7 @@
         flex-flow: column wrap;
         text-align: center;
         gap: 2.5rem;
+        padding: 0 50px;
         font-family: "DM Sans", sans-serif;
 
         h2 {
@@ -285,7 +311,6 @@
 }
 
 .footer-sobre-nosotros {
-    width: 100%;
     min-height: 150px;
     padding: 20px 50px 10px;
     @include flexible1(flex, column, end, center, nowrap);
@@ -293,6 +318,7 @@
     font-family: "DM Sans", sans-serif;
 
     .menu-footer-nosotros {
+        width: 100%;
         @include flexible1 (flex, row, center, center, wrap);
         gap: 1.5rem;
 
@@ -300,7 +326,7 @@
             font-weight: 500;
             font-family: "Poppins", sans-serif;
             color: #fff;
-            font-size: 18px;
+            font-size: 1.125rem;
             transition: all .5s ease;
 
             &:hover {
@@ -310,7 +336,7 @@
     }
 
     .copy-nos {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         color: #fff;
         font-size: 1rem;
     }

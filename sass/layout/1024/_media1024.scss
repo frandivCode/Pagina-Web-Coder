@@ -4,7 +4,7 @@
         width: 90%;
     }
 
-    .main-index .article-index .info-adicional .img-coffee{
+    .main-index .article-index .info-adicional .img-coffee {
         right: 0;
     }
 
@@ -12,4 +12,68 @@
         margin-block: 3rem;
     }
 
+
+    .acerca-de-nosotros {
+        .presentacion-de-la-cafeteria {
+            padding: 0 100px;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.15rem;
+                line-height: 1.6;
+            }
+
+            .cafe-dos {
+                max-width: 230px;
+                bottom: 250px;
+                right: 100px;
+            }
+
+            .granos-de-cafe-dispersos {
+                bottom: -180px;
+                right: 10px;
+            }
+        }
+    }
+
+    .un-poco-mas {
+        .un-poco-mas-de-info {
+            row-gap: 2rem;
+            padding: 0 100px;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.15rem;
+                line-height: 1.6;
+            }
+
+            .corazon {
+                left: 50px;
+                top: 240px;
+            }
+
+            .p-info-dos {
+                align-items: start;
+                grid-row: 3 / 4;
+                grid-column: 2 / 5;
+            }
+
+            .p-info-tres {
+                align-items: end;
+                grid-column: 1 / 4;
+            }
+        }
+    }
+
+    .container-gallery {
+        h2 {
+            font-size: 2rem;
+        }
+    }
 }
