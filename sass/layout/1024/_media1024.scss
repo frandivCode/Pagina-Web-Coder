@@ -1,4 +1,6 @@
 @media (max-width:1024px) {
+
+    //Index
     .contenedor-principal {
         margin: 0 auto;
         width: 90%;
@@ -12,7 +14,7 @@
         margin-block: 3rem;
     }
 
-
+    //Nosotros
     .acerca-de-nosotros {
         .presentacion-de-la-cafeteria {
             padding: 0 100px;
@@ -76,4 +78,18 @@
             font-size: 2rem;
         }
     }
+
+    //Nuestro Trabajo
+    .bg-color-work {
+        .margin-container {
+            margin: 0;
+        }
+
+        .container-blog .card__container {
+            gap: .5rem;
+        }
+    }
+
+
+
 }

@@ -226,7 +226,7 @@
 
             .box-info-contact {
                 h1 {
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     padding-block: 20px;
                 }
 
@@ -410,6 +410,260 @@
         .copy-nos {
             font-size: .85rem;
             text-align: center;
+        }
+    }
+
+    //Nuestro trabajo
+    .bg-color-work {
+        .content-body-work {
+            .header-container-work {
+                padding: 0;
+                background-color: #474443;
+
+                .nav-nosotros {
+                    .logo-cafeteria {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    .nav__container {
+                        .nav__menu {
+                            gap: 2.5rem;
+                            top: 80px;
+
+                            a {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hero-section {
+                height: 82vh;
+                align-items: end;
+
+                .hero-content {
+                    h1 {
+                        font-size: 2rem;
+                        max-width: 400px;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        max-width: 310px;
+                    }
+
+                    button {
+                        font-size: .8rem;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .margin-container {
+            padding: 0;
+
+            h2 {
+                font-size: 1.2rem;
+                margin: 1rem 0;
+            }
+
+            .content-introduccion {
+                padding: 0 20px;
+                margin-block-end: 2rem;
+
+                p {
+                    @include parrafos (#747373, 400, 24px, 13px);
+                }
+            }
+
+            .process-elements-cultivo {
+                padding: 0 20px;
+                margin-block-end: 2rem;
+
+                h2 {
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                }
+
+                p {
+                    @include parrafos (#747373, 400, 24px, 13px);
+                }
+
+                p:nth-child(3) {
+                    margin-top: 1rem;
+                }
+            }
+
+            .process-elements-recoleccion {
+                padding: 0 20px;
+                margin-block-end: 3rem;
+
+                .order-elements-dos {
+
+                    p {
+                        @include parrafos (#747373, 400, 24px, 13px);
+                    }
+
+                    h2 {
+                        font-size: 1.2rem;
+                        margin: 1rem 0;
+                    }
+
+                    h3 {
+                        font-size: 1.1rem;
+                        margin-block-start: 2.5rem;
+                    }
+
+                    .paragraphs-recoleccion-uno {
+                        margin-block: 1rem;
+                    }
+
+                    .order__recoleccion-img {
+                        img {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
+            .order-elements-tres {
+                padding: 0 20px;
+                margin-block-end: 3rem;
+
+                img {
+                    display: none
+                }
+
+                p {
+                    @include parrafos (#747373, 400, 24px, 12.5px);
+                }
+            }
+
+            .process-elements-postcosecha {
+                padding: 0 20px;
+                margin-block-end: 3rem;
+
+                p {
+                    @include parrafos (#747373, 400, 24px, 13px);
+
+                    span {
+                        font-weight: map-get($grosorfont, 600);
+                    }
+                }
+
+                .grid-process {
+                    @include flexible1(flex, column, center, center, nowrap);
+                    padding: 40px 0;
+
+                    img {
+                        width: 250px;
+                        height: auto;
+                    }
+
+                    /* Proceso uno */
+                    .p-process-uno {
+                        @include parrafos (#747373, 400, 25px, 13px);
+                    }
+
+                    /* Proceso dos */
+                    .p-process-dos {
+                        @include parrafos (#747373, 400, 25px, 13px);
+                    }
+                }
+            }
+
+            .process-elements-torrefaccion {
+                padding: 20px;
+
+                p {
+                    @include parrafos (#747373, 400, 24px, 13px);
+                    margin-block-end: 2rem;
+                }
+
+                .img-ultimo-process {
+
+                    img {
+                        width: 300px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .container-blog {
+            padding-block: 2rem;
+
+            .elements-blog {
+
+                h2 {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+            }
+
+            .card__container {
+                gap: 3rem;
+                padding-block: 2rem;
+            }
+
+            .card__article {
+                .card__img {
+                    width: 250px;
+                    border-radius: 1.5rem;
+                }
+
+                .card__data {
+                    width: 220px;
+                    height: 150px;
+                    padding: 0 1rem;
+
+                    span {
+                        font-size: .7rem;
+                        margin-bottom: 0.65rem;
+                    }
+
+                    h2 {
+                        font-size: .8rem;
+                        margin-bottom: 0.65rem;
+                    }
+
+                    a {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .footer-nuestro-trabajo {
+            padding: 15px;
+
+            .social-icon {
+                li {
+                    a {
+                        font-size: 1.2rem;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .list-links-trabajo {
+                gap: 1rem;
+
+                li {
+                    a {
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            .copy {
+                margin: 20px 5px 0 5px;
+                font-size: .77rem;
+            }
         }
     }
 }

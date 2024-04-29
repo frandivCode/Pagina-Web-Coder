@@ -16,30 +16,36 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/logo-de-la-page/girasol-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Nuestro Trabajo | Proceso de café</title>
+    <title>Nuestro Trabajo </title>
 </head>
 
 <body class="bg-color-work">
     <section class="content-body-work">
         <header class="header-container-work">
-            <nav class="navbar-container">
-                <a href="#" class="logo-work" id="regresar"><img src="../assets/logo-de-la-page/logo-girasol.png"
-                        alt="logo de la pagina"></a>
-                <ul class="menu-links-work">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="./eventos.html">Eventos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+
+            <nav class="nav-nosotros">
+                <div class="nav__container">
+    
+                    <label for="menu-burguer" class="nav__label">
+                        <ion-icon name="menu"></ion-icon>
+                    </label>
+                    <input type="checkbox" id="menu-burguer" class="nav__input">
+    
+                    <img class="logo-cafeteria" src="../assets/logo-de-la-page/logo-girasol.png" alt="logo de la pagina">
+                    <ul class="nav__menu">
+                        <a href="../index.html" class="nav__item">Inicio</a>
+                        <a href="#blogs">Blogs</a>
+                        <a href="./contacto.html" class="nav__item">Contacto</a>
+                        <a href="./eventos.html" class="nav__item">Eventos</a>
+                        <a href="./nuestro-trabajo.html" class="nav__item">Nuestro Trabajo</a>
+                    </ul>
+                </div>
             </nav>
+            
         </header>
         <section class="hero-section">
             <div class="hero-content">
@@ -116,7 +122,8 @@
                         y en terrenos planos.
                     </p>
                     <div class="order__recoleccion-img">
-                        <img src="../assets/img-disegn-work/recoleccion-en-maquina.jpg" alt="recoleccion del fruto en maquinaria">
+                        <img src="../assets/img-disegn-work/recoleccion-en-maquina.jpg"
+                            alt="recoleccion del fruto en maquinaria">
                     </div>
                 </div>
             </div>
@@ -131,7 +138,7 @@
                     <li>
                         <p> <img src="../assets/img-disegn/granos-de-cafe.png" alt="granos de cafe"
                                 class="granos-de-cafe__icon">
-                            <span>Picking:</span> los granos se recolectan a mano, uno a
+                            <span>Picking:</span> Los granos se recolectan a mano, uno a
                             uno,
                             seleccionando los granos
                             maduros y
@@ -148,7 +155,7 @@
                         <p>
                             <img src="../assets/img-disegn/granos-de-cafe.png" alt="granos de cafe"
                                 class="granos-de-cafe__icon">
-                            <span>Striping:</span> se retiran todos los frutos del cafeto de una sola vez, ya sea a
+                            <span>Striping:</span> Se retiran todos los frutos del cafeto de una sola vez, ya sea a
                             mano o
                             con
                             maquinaria especial. Se utiliza cuando la mayor parte de las cerezas de un cafetal
@@ -167,30 +174,29 @@
                     Una vez recolectadas las cerezas, llega el proceso de extracción del grano de café que hay que
                     separar de la pulpa. Para ello existen dos métodos: <span>seco y húmedo.</span>
                 </p>
-                <div class="grid-process">
-                    <div class="elements-postcosecha-uno">
-                        <img class="img-process" src="../assets/img-disegn-work/grano-de-coffee-seco.jpg"
-                            alt="grano de café seco después del proceso">
-                        <p>
-                            <span>Seco:</span> Consiste en dejar los frutos al sol durante semanas hasta que se
-                            secan y se puede
-                            separar el grano. Actualmente no se utiliza mucho este método.
-                        </p>
-                    </div>
-                    <div class="elements-postcosecha-dos">
-                        <p>
-                            <span>Húmedo:</span> Primero pasa por una despulpadora para separar el grano del
-                            resto
-                            del
-                            fruto.
-                            Después se retiran los restos de mucílago bien por medios mecánicos o dejando fermentar los
-                            granos unas horas en agua. Finalmente se levan bien y se dejan secar hasta que tienen entre
-                            un 10-12% de humedad.
-                        </p>
-                        <img class="img-process" src="../assets/img-disegn-work/decaffeinate-water.jpg"
-                            alt="grano de café descafeinado despues de pasarlo por agua">
-                    </div>
-                </div>
+                <section class="grid-process">
+
+                    <img class="img-process-uno" src="../assets/img-disegn-work/grano-de-coffee-seco.jpg"
+                        alt="grano de café seco después del proceso">
+                    <p class="p-process-uno">
+                        Seco: Consiste en dejar los frutos al sol durante semanas hasta que se
+                        secan y se puede
+                        separar el grano. Actualmente no se utiliza mucho este método.
+                    </p>
+
+                    <p class="p-process-dos">
+                        Húmedo: Primero pasa por una despulpadora para separar el grano del
+                        resto
+                        del
+                        fruto.
+                        Después se retiran los restos de mucílago bien por medios mecánicos o dejando fermentar los
+                        granos unas horas en agua. Finalmente se levan bien y se dejan secar hasta que tienen entre
+                        un 10-12% de humedad.
+                    </p>
+                    <img class="img-process-dos" src="../assets/img-disegn-work/decaffeinate-water.jpg"
+                        alt="grano de café descafeinado despues de pasarlo por agua">
+
+                </section>
             </div>
 
             <div class="process-elements-torrefaccion">
