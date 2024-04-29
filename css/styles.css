@@ -2307,18 +2307,15 @@ h2 {
       top: 80px; }
       .bg-color-work .content-body-work .header-container-work .nav-nosotros .nav__container .nav__menu a {
         font-size: 15px; }
-  .bg-color-work .content-body-work .hero-section {
-    height: 82vh;
-    align-items: end; }
-    .bg-color-work .content-body-work .hero-section .hero-content h1 {
-      font-size: 2rem;
-      max-width: 400px; }
-    .bg-color-work .content-body-work .hero-section .hero-content p {
-      font-size: 0.9rem;
-      max-width: 310px; }
-    .bg-color-work .content-body-work .hero-section .hero-content button {
-      font-size: .8rem;
-      width: 100px; }
+  .bg-color-work .content-body-work .hero-section .hero-content h1 {
+    font-size: 2rem;
+    max-width: 400px; }
+  .bg-color-work .content-body-work .hero-section .hero-content p {
+    font-size: 0.9rem;
+    max-width: 310px; }
+  .bg-color-work .content-body-work .hero-section .hero-content button {
+    font-size: .8rem;
+    width: 100px; }
   .bg-color-work .margin-container {
     padding: 0; }
     .bg-color-work .margin-container h2 {
