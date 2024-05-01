@@ -80,222 +80,199 @@
         background-color: map-get($event, --black-alpha-80);
 
         .header__nav {
-            @include flexible (flex, space-between, center);
-            height: 100%;
-            padding: 15px 0;
+            height: 90px;
             width: 100%;
+            padding: 15px 0;
 
-            .header__nav-list {
-                @include flexible1(flex, row, flex-end, center, nowrap);
-                gap: 3rem;
-                
-                .navbar-link {
-                    @extend .header__nav-list;
-                    position: relative;
-                    color: map-get($event, --gold-crayola);
-                    font-size: map-get($event, --fontSize-label-2);
-                    font-family: map-get($event, --fontFamily-dm_sans);
+            .navbar_container {
+                @include flexible (flex, space-between, center);
+                width: 90%;
+                margin: 0 auto;
+                height: 100%;
 
-                    .separator {
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%) rotate(45deg);
-                        opacity: 0;
-                        transition: map-get($event , --transition-1);
+                .header__nav-list {
+                    @include flexible1(flex, row, center, center, nowrap);
+                    gap: 3rem;
 
-                        &::before {
-                            .navbar-link:hover &,
-                            .navbar-link:focus-visible &,
-                            .navbar-link.active & {
-                                opacity: 1;
-                            }
-                        }
+                    .navbar-link {
+                        position: relative;
+                        color: map-get($event, --gold-crayola);
+                        font-size: map-get($event, --fontSize-label-2);
+                        font-family: map-get($event, --fontFamily-dm_sans);
                     }
+                }
+
+                .text-center-menu {
+                    text-align: center;
+                    margin: 15px 20px;
+                    font-family: map-get($event, --fontFamily-dm_sans);
+                    font-weight: map-get($event, --weight-regular);
+                    font-size: 0.9rem;
+                }
+
+                // Ocultar elementos en mobile
+                .header__open-nav-checkbox,
+                .header__open-nav-button,
+                .text-center-menu {
+                    display: none;
+                }
+
+                .header__logo {
+                    max-width: 100%;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    .event {
+        @include flexible (flex, center, center);
+
+        .section-subtitle {
+            color: map-get($event, --gold-crayola);
+            font-weight: map-get($event, --weight-regular);
+            letter-spacing: map-get($event, --letterSpacing-2);
+            font-size: map-get($event, --fontSize-body-3);
+            text-transform: uppercase;
+            margin-block-end: 3rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: map-get($event, --fontSize-body-4);
+            margin-block-end: 40px;
+        }
+
+        .event-card {
+            width: 1100px;
+            position: absolute;
+            overflow: hidden;
+            margin-block-end: 5rem;
+
+            .card-banner {
+                .img-holder {
+                    overflow: hidden;
+                    background-color: map-get($event, --eerie-black-4);
+                    width: 100%;
+                    height: auto;
+                }
+
+                .img-cover {
+                    transition: map-get($event, --transition-2);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .publish-date {
+                    position: absolute;
+                    top: 30px;
+                    left: 25px;
+                    padding: 5px 10px;
+                    color: map-get($event, --gold-crayola);
+                    background-color: map-get($event, --smoky-black-3);
+                    font-weight: map-get($event, --weight-bold);
+                    letter-spacing: map-get($event, --letterSpacing-1);
+                    line-height: 14px;
                 }
             }
 
-            // Ocultar elementos en mobile
-            .header__open-nav-checkbox,
-            .header__open-nav-button,
-            .header__nav-list .text-center-menu {
-                display: none;
+            .card-content {
+                background-image: map-get($event, --gradient-1);
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 35px 35px 25px;
+
+                .card-subtitle {
+                    color: map-get($event, --gold-crayola);
+                    text-transform: uppercase;
+                    font-weight: map-get($event, --weight-bold);
+                    letter-spacing: map-get($event, --letterSpacing-2);
+                    margin-block-end: 5px;
+                    font-size: map-get($event, --fontSize-body-4);
+                }
             }
 
-            .header__logo {
-                max-width: 100%;
-                width: 60px;
-                height: 60px;
-            }
-
-            .text-center-menu {
-                text-align: center;
-                margin: 15px 20px;
-                font-family: map-get($event, --fontFamily-dm_sans);
-                font-weight: map-get($event, --weight-regular);
-                font-size: 0.9rem;
+            &:hover,
+            &:focus-within {
+                .img-cover {
+                    transform: scale(1.05);
+                }
             }
         }
-    }
 
-    /* Estilos de sección */
-    .section-subtitle {
-        color: map-get($event, --gold-crayola);
-        font-weight: map-get($event, --weight-regular);
-        letter-spacing: map-get($event , --letterSpacing-2);
-        font-size: map-get($event , --fontSize-body-3);
-        text-transform: uppercase;
-        margin-block-end: 3rem;
-    }
+        .hover\:shine {
+            position: relative;
 
-    .section-title {
-        font-size: map-get($event , --fontSize-body-4);
-        margin-block-end: 40px;
-    }
-
-    /* Estilos generales para eventos */
-    .event {
-        @include flexible (flex, center, center);
-    }
-
-    /* Estilos para tarjeta de evento */
-    .event-card {
-        width: 900px;
-        position: absolute;
-        overflow: hidden;
-        margin-block-end: 5rem;
-
-        .card-content {
-            background-image: map-get($event, --gradient-1);
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 35px 35px 25px;
-        }
-
-        .publish-date {
-            position: absolute;
-            top: 30px;
-            left: 25px;
-            padding: 5px 10px;
-            color: map-get($event, --gold-crayola);
-            background-color: map-get($event , --smoky-black-3);
-            font-weight: map-get($event, --weight-bold);
-            letter-spacing: map-get($event , --letterSpacing-1);
-            line-height: 14px;
-        }
-
-        .card-subtitle {
-            color: map-get($event, --gold-crayola);
-            text-transform: uppercase;
-            font-weight: map-get($event, --weight-bold);
-            letter-spacing: map-get($event , --letterSpacing-2);
-            margin-block-end: 5px;
-            font-size: map-get($event , --fontSize-body-4);
-        }
-
-        .card-banner .img-cover {
-            transition: map-get($event, --transition-2);
-        }
-
-        &:hover,
-        &:focus-within {
-            .img-cover {
-                transform: scale(1.05);
-            }
-        }
-    }
-
-    /* Estilos de efecto shine */
-    .hover\:shine {
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            height: 100%;
-            background-image: linear-gradient(to right, transparent 0%, rgba(214, 173, 102, 0.836) 100%);
-            transform: skewX(-0.08turn) translateX(-180%);
-        }
-
-        &:hover,
-        &:focus-within {
             &::after {
-                transform: skewX(-0.08turn) translateX(275%);
-                transition: map-get($event , --transition-3);
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background-image: linear-gradient(to right, transparent 0%, rgba(214, 173, 102, 0.836) 100%);
+                transform: skewX(-0.08turn) translateX(-180%);
+            }
+
+            &:hover,
+            &:focus-within {
+                &::after {
+                    transform: skewX(-0.08turn) translateX(275%);
+                    transition: map-get($event, --transition-3);
+                }
             }
         }
-    }
-
-    /* Estilos de la imagen */
-    .img-holder {
-        overflow: hidden;
-        background-color: map-get($event, --eerie-black-4);
-        width: 100%;
-        height: auto;
-    }
-
-    .img-cover {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     /* ======== TESTIMONIOS ======== */
-
-    /* Estilo general para la sección de testimonios */
     .testi {
         background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)),
             url('../assets/img-eventos/high-angle-women-coffee-shop.jpg');
         @include bgenCss (center center, no-repeat, cover);
         padding-block-end: 150px;
         margin-bottom: 5rem;
-    }
 
-    /* Estilo para las comillas */
-    .quote {
-        font-size: 7rem;
-        font-family: map-get($event, --fontFamily-dm_sans);
-        line-height: 0.7em;
-    }
+        .testi-text {
+            font-size: 1.1rem;
+            margin: 0 150px;
+            line-break: loose;
+        }
 
-    /* Estilos para el contenedor de elementos de testimonio */
-    .testi .wrapper {
-        display: flex;
-        justify-content: center;
-        gap: 2px;
-        margin-block: 40px 50px;
-    }
+        .quote {
+            font-size: 7rem;
+            font-family: map-get($event, --fontFamily-dm_sans);
+            line-height: 0.7em;
+        }
 
-    /* Estilos para la animación de separación */
-    .testi .separator {
-        animation: rotate360 15s linear infinite;
-    }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 2px;
+            margin-block: 40px 50px;
 
-    /* Estilos para la imagen del perfil */
-    .profile .img {
-        border-radius: map-get($event, --radius-circle);
-        margin-block-end: 25px;
-        width: 80px;
-        height: 80px;
-    }
+            .separator {
+                animation: rotate360 15s linear infinite;
+            }
+        }
 
-    /* Estilos para el texto del testimonio */
-    .testi-text {
-        font-size: 1.1rem;
-        margin: 0 150px;
-        line-break: loose;
-    }
+        .profile {
+            .img {
+                border-radius: map-get($event, --radius-circle);
+                margin-block-end: 25px;
+                width: 80px;
+                height: 80px;
+            }
 
-    /* Estilos para el nombre del perfil */
-    .testi .profile-name {
-        color: map-get($event, --gold-crayola);
-        font-weight: map-get($event, --weight-bold);
-        letter-spacing: map-get($event , --letterSpacing-3);
-        text-transform: uppercase;
+            .profile-name {
+                color: map-get($event, --gold-crayola);
+                font-weight: map-get($event, --weight-bold);
+                letter-spacing: map-get($event, --letterSpacing-3);
+                text-transform: uppercase;
+            }
+        }
     }
 
     /* ====== FOOTER ====== */
@@ -304,119 +281,114 @@
     .footer-event {
         background: map-get($event, --smoky-black-3);
         padding: 70px 10px;
-    }
 
-    /* Estilo para la parte superior del footer */
-    .footer-top {
-        margin-block-end: 70px;
-    }
-
-    /* Estilo para la marca en el footer */
-    .footer-brand {
-        position: relative;
-        padding: 60px 40px;
-        background: map-get($event, --smoky-black-1) url("../assets/img-eventos/footer-form-bg.png");
-        background-position: center top;
-        background-repeat: repeat;
-
-        &::before,
-        &::after {
-            top: 0;
-            width: 15px;
-            height: 100%;
-            background-image: url("../assets/img-eventos/footer-form-pattern.png");
+        .footer-top {
+            margin-block-end: 70px;
         }
 
-        &::before {
-            left: 0;
-        }
+        .footer-brand {
+            position: relative;
+            padding: 60px 40px;
+            background: map-get($event, --smoky-black-1) url("../assets/img-eventos/footer-form-bg.png");
+            background-position: center top;
+            background-repeat: repeat;
 
-        &::after {
-            right: 0;
-        }
+            &::before,
+            &::after {
+                top: 0;
+                width: 15px;
+                height: 100%;
+                background-image: url("../assets/img-eventos/footer-form-pattern.png");
+            }
 
-        .girasol-logo-footer {
-            max-width: max-content;
-            margin-inline: auto;
-            margin-block-end: 40px;
+            &::before {
+                left: 0;
+            }
 
-            img {
-                width: 80px;
-                height: 80px;
+            &::after {
+                right: 0;
+            }
+
+            .girasol-logo-footer {
+                max-width: max-content;
+                margin-inline: auto;
+                margin-block-end: 40px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            /* Estilos para tipografía en el footer */
+            :is(.body-4, .label-1) {
+                color: map-get($event, --quick-silver);
+                font-size: map-get($event, --fontSize-body-2);
+                line-height: map-get($event, --lineHeight-5);
+            }
+
+            /* Estilo para los enlaces de contacto */
+            .contact-link {
+                transition: map-get($event, --transition-1);
+
+                &:hover,
+                &:focus-visible {
+                    color: map-get($event, --gold-crayola);
+                }
+            }
+
+            /* Estilos para el contenedor de elementos */
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                gap: 2px;
+                margin-block: 40px 25px;
             }
         }
 
-        /* Estilos para tipografía en el footer */
-        :is(.body-4, .label-1) {
-            color: map-get($event, --quick-silver);
-            font-size: map-get($event , --fontSize-body-2);
-            line-height: map-get($event, --lineHeight-5);
+        .order-list-footer {
+            @include flexible (flex, space-between, center);
+            padding-block-start: 3rem;
+
+            .footer-list {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+
+                .footer-link {
+                    color: map-get($event, --quick-silver);
+                    font-weight: map-get($event, --weight-regular);
+                    letter-spacing: map-get($event, --letterSpacing-5);
+                    transition: map-get($event, --transition-1);
+                    font-family: "REM", sans-serif;
+                    ;
+
+                    &:hover,
+                    &:focus-visible {
+                        color: map-get($event, --gold-crayola);
+                    }
+                }
+            }
         }
 
-        /* Estilo para los enlaces de contacto */
-        .contact-link {
-            transition: map-get($event, --transition-1);
+        .footer-bottom {
+            @include flexible (flex, center, center);
 
-            &:hover,
-            &:focus-visible {
+            .typing {
+                width: 23ch;
+                font-size: 1.2rem;
+                overflow: hidden;
+                font-family: monospace;
+                border-right: 3px solid;
+                font-weight: 500;
+                color: map-get($event, --quick-silver);
+                animation: teclear 5s steps(35), efecto .3s step-end infinite alternate;
+            }
+
+            .typing-link {
                 color: map-get($event, --gold-crayola);
+                text-decoration: underline;
             }
         }
-
-        /* Estilos para el contenedor de elementos */
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            gap: 2px;
-            margin-block: 40px 25px;
-        }
     }
-
-    /* Estilos para la lista del pie de página */
-    .order-list-footer {
-        @include flexible (flex, space-between, center);
-        padding-block-start: 3rem;
-
-        .footer-list {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-        }
-    }
-
-    /* Estilos para los enlaces del pie de página */
-    .footer-link {
-        color: map-get($event, --quick-silver);
-        font-weight: map-get($event, --weight-regular);
-        letter-spacing: map-get($event , --letterSpacing-5);
-        transition: map-get($event, --transition-1);
-        font-family: "REM", sans-serif;
-        ;
-
-        &:hover,
-        &:focus-visible {
-            color: map-get($event, --gold-crayola);
-        }
-    }
-
-    /* Estilos para la parte inferior del footer */
-    .footer-bottom {
-        @include flexible (flex, center, center);
-
-        .typing {
-            width: 23ch;
-            font-size: 1.2rem;
-            overflow: hidden;
-            font-family: monospace;
-            border-right: 3px solid;
-            color: map-get($event, --quick-silver);
-            animation: teclear 5s steps(35), efecto .3s step-end infinite alternate;
-        }
-
-        .typing-link {
-            color: map-get($event, --gold-crayola);
-            text-decoration: underline;
-        }
-    }
-
 }

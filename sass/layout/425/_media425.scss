@@ -663,4 +663,128 @@
             }
         }
     }
+
+    //Eventos
+    .body-event {
+        .header-event {
+            .header__nav {
+                padding: 0;
+            }
+        }
+
+        .event {
+            .section-subtitle {
+                font-size: 1rem;
+                letter-spacing: 0.2em;
+            }
+
+            .section-title {
+                font-size: 1.05rem;
+            }
+
+            .event-card {
+                width: 400px;
+                margin-block-end: 1.5rem;
+
+                .card-banner {
+                    .publish-date {
+                        font-size: .7rem;
+                        padding: 2px;
+                        top: 10px;
+                        left: 15px;
+                    }
+                }
+
+                .card-content {
+                    padding: 10px 0;
+
+                    .card-title {
+                        font-size: .8rem;
+                        margin: 5px;
+                    }
+
+                    .card-subtitle {
+                        font-size: .9rem;
+                        letter-spacing: 0.2em;
+                    }
+                }
+            }
+        }
+
+        .testi {
+            margin-bottom: 2rem;
+
+            .wrapper {
+                margin-block: 25px;
+            }
+
+            .quote {
+                font-size: 3rem;
+            }
+
+            .testi-text {
+                margin: 0;
+                line-height: 1.6;
+                font-size: .9rem;
+            }
+
+            .profile {
+                .img {
+                    margin-block-end: 10px;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .profile-name {
+                    font-size: .9rem;
+                    letter-spacing: 0.1em;
+                }
+            }
+        }
+
+        .footer-event {
+            padding: 10px;
+
+            .footer-brand {
+                .girasol-logo-footer {
+                    margin-block-end: 10px;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .wrapper {
+                    margin-block: 20px;
+                }
+
+                :is(.body-4, .label-1) {
+                    font-size: .8rem;
+                }
+            }
+
+            .order-list-footer {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1.5rem;
+                padding-block-start: 2rem;
+
+                .footer-list {
+                    align-items: flex-start;
+                    gap: 0.5rem;
+
+                    .footer-link {
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            .footer-bottom {
+                .typing {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
 }

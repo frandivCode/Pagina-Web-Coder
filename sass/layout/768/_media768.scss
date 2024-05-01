@@ -648,4 +648,205 @@
             }
         }
     }
+
+    //Eventos
+    .body-event {
+
+        //General
+        .container {
+            padding-inline: 10px;
+        }
+
+        .text-center {
+            margin: 0;
+        }
+
+        .section {
+            z-index: -1;
+            padding-block: 50px;
+        }
+
+        //Header
+        .header-event {
+            height: 80px;
+
+            .header__nav {
+                width: 100%;
+
+                .navbar_container {
+                    .header__nav-list {
+                        position: absolute;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 1.5rem;
+                        align-items: center;
+                        top: 80px;
+                        width: 100vw;
+                        left: 0;
+                        right: 0;
+                        overflow: hidden;
+                        z-index: 1;
+                        clip-path: circle(0 at center);
+                        background-color: map-get($event, --smoky-black-2);
+                        transition: all .3s ease;
+
+                        .navbar-link {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .header__open-nav-checkbox:checked~.header__nav-list {
+                        height: calc(110vh - 80px);
+                        transition: all .5s ease;
+                        clip-path: circle(100% at center);
+                    }
+
+                    .header__open-nav-button {
+                        display: block;
+                        cursor: pointer;
+                        color: map-get($event, --gold-crayola);
+                        font-weight: map-get($event, --weight-bold);
+                        position: absolute;
+                        right: 15px;
+                        font-size: 26px;
+                    }
+
+                    /* --- menu desplegable --- */
+                    .text-center-menu {
+                        display: block;
+                        color: map-get($event, --quick-silver);
+
+                        .navbar-title {
+                            margin-block: 20px;
+                            font-size: map-get($event, --fontSize-body-4);
+                        }
+
+                        .navbar-text {
+                            margin-block: 10px;
+                        }
+
+                        .sidebar-link {
+                            color: map-get($event, --gold-crayola);
+                        }
+
+                        .separator {
+                            margin-block: 20px;
+                            margin-inline: auto;
+                        }
+                    }
+
+                    .header__logo {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+
+        .event {
+            .section-subtitle {
+                font-size: 1.3rem;
+                margin-block-end: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .event-card {
+                width: 600px;
+                height: auto;
+                margin-block-end: 3rem;
+
+                .img-cover {
+                    filter: brightness(70%);
+                }
+
+                .card-banner {
+                    .publish-date {
+                        font-weight: 500;
+                        font-size: .8rem;
+                        padding: 3px;
+                    }
+                }
+
+                .card-content {
+                    padding: 15px 0;
+
+                    .card-title {
+                        font-size: 1rem;
+                        margin: 10px 5px;
+                    }
+
+                    .card-subtitle {
+                        font-size: 1.2rem;
+                        margin: 0;
+                        letter-spacing: 0.2em;
+                    }
+                }
+            }
+        }
+
+        /* --- testimonio --- */
+        .testi {
+            margin-bottom: 5rem;
+
+            .wrapper {
+                margin-block: 25px;
+            }
+
+            .quote {
+                font-size: 4rem;
+            }
+
+            .testi-text {
+                margin: 20px 100px;
+                line-height: 2;
+            }
+        }
+
+        /* --- footer --- */
+        .footer-event {
+            padding: 10px;
+
+            .footer-brand {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 20px;
+
+                .girasol-logo-footer {
+                    margin-block-end: 20px;
+                }
+
+                .wrapper {
+                    margin-block: 25px;
+                }
+
+                :is(.body-4, .label-1) {
+                    font-size: 1rem;
+                }
+            }
+
+            .order-list-footer {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .footer-list {
+                    flex-direction: column;
+
+                    .footer-link {
+                        font-size: 1rem;
+                        font-weight: map-get($event, --weight-bold);
+                        font-family: map-get($event, --fontFamily-dm_sans);
+                    }
+                }
+            }
+
+            .footer-bottom {
+                .typing {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
 }

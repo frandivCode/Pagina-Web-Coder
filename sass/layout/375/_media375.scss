@@ -145,4 +145,68 @@
             }
         }
     }
+
+    //Eventos
+
+    .body-event {
+        .event {
+            .section-subtitle {
+                font-size: 0.9rem;
+                letter-spacing: 0.1em;
+            }
+
+            .section-title {
+                font-size: 1rem;
+                margin-block-end: 20px;
+            }
+
+            .event-card {
+                width: 350px;
+                margin-block-end: 1rem;
+
+                .card-banner {
+                    .publish-date {
+                        font-size: .65rem;
+                    }
+                }
+
+                .card-content {
+                    padding: 10px 0;
+
+                    .card-title {
+                        font-size: .75rem;
+                        margin: 5px;
+                    }
+
+                    .card-subtitle {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .testi {
+            margin-bottom: 0;
+
+            .wrapper {
+                margin-block: 15px;
+            }
+
+            .testi-text {
+                margin: 0 54px;
+                font-size: .85rem;
+            }
+
+            .profile {
+                .img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .profile-name {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
 }

@@ -446,10 +446,13 @@
         }
     }
 
+    //Eventos
 
-
-
-
-
-
+    .body-event {
+        .event {
+            .event-card {
+                width: 300px;
+            }
+        }
+    }
 }

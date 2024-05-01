@@ -759,26 +759,9 @@ h2 {
   font-family: "DM Sans";
   font-weight: 400;
   height: 100vh;
-  /* Estilos de sección */
-  /* Estilos generales para eventos */
-  /* Estilos para tarjeta de evento */
-  /* Estilos de efecto shine */
-  /* Estilos de la imagen */
   /* ======== TESTIMONIOS ======== */
-  /* Estilo general para la sección de testimonios */
-  /* Estilo para las comillas */
-  /* Estilos para el contenedor de elementos de testimonio */
-  /* Estilos para la animación de separación */
-  /* Estilos para la imagen del perfil */
-  /* Estilos para el texto del testimonio */
-  /* Estilos para el nombre del perfil */
   /* ====== FOOTER ====== */
-  /* Estilos generales del footer */
-  /* Estilo para la parte superior del footer */
-  /* Estilo para la marca en el footer */
-  /* Estilos para la lista del pie de página */
-  /* Estilos para los enlaces del pie de página */
-  /* Estilos para la parte inferior del footer */ }
+  /* Estilos generales del footer */ }
   .body-event .container {
     padding-inline: 16px; }
   .body-event .text-center {
@@ -828,118 +811,111 @@ h2 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8); }
     .body-event .header-event .header__nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100%;
-      padding: 15px 0;
-      width: 100%; }
-      .body-event .header-event .header__nav .header__nav-list, .body-event .header-event .header__nav .header__nav-list .navbar-link {
+      height: 90px;
+      width: 100%;
+      padding: 15px 0; }
+      .body-event .header-event .header__nav .navbar_container {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
-        flex-wrap: nowrap;
-        gap: 3rem; }
-        .body-event .header-event .header__nav .header__nav-list .navbar-link {
-          position: relative;
-          color: #d6ad66;
-          font-size: 1.1rem;
-          font-family: "DM Sans"; }
-          .body-event .header-event .header__nav .header__nav-list .navbar-link .separator {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%) rotate(45deg);
-            opacity: 0;
-            transition: 250ms ease; }
-            .navbar-link:hover .body-event .header-event .header__nav .header__nav-list .navbar-link .separator::before,
-            .navbar-link:focus-visible .body-event .header-event .header__nav .header__nav-list .navbar-link .separator::before,
-            .navbar-link.active .body-event .header-event .header__nav .header__nav-list .navbar-link .separator::before {
-              opacity: 1; }
-      .body-event .header-event .header__nav .header__open-nav-checkbox,
-      .body-event .header-event .header__nav .header__open-nav-button,
-      .body-event .header-event .header__nav .header__nav-list .text-center-menu {
-        display: none; }
-      .body-event .header-event .header__nav .header__logo {
-        max-width: 100%;
-        width: 60px;
-        height: 60px; }
-      .body-event .header-event .header__nav .text-center-menu {
-        text-align: center;
-        margin: 15px 20px;
-        font-family: "DM Sans";
-        font-weight: 400;
-        font-size: 0.9rem; }
-  .body-event .section-subtitle {
-    color: #d6ad66;
-    font-weight: 400;
-    letter-spacing: 0.4em;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-block-end: 3rem; }
-  .body-event .section-title {
-    font-size: 1.5rem;
-    margin-block-end: 40px; }
+        width: 90%;
+        margin: 0 auto;
+        height: 100%; }
+        .body-event .header-event .header__nav .navbar_container .header__nav-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+          gap: 3rem; }
+          .body-event .header-event .header__nav .navbar_container .header__nav-list .navbar-link {
+            position: relative;
+            color: #d6ad66;
+            font-size: 1.1rem;
+            font-family: "DM Sans"; }
+        .body-event .header-event .header__nav .navbar_container .text-center-menu {
+          text-align: center;
+          margin: 15px 20px;
+          font-family: "DM Sans";
+          font-weight: 400;
+          font-size: 0.9rem; }
+        .body-event .header-event .header__nav .navbar_container .header__open-nav-checkbox,
+        .body-event .header-event .header__nav .navbar_container .header__open-nav-button,
+        .body-event .header-event .header__nav .navbar_container .text-center-menu {
+          display: none; }
+        .body-event .header-event .header__nav .navbar_container .header__logo {
+          max-width: 100%;
+          width: 60px;
+          height: 60px; }
   .body-event .event {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .body-event .event-card {
-    width: 900px;
-    position: absolute;
-    overflow: hidden;
-    margin-block-end: 5rem; }
-    .body-event .event-card .card-content {
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), transparent);
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 35px 35px 25px; }
-    .body-event .event-card .publish-date {
-      position: absolute;
-      top: 30px;
-      left: 25px;
-      padding: 5px 10px;
+    .body-event .event .section-subtitle {
       color: #d6ad66;
-      background-color: #121111;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      line-height: 14px; }
-    .body-event .event-card .card-subtitle {
-      color: #d6ad66;
-      text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.4em;
-      margin-block-end: 5px;
-      font-size: 1.5rem; }
-    .body-event .event-card .card-banner .img-cover {
-      transition: 500ms ease; }
-    .body-event .event-card:hover .img-cover, .body-event .event-card:focus-within .img-cover {
-      transform: scale(1.05); }
-  .body-event .hover\:shine {
-    position: relative; }
-    .body-event .hover\:shine::after {
-      content: "";
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin-block-end: 3rem;
+      text-align: center; }
+    .body-event .event .section-title {
+      font-size: 1.5rem;
+      margin-block-end: 40px; }
+    .body-event .event .event-card {
+      width: 1100px;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      background-image: linear-gradient(to right, transparent 0%, rgba(214, 173, 102, 0.836) 100%);
-      transform: skewX(-0.08turn) translateX(-180%); }
-    .body-event .hover\:shine:hover::after, .body-event .hover\:shine:focus-within::after {
-      transform: skewX(-0.08turn) translateX(275%);
-      transition: 1000ms ease; }
-  .body-event .img-holder {
-    overflow: hidden;
-    background-color: #212121;
-    width: 100%;
-    height: auto; }
-  .body-event .img-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+      overflow: hidden;
+      margin-block-end: 5rem; }
+      .body-event .event .event-card .card-banner .img-holder {
+        overflow: hidden;
+        background-color: #212121;
+        width: 100%;
+        height: auto; }
+      .body-event .event .event-card .card-banner .img-cover {
+        transition: 500ms ease;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .body-event .event .event-card .card-banner .publish-date {
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        padding: 5px 10px;
+        color: #d6ad66;
+        background-color: #121111;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        line-height: 14px; }
+      .body-event .event .event-card .card-content {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), transparent);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 35px 35px 25px; }
+        .body-event .event .event-card .card-content .card-subtitle {
+          color: #d6ad66;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 0.4em;
+          margin-block-end: 5px;
+          font-size: 1.5rem; }
+      .body-event .event .event-card:hover .img-cover, .body-event .event .event-card:focus-within .img-cover {
+        transform: scale(1.05); }
+    .body-event .event .hover\:shine {
+      position: relative; }
+      .body-event .event .hover\:shine::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(to right, transparent 0%, rgba(214, 173, 102, 0.836) 100%);
+        transform: skewX(-0.08turn) translateX(-180%); }
+      .body-event .event .hover\:shine:hover::after, .body-event .event .hover\:shine:focus-within::after {
+        transform: skewX(-0.08turn) translateX(275%);
+        transition: 1000ms ease; }
   .body-event .testi {
     background-image: linear-gradient(rgba(0, 0, 0, 0.483), rgba(0, 0, 0, 0.483)), url("../assets/img-eventos/high-angle-women-coffee-shop.jpg");
     background-position: center center;
@@ -947,106 +923,107 @@ h2 {
     background-size: cover;
     padding-block-end: 150px;
     margin-bottom: 5rem; }
-  .body-event .quote {
-    font-size: 7rem;
-    font-family: "DM Sans";
-    line-height: 0.7em; }
-  .body-event .testi .wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 2px;
-    margin-block: 40px 50px; }
-  .body-event .testi .separator {
-    animation: rotate360 15s linear infinite; }
-  .body-event .profile .img {
-    border-radius: 50%;
-    margin-block-end: 25px;
-    width: 80px;
-    height: 80px; }
-  .body-event .testi-text {
-    font-size: 1.1rem;
-    margin: 0 150px;
-    line-break: loose; }
-  .body-event .testi .profile-name {
-    color: #d6ad66;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase; }
-  .body-event .footer-event {
-    background: #121111;
-    padding: 70px 10px; }
-  .body-event .footer-top {
-    margin-block-end: 70px; }
-  .body-event .footer-brand {
-    position: relative;
-    padding: 60px 40px;
-    background: #0e0d0b url("../assets/img-eventos/footer-form-bg.png");
-    background-position: center top;
-    background-repeat: repeat;
-    /* Estilos para tipografía en el footer */
-    /* Estilo para los enlaces de contacto */
-    /* Estilos para el contenedor de elementos */ }
-    .body-event .footer-brand::before, .body-event .footer-brand::after {
-      top: 0;
-      width: 15px;
-      height: 100%;
-      background-image: url("../assets/img-eventos/footer-form-pattern.png"); }
-    .body-event .footer-brand::before {
-      left: 0; }
-    .body-event .footer-brand::after {
-      right: 0; }
-    .body-event .footer-brand .girasol-logo-footer {
-      max-width: max-content;
-      margin-inline: auto;
-      margin-block-end: 40px; }
-      .body-event .footer-brand .girasol-logo-footer img {
-        width: 80px;
-        height: 80px; }
-    .body-event .footer-brand :is(.body-4, .label-1) {
-      color: #a6a6a6;
-      font-size: 1.15rem;
-      line-height: 1.85em; }
-    .body-event .footer-brand .contact-link {
-      transition: 250ms ease; }
-      .body-event .footer-brand .contact-link:hover, .body-event .footer-brand .contact-link:focus-visible {
-        color: #d6ad66; }
-    .body-event .footer-brand .wrapper {
+    .body-event .testi .testi-text {
+      font-size: 1.1rem;
+      margin: 0 150px;
+      line-break: loose; }
+    .body-event .testi .quote {
+      font-size: 7rem;
+      font-family: "DM Sans";
+      line-height: 0.7em; }
+    .body-event .testi .wrapper {
       display: flex;
       justify-content: center;
       gap: 2px;
-      margin-block: 40px 25px; }
-  .body-event .order-list-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block-start: 3rem; }
-    .body-event .order-list-footer .footer-list {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem; }
-  .body-event .footer-link {
-    color: #a6a6a6;
-    font-weight: 400;
-    letter-spacing: 1px;
-    transition: 250ms ease;
-    font-family: "REM", sans-serif; }
-    .body-event .footer-link:hover, .body-event .footer-link:focus-visible {
-      color: #d6ad66; }
-  .body-event .footer-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .body-event .footer-bottom .typing {
-      width: 23ch;
-      font-size: 1.2rem;
-      overflow: hidden;
-      font-family: monospace;
-      border-right: 3px solid;
-      color: #a6a6a6;
-      animation: teclear 5s steps(35), efecto 0.3s step-end infinite alternate; }
-    .body-event .footer-bottom .typing-link {
+      margin-block: 40px 50px; }
+      .body-event .testi .wrapper .separator {
+        animation: rotate360 15s linear infinite; }
+    .body-event .testi .profile .img {
+      border-radius: 50%;
+      margin-block-end: 25px;
+      width: 80px;
+      height: 80px; }
+    .body-event .testi .profile .profile-name {
       color: #d6ad66;
-      text-decoration: underline; }
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase; }
+  .body-event .footer-event {
+    background: #121111;
+    padding: 70px 10px; }
+    .body-event .footer-event .footer-top {
+      margin-block-end: 70px; }
+    .body-event .footer-event .footer-brand {
+      position: relative;
+      padding: 60px 40px;
+      background: #0e0d0b url("../assets/img-eventos/footer-form-bg.png");
+      background-position: center top;
+      background-repeat: repeat;
+      /* Estilos para tipografía en el footer */
+      /* Estilo para los enlaces de contacto */
+      /* Estilos para el contenedor de elementos */ }
+      .body-event .footer-event .footer-brand::before, .body-event .footer-event .footer-brand::after {
+        top: 0;
+        width: 15px;
+        height: 100%;
+        background-image: url("../assets/img-eventos/footer-form-pattern.png"); }
+      .body-event .footer-event .footer-brand::before {
+        left: 0; }
+      .body-event .footer-event .footer-brand::after {
+        right: 0; }
+      .body-event .footer-event .footer-brand .girasol-logo-footer {
+        max-width: max-content;
+        margin-inline: auto;
+        margin-block-end: 40px; }
+        .body-event .footer-event .footer-brand .girasol-logo-footer img {
+          width: 80px;
+          height: 80px; }
+      .body-event .footer-event .footer-brand :is(.body-4, .label-1) {
+        color: #a6a6a6;
+        font-size: 1.15rem;
+        line-height: 1.85em; }
+      .body-event .footer-event .footer-brand .contact-link {
+        transition: 250ms ease; }
+        .body-event .footer-event .footer-brand .contact-link:hover, .body-event .footer-event .footer-brand .contact-link:focus-visible {
+          color: #d6ad66; }
+      .body-event .footer-event .footer-brand .wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        margin-block: 40px 25px; }
+    .body-event .footer-event .order-list-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block-start: 3rem; }
+      .body-event .footer-event .order-list-footer .footer-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem; }
+        .body-event .footer-event .order-list-footer .footer-list .footer-link {
+          color: #a6a6a6;
+          font-weight: 400;
+          letter-spacing: 1px;
+          transition: 250ms ease;
+          font-family: "REM", sans-serif; }
+          .body-event .footer-event .order-list-footer .footer-list .footer-link:hover, .body-event .footer-event .order-list-footer .footer-list .footer-link:focus-visible {
+            color: #d6ad66; }
+    .body-event .footer-event .footer-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .body-event .footer-event .footer-bottom .typing {
+        width: 23ch;
+        font-size: 1.2rem;
+        overflow: hidden;
+        font-family: monospace;
+        border-right: 3px solid;
+        font-weight: 500;
+        color: #a6a6a6;
+        animation: teclear 5s steps(35), efecto 0.3s step-end infinite alternate; }
+      .body-event .footer-event .footer-bottom .typing-link {
+        color: #d6ad66;
+        text-decoration: underline; }
 
 .bg-color-work {
   background-color: #F6F5F2;
@@ -2088,7 +2065,124 @@ h2 {
         font-size: 1rem; }
     .bg-color-work .footer-nuestro-trabajo .copy {
       margin: 30px 10px 0 10px;
-      font-size: .9rem; } }
+      font-size: .9rem; }
+  .body-event {
+    /* --- testimonio --- */
+    /* --- footer --- */ }
+    .body-event .container {
+      padding-inline: 10px; }
+    .body-event .text-center {
+      margin: 0; }
+    .body-event .section {
+      z-index: -1;
+      padding-block: 50px; }
+    .body-event .header-event {
+      height: 80px; }
+      .body-event .header-event .header__nav {
+        width: 100%; }
+        .body-event .header-event .header__nav .navbar_container {
+          /* --- menu desplegable --- */ }
+          .body-event .header-event .header__nav .navbar_container .header__nav-list {
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: center;
+            top: 80px;
+            width: 100vw;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            z-index: 1;
+            clip-path: circle(0 at center);
+            background-color: #0e0d0c;
+            transition: all .3s ease; }
+            .body-event .header-event .header__nav .navbar_container .header__nav-list .navbar-link {
+              font-size: 1rem; }
+          .body-event .header-event .header__nav .navbar_container .header__open-nav-checkbox:checked ~ .header__nav-list {
+            height: calc(110vh - 80px);
+            transition: all .5s ease;
+            clip-path: circle(100% at center); }
+          .body-event .header-event .header__nav .navbar_container .header__open-nav-button {
+            display: block;
+            cursor: pointer;
+            color: #d6ad66;
+            font-weight: 600;
+            position: absolute;
+            right: 15px;
+            font-size: 26px; }
+          .body-event .header-event .header__nav .navbar_container .text-center-menu {
+            display: block;
+            color: #a6a6a6; }
+            .body-event .header-event .header__nav .navbar_container .text-center-menu .navbar-title {
+              margin-block: 20px;
+              font-size: 1.5rem; }
+            .body-event .header-event .header__nav .navbar_container .text-center-menu .navbar-text {
+              margin-block: 10px; }
+            .body-event .header-event .header__nav .navbar_container .text-center-menu .sidebar-link {
+              color: #d6ad66; }
+            .body-event .header-event .header__nav .navbar_container .text-center-menu .separator {
+              margin-block: 20px;
+              margin-inline: auto; }
+          .body-event .header-event .header__nav .navbar_container .header__logo {
+            width: 45px;
+            height: 45px; }
+    .body-event .event .section-subtitle {
+      font-size: 1.3rem;
+      margin-block-end: 1rem; }
+    .body-event .event .section-title {
+      font-size: 1.3rem; }
+    .body-event .event .event-card {
+      width: 600px;
+      height: auto;
+      margin-block-end: 3rem; }
+      .body-event .event .event-card .img-cover {
+        filter: brightness(70%); }
+      .body-event .event .event-card .card-banner .publish-date {
+        font-weight: 500;
+        font-size: .8rem;
+        padding: 3px; }
+      .body-event .event .event-card .card-content {
+        padding: 15px 0; }
+        .body-event .event .event-card .card-content .card-title {
+          font-size: 1rem;
+          margin: 10px 5px; }
+        .body-event .event .event-card .card-content .card-subtitle {
+          font-size: 1.2rem;
+          margin: 0;
+          letter-spacing: 0.2em; }
+    .body-event .testi {
+      margin-bottom: 5rem; }
+      .body-event .testi .wrapper {
+        margin-block: 25px; }
+      .body-event .testi .quote {
+        font-size: 4rem; }
+      .body-event .testi .testi-text {
+        margin: 20px 100px;
+        line-height: 2; }
+    .body-event .footer-event {
+      padding: 10px; }
+      .body-event .footer-event .footer-brand {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px; }
+        .body-event .footer-event .footer-brand .girasol-logo-footer {
+          margin-block-end: 20px; }
+        .body-event .footer-event .footer-brand .wrapper {
+          margin-block: 25px; }
+        .body-event .footer-event .footer-brand :is(.body-4, .label-1) {
+          font-size: 1rem; }
+      .body-event .footer-event .order-list-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+        .body-event .footer-event .order-list-footer .footer-list {
+          flex-direction: column; }
+          .body-event .footer-event .order-list-footer .footer-list .footer-link {
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: "DM Sans"; }
+      .body-event .footer-event .footer-bottom .typing {
+        font-size: 1.1rem; } }
 
 @media (max-width: 425px) and (max-width: 425px) {
   .header-principal .nav-principal {
@@ -2448,7 +2542,70 @@ h2 {
         font-size: .8rem; }
     .bg-color-work .footer-nuestro-trabajo .copy {
       margin: 20px 5px 0 5px;
-      font-size: .77rem; } }
+      font-size: .77rem; }
+  .body-event .header-event .header__nav {
+    padding: 0; }
+  .body-event .event .section-subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.2em; }
+  .body-event .event .section-title {
+    font-size: 1.05rem; }
+  .body-event .event .event-card {
+    width: 400px;
+    margin-block-end: 1.5rem; }
+    .body-event .event .event-card .card-banner .publish-date {
+      font-size: .7rem;
+      padding: 2px;
+      top: 10px;
+      left: 15px; }
+    .body-event .event .event-card .card-content {
+      padding: 10px 0; }
+      .body-event .event .event-card .card-content .card-title {
+        font-size: .8rem;
+        margin: 5px; }
+      .body-event .event .event-card .card-content .card-subtitle {
+        font-size: .9rem;
+        letter-spacing: 0.2em; }
+  .body-event .testi {
+    margin-bottom: 2rem; }
+    .body-event .testi .wrapper {
+      margin-block: 25px; }
+    .body-event .testi .quote {
+      font-size: 3rem; }
+    .body-event .testi .testi-text {
+      margin: 0;
+      line-height: 1.6;
+      font-size: .9rem; }
+    .body-event .testi .profile .img {
+      margin-block-end: 10px;
+      width: 45px;
+      height: 45px; }
+    .body-event .testi .profile .profile-name {
+      font-size: .9rem;
+      letter-spacing: 0.1em; }
+  .body-event .footer-event {
+    padding: 10px; }
+    .body-event .footer-event .footer-brand .girasol-logo-footer {
+      margin-block-end: 10px; }
+      .body-event .footer-event .footer-brand .girasol-logo-footer img {
+        width: 60px;
+        height: 60px; }
+    .body-event .footer-event .footer-brand .wrapper {
+      margin-block: 20px; }
+    .body-event .footer-event .footer-brand :is(.body-4, .label-1) {
+      font-size: .8rem; }
+    .body-event .footer-event .order-list-footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1.5rem;
+      padding-block-start: 2rem; }
+      .body-event .footer-event .order-list-footer .footer-list {
+        align-items: flex-start;
+        gap: 0.5rem; }
+        .body-event .footer-event .order-list-footer .footer-list .footer-link {
+          font-size: .8rem; }
+    .body-event .footer-event .footer-bottom .typing {
+      font-size: .9rem; } }
 
 @media (max-width: 375px) and (max-width: 375px) {
   .header-principal .nav-principal {
@@ -2525,7 +2682,37 @@ h2 {
     .main-index .article-index .team .team-content .team-box img {
       height: 200px; }
   .main-index .article-index .review .review-box p {
-    max-width: 270px; } }
+    max-width: 270px; }
+  .body-event .event .section-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em; }
+  .body-event .event .section-title {
+    font-size: 1rem;
+    margin-block-end: 20px; }
+  .body-event .event .event-card {
+    width: 350px;
+    margin-block-end: 1rem; }
+    .body-event .event .event-card .card-banner .publish-date {
+      font-size: .65rem; }
+    .body-event .event .event-card .card-content {
+      padding: 10px 0; }
+      .body-event .event .event-card .card-content .card-title {
+        font-size: .75rem;
+        margin: 5px; }
+      .body-event .event .event-card .card-content .card-subtitle {
+        font-size: .8rem; }
+  .body-event .testi {
+    margin-bottom: 0; }
+    .body-event .testi .wrapper {
+      margin-block: 15px; }
+    .body-event .testi .testi-text {
+      margin: 0 54px;
+      font-size: .85rem; }
+    .body-event .testi .profile .img {
+      width: 40px;
+      height: 40px; }
+    .body-event .testi .profile .profile-name {
+      font-size: .8rem; } }
 
 @media (max-width: 320px) and (max-width: 320px) {
   .main-index .article-index .heading, .main-index .article-index .products, .main-index .article-index .products p {
@@ -2752,4 +2939,6 @@ h2 {
         font-size: .7rem; }
     .bg-color-work .footer-nuestro-trabajo .copy {
       margin: 10px 2.5px 0 2.5px;
-      font-size: .7rem; } }
+      font-size: .7rem; }
+  .body-event .event .event-card {
+    width: 300px; } }
