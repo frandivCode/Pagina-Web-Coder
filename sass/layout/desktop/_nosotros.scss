@@ -103,6 +103,7 @@
             color: #FAEED1;
             font-family: "Poppins", sans-serif;
             @include flexible (flex, center, center);
+            filter: drop-shadow(0 0 0.75rem #FAEED1);
         }
 
         .grid-p {
