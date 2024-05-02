@@ -1063,7 +1063,7 @@ h2 {
             .bg-color-work .content-body-work .header-container-work .nav-nosotros .nav__container .nav__menu a {
               text-decoration: none;
               color: #ffffff;
-              font-size: 17px;
+              font-size: 40px;
               font-weight: 500;
               position: relative;
               font-family: "Poppins", sans-serif; }
@@ -1075,7 +1075,7 @@ h2 {
                 left: 0;
                 height: 2px;
                 width: 100%;
-                background: #E2DFD0;
+                background: #f5cc00;
                 transform-origin: right;
                 transform: scaleX(0);
                 transition: transform 0.3s ease-in-out; }
@@ -1403,7 +1403,7 @@ h2 {
             left: 0;
             height: 2px;
             width: 100%;
-            background: #B4D4FF;
+            background: #006eff;
             transform-origin: right;
             transform: scaleX(0);
             transition: transform 0.3s ease-in-out; }
